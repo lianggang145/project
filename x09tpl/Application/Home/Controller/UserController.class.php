@@ -1,13 +1,67 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-class IndexController extends Controller {
+class userController extends Controller {
+	// 自动验证
+	protected $rule = array(
+        array('name','/^\w{6,16}$/','用户名格式错误',1,'require'),//账号 required
+        array('pwd','/^\w{6,16}$/','密码格式错误',1,'require'),//密码
+        array('repwd','pwd','两次密码输入不正确',1,'confirm',3,1,'require'),//重复密码
+        array('email','/^([a-zA-Z0-9_\.\-]){6,}\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/','邮箱格式错误或邮箱已注册',1,'unique',3,1,'require'),//邮箱
+    );
+	public function Inx(){
+		$this->display();
+	}
+	// 登陆页面
     public function index(){
-        // $this->show('<style type="text/css">*{ padding: 0; margin: 0; } div{ padding: 4px 48px;} body{ background: #fff; font-family: "微软雅黑"; color: #333;font-size:24px} h1{ font-size: 100px; font-weight: normal; margin-bottom: 12px; } p{ line-height: 1.8em; font-size: 36px }</style><div style="padding: 24px 48px;"> <h1>:)</h1><p>欢迎使用 <b>ThinkPHP</b>！</p><br/>[ 您现在访问的是Home前台模块的Index控制器 ]</div><script type="text/javascript" src="http://tajs.qq.com/stats?sId=9347272" charset="UTF-8"></script>','utf-8');
-    $li=new \Think\Model('address');
-    $list=$li->select();
-    // var_dump($list);
-    $this->assign('list',$list);
-    $this->display('user/index');
+  		$this->display('user/index');
+    }
+    
+    // 加载验证码
+    public function verify(){
+    	// 实例化验证码类
+    	$verify=new \Think\Verify();
+    	// 设置信息
+    	$verify->fontSize=20;//设置字体大小
+    	$verify->length=4;//位数
+    	// 开启干扰
+    	$verify->useNoise=true;
+    	// 生成验证码
+    	$verify->entry();
+    }
+    // 注册页面
+    public function registr(){
+    	$this->display('user/registr');
+    }
+    // 检测
+    public function dores(){
+    	$fcode=$_POST['fcode'];
+    	// 实例化验证码
+    	$verify=new \Think\Verify();
+    	$data=array();
+    	// 用来检测验证码 和用户注册是否批匹配正则
+    	if($verify->check($fcode,'')){
+    		// 便利添加POST数据
+    		foreach($_POST as $k=>$v){
+    			$data[$k]=$v;
+   			}
+   			// 执行添加
+   			$user=M('user');
+   			// 调用自动验证方法
+   			if(!$user->validate($this->rule)->create()){
+   				$this->error($user->getError(),U('user/registr'));
+   				exit;
+   			}
+    	}else{
+    		$this->error('验证码有误请您去吃屎',U('user/registr'));
+    	}
+    	// 用户名不能跟数据库重复
+    	$name=$user->where("name='{$data['name']}'")->find();
+    	if($name['name']==$data['name']){
+    		$this->error('用户名已存在,请重新输入',U('user/registr'));
+    	}else{
+
+    		$this->success('注册成功');
+    	}
     }
 }

@@ -6,11 +6,4 @@ class CateController extends MiddleController {
 	public function add(){
         $this->display('Cate/add');
     }
-    // 处理添加
-    // 制作一个公共的分类方法
-
-    public function index(){
-           $cate=M('cate');
-        var_dump($cate);die();
-    }
    }
