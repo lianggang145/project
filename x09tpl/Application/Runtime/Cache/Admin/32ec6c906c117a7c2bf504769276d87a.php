@@ -7,13 +7,13 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
 <!-- Required Stylesheets -->
-<link rel="stylesheet" type="text/css" href="/x09tpl/Public/bootstrap/css/bootstrap.min.css" media="screen">
-<link rel="stylesheet" type="text/css" href="/x09tpl/Public/css/fonts/ptsans/stylesheet.css" media="screen">
-<link rel="stylesheet" type="text/css" href="/x09tpl/Public/css/fonts/icomoon/style.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/Public/bootstrap/css/bootstrap.min.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/Public/css/fonts/ptsans/stylesheet.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/Public/css/fonts/icomoon/style.css" media="screen">
 
-<link rel="stylesheet" type="text/css" href="/x09tpl/Public/css/login.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/Public/css/login.css" media="screen">
 
-<link rel="stylesheet" type="text/css" href="/x09tpl/Public/css/mws-theme.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/Public/css/mws-theme.css" media="screen">
 
 <title>商城后台登陆</title>
 
@@ -26,7 +26,7 @@
             <h1>登陆</h1>
             <div class="mws-login-lock"><i class="icon-lock"></i></div>
             <div id="mws-login-form">
-                <form class="mws-form" action="/x09tpl/index.php/Admin/Login/dologin" method="post">
+                <form class="mws-form" action="/index.php/Admin/Login/dologin" method="post">
                     <div class="mws-form-row">
                         <div class="mws-form-item">
                             <input type="text" name="name" class="mws-login-username required" placeholder="username">

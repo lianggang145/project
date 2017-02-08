@@ -60,8 +60,39 @@ class userController extends Controller {
     	if($name['name']==$data['name']){
     		$this->error('用户名已存在,请重新输入',U('user/registr'));
     	}else{
-
-    		$this->success('注册成功');
+            $data['pwd']=md5("!@%".$data['pwd'].'*^&*()');
+            // 用unset删除多余数据
+            unset($data['repwd']);
+            unset($data['fcode']);
+            $data['token']=md5(time()+mt_rand(1,9999999999));
+            $res=$user->data($data)->add();
+            if($res>0){
+                $this->success('注册成功',U('user/index'));
+            }else{
+                $this->error('注册失败');
+            }
+    		
     	}
     }
+    // 开始检测登陆
+    // 判断用户是否激活账户
+    public function login(){
+        $name=$_POST['name'];
+        $mod=M('user');
+        $list=$mod->where("name='{$name}'")->find();
+        // var_dump($list['id']);
+        if($list['name']!=""){
+            if($list['status']==1){
+               
+            }else{
+                 $this->display('shou/index');
+            }
+        }else{
+            // var_dump($list);die();                  
+            $_SESSION['status']=$list['status'];
+            // var_dump($_SESSION);die();
+            $this->success('用户名不存',U('user/index'));
+        }
+    }
+   
 }
