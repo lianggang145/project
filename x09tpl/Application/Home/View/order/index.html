@@ -1,0 +1,50 @@
+<extend name="userpublic/index" />
+<block name="title"><title>用户详情</title></block>
+<block name="userinfo">
+    <div class="m_right">
+            <p></p>     
+            
+            <div class="mem_tit">
+                详细信息
+            </div>
+            <table border="0" class="mem_tab" style="width:930px; margin-bottom:30px;" cellspacing="0" cellpadding="0">
+              <form action="__MODULE__/user_info/add" enctype="multipart/form-data">
+              <tr>                                                                                                                                                    
+                <td width="150" class="tx_l">用户名</td>                                                                                                                                         
+                <td width="680"><input type="text" value="{$_SESSION['name']}" class="tx_ipt" /></td>
+              </tr>
+              <tr>
+                <td class="tx_l">真实姓名</td>
+                <td><input type="text" value="" class="tx_ipt" name="name"/></td>
+              </tr>
+              <tr>
+                <td class="tx_l">性别</td>
+                <td><input type="text" value="" class="tx_ipt" name="sex"/></td>
+              </tr>
+              <tr>
+                <td class="tx_l">邮箱</td>
+                <td><input type="text" value="" class="tx_ipt" name="email" /></td>
+              </tr>
+              <tr>
+                <td class="tx_l">手机号</td>
+                <td><input type="text" value="" class="tx_ipt" name="phone" /></td>
+              </tr>
+              <tr valign="top">
+                <td class="tx_l">头像</td>
+                <td>  <div><input name="pic" type="file"></span></div> </td>
+              </tr>
+              <tr height="70">
+                <td colspan="2" align="center">
+                    <input type="submit" value="提交表单" class="btn_tj" /> &nbsp; &nbsp;
+                </td>
+              </tr>
+            </table>
+            </form>
+
+
+
+
+
+        </div>
+    </div>
+</block>
