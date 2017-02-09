@@ -1,33 +1,33 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/style.css" />
+	<link type="text/css" rel="stylesheet" href="/Public/home/css/style.css" />
     <!--[if IE 6]>
-    <script src="__PUBLIC__/home/js/iepng.js" type="text/javascript"></script>
+    <script src="/Public/home/js/iepng.js" type="text/javascript"></script>
         <script type="text/javascript">
            EvPNG.fix('div, ul, img, li, input, a'); 
         </script>
     <![endif]-->    
-    <script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.11.1.min_044d0927.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/home/js/jquery.bxslider_e88acd1b.js"></script>
+    <script type="text/javascript" src="/Public/home/js/jquery-1.11.1.min_044d0927.js"></script>
+	<script type="text/javascript" src="/Public/home/js/jquery.bxslider_e88acd1b.js"></script>
     
-    <script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.8.2.min.js"></script>
-    <script type="text/javascript" src="__PUBLIC__/home/js/menu.js"></script>    
+    <script type="text/javascript" src="/Public/home/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="/Public/home/js/menu.js"></script>    
         
-	<script type="text/javascript" src="__PUBLIC__/home/js/select.js"></script>
+	<script type="text/javascript" src="/Public/home/js/select.js"></script>
     
-	<script type="text/javascript" src="__PUBLIC__/home/js/lrscroll.js"></script>
+	<script type="text/javascript" src="/Public/home/js/lrscroll.js"></script>
     
-    <script type="text/javascript" src="__PUBLIC__/home/js/iban.js"></script>
-    <script type="text/javascript" src="__PUBLIC__/home/js/fban.js"></script>
-    <script type="text/javascript" src="__PUBLIC__/home/js/f_ban.js"></script>
-    <script type="text/javascript" src="__PUBLIC__/home/js/mban.js"></script>
-    <script type="text/javascript" src="__PUBLIC__/home/js/bban.js"></script>
-    <script type="text/javascript" src="__PUBLIC__/home/js/hban.js"></script>
-    <script type="text/javascript" src="__PUBLIC__/home/js/tban.js"></script>
+    <script type="text/javascript" src="/Public/home/js/iban.js"></script>
+    <script type="text/javascript" src="/Public/home/js/fban.js"></script>
+    <script type="text/javascript" src="/Public/home/js/f_ban.js"></script>
+    <script type="text/javascript" src="/Public/home/js/mban.js"></script>
+    <script type="text/javascript" src="/Public/home/js/bban.js"></script>
+    <script type="text/javascript" src="/Public/home/js/hban.js"></script>
+    <script type="text/javascript" src="/Public/home/js/tban.js"></script>
     
-	<script type="text/javascript" src="__PUBLIC__/home/js/lrscroll_1.js"></script>
+	<script type="text/javascript" src="/Public/home/js/lrscroll_1.js"></script>
     
     
 <title>商城首页</title>
@@ -38,16 +38,14 @@
 	<div class="sou">
     	
         <span class="fr">
-            <if condition="$_SESSION['name']">
-                <span class="fl">欢迎，{$_SESSION['name']}，登陆</a>&nbsp;
-                <a href="__MODULE__/shou/lout">退出</a>&nbsp;
-                <else />
-                <span class="fl">欢迎，请<a href="__MODULE__/user/index">登录</a>
-                <a href="__MODULE__/user/registr" style="color:#ff4e00;">免费注册</a>&nbsp;|&nbsp;
-            </if>
+            <?php if($_SESSION['name']): ?><span class="fl">欢迎，<?php echo ($_SESSION['name']); ?>，登陆</a>&nbsp;
+                <a href="/index.php/Home/shou/lout">退出</a>&nbsp;
+                <?php else: ?>
+                <span class="fl">欢迎，请<a href="/index.php/Home/user/index">登录</a>
+                <a href="/index.php/Home/user/registr" style="color:#ff4e00;">免费注册</a>&nbsp;|&nbsp;<?php endif; ?>
         	
                 
-                <a href="__MODULE__/order/index">用户中心</a>&nbsp;|</span>
+                <a href="/index.php/Home/order/index">用户中心</a>&nbsp;|</span>
         	<span class="ss">
             	<div class="ss_list">
                 	<a href="#">收藏夹</a>
@@ -89,12 +87,12 @@
             </span>
             <span class="fl">|&nbsp;关注我们：</span>
             <span class="s_sh"><a href="#" class="sh1">新浪</a><a href="#" class="sh2">微信</a></span>
-            <span class="fr">|&nbsp;<a href="#">手机版&nbsp;<img src="__PUBLIC__/home/images/s_tel.png" align="absmiddle" /></a></span>
+            <span class="fr">|&nbsp;<a href="#">手机版&nbsp;<img src="/Public/home/images/s_tel.png" align="absmiddle" /></a></span>
         </span>
     </div>
 </div>
 <div class="top">
-    <div class="logo"><a href="Index.html"><img src="__PUBLIC__/home/images/logo.png" /></a></div>
+    <div class="logo"><a href="Index.html"><img src="/Public/home/images/logo.png" /></a></div>
     <div class="search">
     	<form>
         	<input type="text" value="" class="s_ipt" />
@@ -111,17 +109,17 @@
             <!--Begin 购物车已登录 Begin-->
             <ul class="cars">
             	<li>
-                	<div class="img"><a href="#"><img src="__PUBLIC__/home/images/car1.jpg" width="58" height="58" /></a></div>
+                	<div class="img"><a href="#"><img src="/Public/home/images/car1.jpg" width="58" height="58" /></a></div>
                     <div class="name"><a href="#">法颂浪漫梦境50ML 香水女士持久清新淡香 送2ML小样3只</a></div>
                     <div class="price"><font color="#ff4e00">￥399</font> X1</div>
                 </li>
                 <li>
-                	<div class="img"><a href="#"><img src="__PUBLIC__/home/images/car2.jpg" width="58" height="58" /></a></div>
+                	<div class="img"><a href="#"><img src="/Public/home/images/car2.jpg" width="58" height="58" /></a></div>
                     <div class="name"><a href="#">香奈儿（Chanel）邂逅活力淡香水50ml</a></div>
                     <div class="price"><font color="#ff4e00">￥399</font> X1</div>
                 </li>
                 <li>
-                	<div class="img"><a href="#"><img src="__PUBLIC__/home/images/car2.jpg" width="58" height="58" /></a></div>
+                	<div class="img"><a href="#"><img src="/Public/home/images/car2.jpg" width="58" height="58" /></a></div>
                     <div class="name"><a href="#">香奈儿（Chanel）邂逅活力淡香水50ml</a></div>
                     <div class="price"><font color="#ff4e00">￥399</font> X1</div>
                 </li>
@@ -143,7 +141,7 @@
                 <ul>      
                     <li>
                     	<div class="fj">
-                        	<span class="n_img"><span></span><img src="__PUBLIC__/home/images/nav1.png" /></span>
+                        	<span class="n_img"><span></span><img src="/Public/home/images/nav1.png" /></span>
                             <span class="fl">进口食品、生鲜</span>
                         </div>
                         <div class="zj">
@@ -158,8 +156,8 @@
                                 
                             </div>
                             <div class="zj_r">
-                                <a href="#"><img src="__PUBLIC__/home/images/n_img1.jpg" width="236" height="200" /></a>
-                                <a href="#"><img src="__PUBLIC__/home/images/n_img2.jpg" width="236" height="200" /></a>
+                                <a href="#"><img src="/Public/home/images/n_img1.jpg" width="236" height="200" /></a>
+                                <a href="#"><img src="/Public/home/images/n_img2.jpg" width="236" height="200" /></a>
                             </div>
                         </div>
                     </li>
@@ -189,9 +187,9 @@
     	<div class="banner">    	
             <div class="top_slide_wrap">
                 <ul class="slide_box bxslider">
-                    <li><img src="__PUBLIC__/home/images/ban1.jpg" width="740" height="401" /></li>
-                    <li><img src="__PUBLIC__/home/images/ban1.jpg" width="740" height="401" /></li> 
-                    <li><img src="__PUBLIC__/home/images/ban1.jpg" width="740" height="401" /></li> 
+                    <li><img src="/Public/home/images/ban1.jpg" width="740" height="401" /></li>
+                    <li><img src="/Public/home/images/ban1.jpg" width="740" height="401" /></li> 
+                    <li><img src="/Public/home/images/ban1.jpg" width="740" height="401" /></li> 
                 </ul>	
                 <div class="op_btns clearfix">
                     <a href="#" class="op_btn op_prev"><span></span></a>
@@ -252,7 +250,7 @@
     <!--Begin 热门商品 Begin-->
     <div class="content mar_10">
     	<div class="h_l_img">
-        	<div class="img"><img src="__PUBLIC__/home/images/l_img.jpg" width="188" height="188" /></div>
+        	<div class="img"><img src="/Public/home/images/l_img.jpg" width="188" height="188" /></div>
             <div class="pri_bg">
                 <span class="price fl">￥53.00</span>
                 <span class="fr">16R</span>
@@ -266,9 +264,9 @@
                             <ul class="featureUL">
                                 <li class="featureBox">
                                     <div class="box">
-                                    	<div class="h_icon"><img src="__PUBLIC__/home/images/hot.png" width="50" height="50" /></div>
+                                    	<div class="h_icon"><img src="/Public/home/images/hot.png" width="50" height="50" /></div>
                                         <div class="imgbg">
-                                        	<a href="#"><img src="__PUBLIC__/home/images/hot1.jpg" width="160" height="136" /></a>
+                                        	<a href="#"><img src="/Public/home/images/hot1.jpg" width="160" height="136" /></a>
                                         </div>                                        
                                         <div class="name">
                                         	<a href="#">
@@ -283,9 +281,9 @@
                                 </li>
                                 <li class="featureBox">
                                     <div class="box">
-                                        <div class="h_icon"><img src="__PUBLIC__/home/images/hot.png" width="50" height="50" /></div>
+                                        <div class="h_icon"><img src="/Public/home/images/hot.png" width="50" height="50" /></div>
                                         <div class="imgbg">
-                                        	<a href="#"><img src="__PUBLIC__/home/images/hot2.jpg" width="160" height="136" /></a>
+                                        	<a href="#"><img src="/Public/home/images/hot2.jpg" width="160" height="136" /></a>
                                         </div>                                        
                                         <div class="name">
                                         	<a href="#">
@@ -300,9 +298,9 @@
                                 </li>
                                 <li class="featureBox">
                                     <div class="box">
-                                        <div class="h_icon"><img src="__PUBLIC__/home/images/hot.png" width="50" height="50" /></div>
+                                        <div class="h_icon"><img src="/Public/home/images/hot.png" width="50" height="50" /></div>
                                         <div class="imgbg">
-                                        	<a href="#"><img src="__PUBLIC__/home/images/hot3.jpg" width="160" height="136" /></a>
+                                        	<a href="#"><img src="/Public/home/images/hot3.jpg" width="160" height="136" /></a>
                                         </div>                                        
                                         <div class="name">
                                         	<a href="#">
@@ -317,9 +315,9 @@
                                 </li>
                                 <li class="featureBox">
                                     <div class="box">
-                                        <div class="h_icon"><img src="__PUBLIC__/home/images/hot.png" width="50" height="50" /></div>
+                                        <div class="h_icon"><img src="/Public/home/images/hot.png" width="50" height="50" /></div>
                                         <div class="imgbg">
-                                        	<a href="#"><img src="__PUBLIC__/home/images/hot4.jpg" width="160" height="136" /></a>
+                                        	<a href="#"><img src="/Public/home/images/hot4.jpg" width="160" height="136" /></a>
                                         </div>                                        
                                         <div class="name">
                                         	<a href="#">
@@ -350,9 +348,9 @@
     	<div class="i_sell">
             <div id="imgPlay">
                 <ul class="imgs" id="actor">
-                    <li><a href="#"><img src="__PUBLIC__/home/images/tm_r.jpg" width="211" height="357" /></a></li>
-                    <li><a href="#"><img src="__PUBLIC__/home/images/tm_r.jpg" width="211" height="357" /></a></li>
-                    <li><a href="#"><img src="__PUBLIC__/home/images/tm_r.jpg" width="211" height="357" /></a></li>
+                    <li><a href="#"><img src="/Public/home/images/tm_r.jpg" width="211" height="357" /></a></li>
+                    <li><a href="#"><img src="/Public/home/images/tm_r.jpg" width="211" height="357" /></a></li>
+                    <li><a href="#"><img src="/Public/home/images/tm_r.jpg" width="211" height="357" /></a></li>
                 </ul>
                 <div class="previ">上一张</div>
                 <div class="nexti">下一张</div>
@@ -360,7 +358,7 @@
         </div>
         <div class="sell_right">
         	<div class="sell_1">
-            	<div class="s_img"><a href="#"><img src="__PUBLIC__/home/images/tm_1.jpg" width="185" height="155" /></a></div>
+            	<div class="s_img"><a href="#"><img src="/Public/home/images/tm_1.jpg" width="185" height="155" /></a></div>
             	<div class="s_price">￥<span>89</span></div>
                 <div class="s_name">
                 	<h2><a href="#">沙宣洗发水</a></h2>
@@ -368,7 +366,7 @@
                 </div>
             </div>
             <div class="sell_2">
-            	<div class="s_img"><a href="#"><img src="__PUBLIC__/home/images/tm_2.jpg" width="185" height="155" /></a></div>
+            	<div class="s_img"><a href="#"><img src="/Public/home/images/tm_2.jpg" width="185" height="155" /></a></div>
             	<div class="s_price">￥<span>289</span></div>
                 <div class="s_name">
                 	<h2><a href="#">德芙巧克力</a></h2>
@@ -376,7 +374,7 @@
                 </div>
             </div>
             <div class="sell_b1">
-            	<div class="sb_img"><a href="#"><img src="__PUBLIC__/home/images/tm_b1.jpg" width="242" height="356" /></a></div>
+            	<div class="sb_img"><a href="#"><img src="/Public/home/images/tm_b1.jpg" width="242" height="356" /></a></div>
             	<div class="s_price">￥<span>289</span></div>
                 <div class="s_name">
                 	<h2><a href="#">东北大米</a></h2>
@@ -384,7 +382,7 @@
                 </div>
             </div>
             <div class="sell_3">
-            	<div class="s_img"><a href="#"><img src="__PUBLIC__/home/images/tm_3.jpg" width="185" height="155" /></a></div>
+            	<div class="s_img"><a href="#"><img src="/Public/home/images/tm_3.jpg" width="185" height="155" /></a></div>
             	<div class="s_price">￥<span>289</span></div>
                 <div class="s_name">
                 	<h2><a href="#">迪奥香水</a></h2>
@@ -392,7 +390,7 @@
                 </div>
             </div>
             <div class="sell_4">
-            	<div class="s_img"><a href="#"><img src="__PUBLIC__/home/images/tm_4.jpg" width="185" height="155" /></a></div>
+            	<div class="s_img"><a href="#"><img src="/Public/home/images/tm_4.jpg" width="185" height="155" /></a></div>
             	<div class="s_price">￥<span>289</span></div>
                 <div class="s_name">
                 	<h2><a href="#">美妆</a></h2>
@@ -400,7 +398,7 @@
                 </div>
             </div>
             <div class="sell_b2">
-            	<div class="sb_img"><a href="#"><img src="__PUBLIC__/home/images/tm_b2.jpg" width="242" height="356" /></a></div>
+            	<div class="sb_img"><a href="#"><img src="/Public/home/images/tm_b2.jpg" width="242" height="356" /></a></div>
             	<div class="s_price">￥<span>289</span></div>
                 <div class="s_name">
                 	<h2><a href="#">美妆</a></h2>
@@ -411,7 +409,7 @@
     </div>
     <!--End 限时特卖 End-->
     <div class="content mar_20">
-    	<img src="__PUBLIC__/home/images/mban_1.jpg" width="1200" height="110" />
+    	<img src="/Public/home/images/mban_1.jpg" width="1200" height="110" />
     </div>
 	
        
@@ -426,25 +424,25 @@
         <div class="b_btm">
             <table border="0" style="width:210px; height:62px; float:left; margin-left:75px; margin-top:30px;" cellspacing="0" cellpadding="0">
               <tr>
-                <td width="72"><img src="__PUBLIC__/home/images/b1.png" width="62" height="62" /></td>
+                <td width="72"><img src="/Public/home/images/b1.png" width="62" height="62" /></td>
                 <td><h2>正品保障</h2>正品行货  放心购买</td>
               </tr>
             </table>
 			<table border="0" style="width:210px; height:62px; float:left; margin-left:75px; margin-top:30px;" cellspacing="0" cellpadding="0">
               <tr>
-                <td width="72"><img src="__PUBLIC__/home/images/b2.png" width="62" height="62" /></td>
+                <td width="72"><img src="/Public/home/images/b2.png" width="62" height="62" /></td>
                 <td><h2>满38包邮</h2>满38包邮 免运费</td>
               </tr>
             </table>
             <table border="0" style="width:210px; height:62px; float:left; margin-left:75px; margin-top:30px;" cellspacing="0" cellpadding="0">
               <tr>
-                <td width="72"><img src="__PUBLIC__/home/images/b3.png" width="62" height="62" /></td>
+                <td width="72"><img src="/Public/home/images/b3.png" width="62" height="62" /></td>
                 <td><h2>天天低价</h2>天天低价 畅选无忧</td>
               </tr>
             </table>
             <table border="0" style="width:210px; height:62px; float:left; margin-left:75px; margin-top:30px;" cellspacing="0" cellpadding="0">
               <tr>
-                <td width="72"><img src="__PUBLIC__/home/images/b4.png" width="62" height="62" /></td>
+                <td width="72"><img src="/Public/home/images/b4.png" width="62" height="62" /></td>
                 <td><h2>准时送达</h2>收货时间由你做主</td>
               </tr>
             </table>
@@ -492,14 +490,14 @@
             </p>
         </div>
         <div class="b_er">
-            <div class="b_er_c"><img src="__PUBLIC__/home/images/er.gif" width="118" height="118" /></div>
-            <img src="__PUBLIC__/home/images/ss.png" />
+            <div class="b_er_c"><img src="/Public/home/images/er.gif" width="118" height="118" /></div>
+            <img src="/Public/home/images/ss.png" />
         </div>
     </div>    
     <div class="btmbg">
 		<div class="btm">
         	备案/许可证编号：蜀ICP备12009302号-1-www.dingguagua.com   Copyright © 2015-2018 尤洪商城网 All Rights Reserved. 复制必究 , Technical Support: Dgg Group <br />
-            <img src="__PUBLIC__/home/images/b_1.gif" width="98" height="33" /><img src="__PUBLIC__/home/images/b_2.gif" width="98" height="33" /><img src="__PUBLIC__/home/images/b_3.gif" width="98" height="33" /><img src="__PUBLIC__/home/images/b_4.gif" width="98" height="33" /><img src="__PUBLIC__/home/images/b_5.gif" width="98" height="33" /><img src="__PUBLIC__/home/images/b_6.gif" width="98" height="33" />
+            <img src="/Public/home/images/b_1.gif" width="98" height="33" /><img src="/Public/home/images/b_2.gif" width="98" height="33" /><img src="/Public/home/images/b_3.gif" width="98" height="33" /><img src="/Public/home/images/b_4.gif" width="98" height="33" /><img src="/Public/home/images/b_5.gif" width="98" height="33" /><img src="/Public/home/images/b_6.gif" width="98" height="33" />
         </div>    	
     </div>
     <!--End Footer End -->    
@@ -509,6 +507,6 @@
 
 
 <!--[if IE 6]>
-<script src="__PUBLIC__/home///letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<script src="/Public/home///letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
 <![endif]-->
 </html>

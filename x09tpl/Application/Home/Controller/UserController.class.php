@@ -86,6 +86,8 @@ class userController extends Controller {
             $this->success('用户名或密码有误',U('user/index'));
         }else{
             $_SESSION['name']=$name;
+            $_SESSION['islogin']=2;
+            $_SESSION['hid']=$list['id'];
             $this->success('登陆成功',U('shou/index'));
         }
     }
