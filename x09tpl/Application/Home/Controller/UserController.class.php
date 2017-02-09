@@ -78,20 +78,15 @@ class userController extends Controller {
     // 判断用户是否激活账户
     public function login(){
         $name=$_POST['name'];
+        $pwd=md5("!@$%".$_POST['pwd'].'*^&*()');
         $mod=M('user');
         $list=$mod->where("name='{$name}'")->find();
         // var_dump($list['id']);
-        if($list['name']!=""){
-            if($list['status']==1){
-               
-            }else{
-                 $this->display('shou/index');
-            }
+        if(empty($list)||$list['pwd']!=$pwd){
+            $this->success('用户名或密码有误',U('user/index'));
         }else{
-            // var_dump($list);die();                  
-            $_SESSION['status']=$list['status'];
-            // var_dump($_SESSION);die();
-            $this->success('用户名不存',U('user/index'));
+            $_SESSION['name']=$name;
+            $this->success('登陆成功',U('shou/index'));
         }
     }
    

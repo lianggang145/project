@@ -64,19 +64,17 @@
               </tr>
               <tr height="70">
                 <td>用户名</td>
-                <td><input type="text" value="" class="l_user" name="name" /></td>
+                <td><input type="text" value="" class="l_user" name="name" required oninvalid="setCustomValidity('用户名不能为空')" oninput="setCustomValidity('')" /></td>
               </tr>
               <tr height="70">
                 <td>密&nbsp; &nbsp; 码</td>
-                <td><input type="password" value="" class="l_pwd" name="pwd" /></td>
+                <td><input type="password" value="" class="l_pwd" name="pwd" required oninvalid="setCustomValidity('密码不能为空')" oninput="setCustomValidity('')" /></td>
               </tr>
               <tr>
               	<td>&nbsp;</td>
                 <td style="font-size:12px; padding-top:20px;">
-                	<span style="font-family:'宋体';" class="fl">
-                    	<label class="r_rad"><input type="checkbox" /></label><label class="r_txt">请保存我这次的登录信息</label>
-                    </span>
-                    <span class="fr"><a href="#" style="color:#ff4e00;">激活账户</a></span>
+                
+                    <span class="fr"><a href="#" style="color:#ff4e00;">忘记密码</a></span>
                 </td>
               </tr>
               <tr height="60">

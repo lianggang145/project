@@ -18,7 +18,7 @@ class LoginController extends Controller {
             // var_dump($ll);
             if(empty($ll)||$ll['pwd']!=$pwd){
 
-                $this->error('账号或者密码不错误，请去吃屎',U('Login/index'));
+                $this->error('账号或者密码错误，请去吃屎',U('Login/index'));
             }else{
                 $_SESSION['islogin']=2;
                 $_SESSION['name']=$name;
