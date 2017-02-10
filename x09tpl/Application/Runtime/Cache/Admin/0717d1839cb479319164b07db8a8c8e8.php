@@ -305,7 +305,7 @@
                 <td class=" "><span class="badge badge-success"><?php echo ($row['id']); ?></span></td>
                 <td class=" "><span class="badge badge-success"><?php echo ($row['name']); ?></span></td>
                 <td class=" "><span class="badge badge-success"><?php echo ($row['descr']); ?></span></td>
-				 <td class=" "><img src="<?php echo ($row['pic']); ?>" alt=""></td>
+				 <td class=" "><img src="<?php echo ($row['pic']); ?>" alt="图片暂缺" width="120px" height="135px"></td>
 				  <td class=" "><span class="badge badge-success"><?php echo ($row['num']); ?></span></td>
 				   <td class=" "><span class="badge badge-success"><?php echo ($row['address']); ?></span></td>
 				    <td class=" "><span class="badge badge-success"><?php echo ($row['time']); ?></span></td>
