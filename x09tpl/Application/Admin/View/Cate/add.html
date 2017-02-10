@@ -6,7 +6,7 @@
                <span>分类添加</span>
           </div>
           <div class="mws-panel-body no-padding">
-               <form action="__MODULE__/Cate/index" method="post" class="mws-form">
+               <form action="__MODULE__/Type/insert" method="post" class="mws-form">
                   
                     <div class="mws-form-inline">
                          <div class="mws-form-row">
@@ -21,9 +21,9 @@
                             <div class="mws-form-item">
                                 <select class="large" name="pid">
                                  	<option value="0">--请选择--</option>
-                                 	
-                                    <option value=""></option> 
-                                                                            
+                                 	<foreach name="cate" item="row">
+                                    <option value="{$row['id']}">{$row['name']}</option> 
+                                  </foreach>                                 
                                 </select>
                             </div>
                         </div>
