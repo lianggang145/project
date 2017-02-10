@@ -186,11 +186,11 @@
 		<!--Begin Banner Begin-->
     	<div class="banner">    	
             <div class="top_slide_wrap">
+            
                 <ul class="slide_box bxslider">
-                    <li><img src="/Public/home/images/ban1.jpg" width="740" height="401" /></li>
-                    <li><img src="/Public/home/images/ban1.jpg" width="740" height="401" /></li> 
-                    <li><img src="/Public/home/images/ban1.jpg" width="740" height="401" /></li> 
+                <?php if(is_array($list)): foreach($list as $key=>$row): ?><li><img src="<?php echo ($row['pic']); ?>" width="740" height="401" /></li><?php endforeach; endif; ?>
                 </ul>	
+            
                 <div class="op_btns clearfix">
                     <a href="#" class="op_btn op_prev"><span></span></a>
                     <a href="#" class="op_btn op_next"><span></span></a>
