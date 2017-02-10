@@ -158,61 +158,49 @@
         </div>
 		
     
-    <div class="m_right">
-            <p></p>     
-            
-            <div class="mem_tit">
-                详细信息
-            </div>
-            <table border="0" class="mem_tab" style="width:930px; margin-bottom:30px;" cellspacing="0" cellpadding="0">
-              <form action="/index.php/Home/order/insert" method="post" enctype="multipart/form-data">
-              <tr>                                                                                                                                                    
-                <td width="150" class="tx_l">用户名</td>                                                                                                                                         
-                <td width="680"><input type="text" value="<?php echo ($_SESSION['name']); ?>" class="tx_ipt" /></td>
-              </tr>
-              <tr>
-                <td class="tx_l">真实姓名</td>
-                <td><input type="text" value="" class="tx_ipt" name="name" required oninvalid="setCustomValidity('姓名不能为空')" oninput="setCustomValidity('')" /></td>
-              </tr>
-              <tr>
-                <td class="tx_l">性别</td>
-                <td>
-                    <input type="checkbox" value="1" class="tx_ipt" name="sex"/>男
-                    <input type="checkbox" value="2" class="tx_ipt" name="sex"/>女
-                </td>
-              </tr>
-               <tr>
-                <td class="tx_l">年龄</td>
-                <td><input type="text" value="" class="tx_ipt" name="age" required oninvalid="setCustomValidity('请填写年龄')" oninput="setCustomValidity('')" /></td>
-              </tr>
-              <tr>
-                <td class="tx_l">邮箱</td>
-                <td><input type="text" value="" class="tx_ipt" name="email" required oninvalid="setCustomValidity('邮箱不能为空')" oninput="setCustomValidity('')" /></td>
-              </tr>
-              <tr>
-                <td class="tx_l">手机号</td>
-                <td><input type="text" value="" class="tx_ipt" name="phone" required oninvalid="setCustomValidity('手机号不能为空')" oninput="setCustomValidity('')" /></td>
-              </tr>
-              <tr valign="top">
-                <td class="tx_l">头像</td>
-                <td>  <div><input type="file" value="" name="pic"></span></div> </td>
-              </tr>
-              <tr height="70">
-                <td colspan="2" align="center">
-                    <input type="submit" value="提交表单" class="btn_tj" /> &nbsp; &nbsp;
-                </td>
-              </tr>
-            </table>
-            </form>
-
-
-
-
-
-        </div>
-    </div>
-
     
+<div class="m_right">
+        	<div class="m_des">
+            	<table style="width:870px; line-height:22px;" cellspacing="0" cellpadding="0" border="0">
+                  <tbody><tr valign="top">
+                    <td width="115"><img src="<?php echo ($_SESSION['list']['pic']); ?>" width="90" height="90"></td>
+                    <td>
+                    	<div class="m_user"><?php echo ($_SESSION['list']['name']); ?></div>
+                        <p>
+                            年龄：<?php echo ($_SESSION['list']['age']); ?> <br>
+                            <font color="#ff4e00">您还差 270 积分达到 分红100</font><br>
+                            上一次登录时间: 2015-09-28 18:19:47<br>
+                            您还没有通过邮件认证 <a href="/index.php/Home/order/update" style="color:#ff4e00;">修改个人信息</a>
+                        </p>
+                        <div class="m_notice">
+                        	用户中心公告！
+                        </div>
+                    </td>
+                  </tr>
+                </tbody></table>	
+            </div>
+            
+           
+
+            <div class="mem_t">账号信息</div>
+            <table class="mon_tab" style="width:870px; margin-bottom:20px;" cellspacing="0" cellpadding="0" border="0">
+              <tbody><tr>
+                <td width="40%">用户ID：<span style="color:#555555;"><?php echo ($_SESSION['list']['id']); ?></span></td>
+                <td width="40%">性别：
+                <?php if($_SESSION['list']['sex']==1): ?><span style="color:#555555;">男</span></td>
+                <?php else: ?>
+                <span style="color:#555555;">女</span></td><?php endif; ?>
+              </tr>
+              <tr>
+                <td>电&nbsp; &nbsp; 话：<span style="color:#555555;"><?php echo ($_SESSION['list']['phone']); ?></span></td>
+                <td>邮&nbsp; &nbsp; 箱：<span style="color:#555555;"><?php echo ($_SESSION['list']['email']); ?></span></td>
+              </tr>
+              
+            </tbody></table>
+               
+            
+        </div>
+       
     
     </div>
 	<!--End 用户中心 End--> 

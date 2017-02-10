@@ -16,7 +16,7 @@
 	<script type="text/javascript" src="/Public/home/js/select.js"></script>
         
     
-<title>用户详情</title>
+<title>修改用户</title>
 </head>
 <body>  
 <!--Begin Header Begin-->
@@ -158,43 +158,49 @@
         </div>
 		
     
-    <div class="m_right">
+    
+    
+	  <div class="m_right">
             <p></p>     
             
             <div class="mem_tit">
                 详细信息
             </div>
             <table border="0" class="mem_tab" style="width:930px; margin-bottom:30px;" cellspacing="0" cellpadding="0">
-              <form action="/index.php/Home/order/insert" method="post" enctype="multipart/form-data">
+              <form action="/index.php/Home/order/doupdate" method="post" enctype="multipart/form-data">
               <tr>                                                                                                                                                    
                 <td width="150" class="tx_l">用户名</td>                                                                                                                                         
                 <td width="680"><input type="text" value="<?php echo ($_SESSION['name']); ?>" class="tx_ipt" /></td>
               </tr>
               <tr>
                 <td class="tx_l">真实姓名</td>
-                <td><input type="text" value="" class="tx_ipt" name="name" required oninvalid="setCustomValidity('姓名不能为空')" oninput="setCustomValidity('')" /></td>
+                <td><input type="text" value="<?php echo ($_SESSION['list']['name']); ?>" class="tx_ipt" name="name" required oninvalid="setCustomValidity('姓名不能为空')" oninput="setCustomValidity('')" /></td>
               </tr>
               <tr>
                 <td class="tx_l">性别</td>
                 <td>
-                    <input type="checkbox" value="1" class="tx_ipt" name="sex"/>男
-                    <input type="checkbox" value="2" class="tx_ipt" name="sex"/>女
+                    <input type="checkbox" value="1" class="tx_ipt" name="sex" <?php if($_SESSION['list']['name']==1): ?>checked<?php endif; ?> />男
+                    <input type="checkbox" value="2" class="tx_ipt" name="sex" <?php if($_SESSION['list']['name']==0): ?>checked<?php endif; ?> />女
                 </td>
               </tr>
                <tr>
                 <td class="tx_l">年龄</td>
-                <td><input type="text" value="" class="tx_ipt" name="age" required oninvalid="setCustomValidity('请填写年龄')" oninput="setCustomValidity('')" /></td>
+                <td><input type="text" value="<?php echo ($_SESSION['list']['age']); ?>" class="tx_ipt" name="age" required oninvalid="setCustomValidity('请填写年龄')" oninput="setCustomValidity('')" /></td>
               </tr>
               <tr>
                 <td class="tx_l">邮箱</td>
-                <td><input type="text" value="" class="tx_ipt" name="email" required oninvalid="setCustomValidity('邮箱不能为空')" oninput="setCustomValidity('')" /></td>
+                <td><input type="text" value="<?php echo ($_SESSION['list']['email']); ?>" class="tx_ipt" name="email" required oninvalid="setCustomValidity('邮箱不能为空')" oninput="setCustomValidity('')" /></td>
               </tr>
               <tr>
                 <td class="tx_l">手机号</td>
-                <td><input type="text" value="" class="tx_ipt" name="phone" required oninvalid="setCustomValidity('手机号不能为空')" oninput="setCustomValidity('')" /></td>
+                <td><input type="text" value="<?php echo ($_SESSION['list']['phone']); ?>" class="tx_ipt" name="phone" required oninvalid="setCustomValidity('手机号不能为空')" oninput="setCustomValidity('')" /></td>
+              </tr>
+               <tr>
+                <td class="tx_l">原头像</td>
+                <td><img src="<?php echo ($_SESSION['list']['pic']); ?>" width="100px"></td>
               </tr>
               <tr valign="top">
-                <td class="tx_l">头像</td>
+                <td class="tx_l">新头像</td>
                 <td>  <div><input type="file" value="" name="pic"></span></div> </td>
               </tr>
               <tr height="70">
@@ -204,16 +210,9 @@
               </tr>
             </table>
             </form>
-
-
-
-
-
         </div>
     </div>
 
-    
-    
     </div>
 	<!--End 用户中心 End--> 
     <!--Begin Footer Begin -->
