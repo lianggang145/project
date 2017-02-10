@@ -100,7 +100,7 @@ class OrderController extends MiddleController {
      $data['phone']=$_POST['phone'];
      $data['email']=$_POST['email'];
      $id=$_SESSION['list']['id'];
-     // var_dump($id);
+     
      // var_dump($data);die;
     if($mod->where("id=$id")->save($data)){
     	self::index();

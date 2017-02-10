@@ -10,29 +10,29 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
 <!-- Plugin Stylesheets first to ease overrides -->
-<link rel="stylesheet" type="text/css" href="/x09tpl/Public/b/plugins/colorpicker/colorpicker.css" media="screen">
-<link rel="stylesheet" type="text/css" href="/x09tpl/Public/b/custom-plugins/wizard/wizard.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/Public/b/plugins/colorpicker/colorpicker.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/Public/b/custom-plugins/wizard/wizard.css" media="screen">
 
 <!-- Required Stylesheets -->
-<link rel="stylesheet" type="text/css" href="/x09tpl/Public/b/bootstrap/css/bootstrap.min.css" media="screen">
-<link rel="stylesheet" type="text/css" href="/x09tpl/Public/b/css/fonts/ptsans/stylesheet.css" media="screen">
-<link rel="stylesheet" type="text/css" href="/x09tpl/Public/b/css/fonts/icomoon/style.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/Public/b/bootstrap/css/bootstrap.min.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/Public/b/css/fonts/ptsans/stylesheet.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/Public/b/css/fonts/icomoon/style.css" media="screen">
 
-<link rel="stylesheet" type="text/css" href="/x09tpl/Public/b/css/mws-style.css" media="screen">
-<link rel="stylesheet" type="text/css" href="/x09tpl/Public/b/css/icons/icol16.css" media="screen">
-<link rel="stylesheet" type="text/css" href="/x09tpl/Public/b/css/icons/icol32.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/Public/b/css/mws-style.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/Public/b/css/icons/icol16.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/Public/b/css/icons/icol32.css" media="screen">
 
 <!-- Demo Stylesheet -->
-<link rel="stylesheet" type="text/css" href="/x09tpl/Public/b/css/demo.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/Public/b/css/demo.css" media="screen">
 
 <!-- jQuery-UI Stylesheet -->
-<link rel="stylesheet" type="text/css" href="/x09tpl/Public/b/jui/css/jquery.ui.all.css" media="screen">
-<link rel="stylesheet" type="text/css" href="/x09tpl/Public/b/jui/jquery-ui.custom.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/Public/b/jui/css/jquery.ui.all.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/Public/b/jui/jquery-ui.custom.css" media="screen">
 
 <!-- Theme Stylesheet -->
-<link rel="stylesheet" type="text/css" href="/x09tpl/Public/b/css/mws-theme.css" media="screen">
-<link rel="stylesheet" type="text/css" href="/x09tpl/Public/b/css/themer.css" media="screen">
-<link rel="stylesheet" type="text/css" href="/x09tpl/Public/b/css/my.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/Public/b/css/mws-theme.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/Public/b/css/themer.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/Public/b/css/my.css" media="screen">
 
 
 <title>用户详情</title>
@@ -48,7 +48,7 @@
         
         	<!-- Logo Wrapper, images put within this wrapper will always be vertically centered -->
         	<div id="mws-logo-wrap">
-            	<img src="/x09tpl/Public/b/images/mws-logo.png" alt="mws admin">
+            	<img src="/Public/b/images/mws-logo.png" alt="mws admin">
 			</div>
         </div>
         
@@ -57,7 +57,7 @@
         
         	<!-- Notifications -->
         	<div id="mws-user-notif" class="mws-dropdown-menu">
-            	<a href="/x09tpl/index.php/Admin/Login/logout" data-toggle="dropdown" class="mws-dropdown-trigger"><i class="icon-exclamation-sign">退出</i></a>
+            	<a href="/index.php/Admin/Login/logout" data-toggle="dropdown" class="mws-dropdown-trigger"><i class="icon-exclamation-sign">退出</i></a>
                 
                 <!-- Unread notification count -->
                 <span class="mws-dropdown-notif">35</span>
@@ -67,7 +67,7 @@
                 	<div class="mws-dropdown-content">
                         <ul class="mws-notifications">
                         	<li class="read">
-                            	<a href="/x09tpl/Public/#">
+                            	<a href="/Public/#">
                                     <span class="message">
                                         Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
                                     </span>
@@ -77,7 +77,7 @@
                                 </a>
                             </li>
                         	<li class="read">
-                            	<a href="/x09tpl/Public/#">
+                            	<a href="/Public/#">
                                     <span class="message">
                                         Lorem ipsum dolor sit amet
                                     </span>
@@ -87,7 +87,7 @@
                                 </a>
                             </li>
                         	<li class="unread">
-                            	<a href="/x09tpl/Public/#">
+                            	<a href="/Public/#">
                                     <span class="message">
                                         Lorem ipsum dolor sit amet
                                     </span>
@@ -97,7 +97,7 @@
                                 </a>
                             </li>
                         	<li class="unread">
-                            	<a href="/x09tpl/Public/#">
+                            	<a href="/Public/#">
                                     <span class="message">
                                         Lorem ipsum dolor sit amet
                                     </span>
@@ -108,7 +108,7 @@
                             </li>
                         </ul>
                         <div class="mws-dropdown-viewall">
-	                        <a href="/x09tpl/Public/#">View All Notifications</a>
+	                        <a href="/Public/#">View All Notifications</a>
                         </div>
                     </div>
                 </div>
@@ -116,7 +116,7 @@
             
             <!-- Messages -->
             <div id="mws-user-message" class="mws-dropdown-menu">
-            	<a href="/x09tpl/Public/#" data-toggle="dropdown" class="mws-dropdown-trigger"><i class="icon-envelope"></i></a>
+            	<a href="/Public/#" data-toggle="dropdown" class="mws-dropdown-trigger"><i class="icon-envelope"></i></a>
                 
                 <!-- Unred messages count -->
                 <span class="mws-dropdown-notif">35</span>
@@ -126,7 +126,7 @@
                 	<div class="mws-dropdown-content">
                         <ul class="mws-messages">
                         	<li class="read">
-                            	<a href="/x09tpl/Public/#">
+                            	<a href="/Public/#">
                                     <span class="sender">John Doe</span>
                                     <span class="message">
                                         Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
@@ -137,7 +137,7 @@
                                 </a>
                             </li>
                         	<li class="read">
-                            	<a href="/x09tpl/Public/#">
+                            	<a href="/Public/#">
                                     <span class="sender">John Doe</span>
                                     <span class="message">
                                         Lorem ipsum dolor sit amet
@@ -148,7 +148,7 @@
                                 </a>
                             </li>
                         	<li class="unread">
-                            	<a href="/x09tpl/Public/#">
+                            	<a href="/Public/#">
                                     <span class="sender">John Doe</span>
                                     <span class="message">
                                         Lorem ipsum dolor sit amet
@@ -159,7 +159,7 @@
                                 </a>
                             </li>
                         	<li class="unread">
-                            	<a href="/x09tpl/Public/#">
+                            	<a href="/Public/#">
                                     <span class="sender">John Doe</span>
                                     <span class="message">
                                         Lorem ipsum dolor sit amet
@@ -171,7 +171,7 @@
                             </li>
                         </ul>
                         <div class="mws-dropdown-viewall">
-	                        <a href="/x09tpl/Public/#">View All Messages</a>
+	                        <a href="/Public/#">View All Messages</a>
                         </div>
                     </div>
                 </div>
@@ -182,7 +182,7 @@
             
             	<!-- User Photo -->
             	<div id="mws-user-photo">
-                	<img src="/x09tpl/Public/b/example/profile.jpg" alt="User Photo">
+                	<img src="/Public/b/example/profile.jpg" alt="User Photo">
                 </div>
                 
                 <!-- Username and Functions -->
@@ -191,9 +191,9 @@
                         Hello, John Doe
                     </div>
                     <ul>
-                    	<li><a href="/x09tpl/Public/#">Profile</a></li>
-                        <li><a href="/x09tpl/Public/#">Change Password</a></li>
-                        <li><a href="/x09tpl/Public/index.html">Logout</a></li>
+                    	<li><a href="/Public/#">Profile</a></li>
+                        <li><a href="/Public/#">Change Password</a></li>
+                        <li><a href="/Public/index.html">Logout</a></li>
                     </ul>
                 </div>
             </div>
@@ -231,32 +231,32 @@
                     <li>
                         <a href=""><i class="icon-user"></i> 用户管理</a>
                         <ul class="closed">
-                            <li><a href="/x09tpl/index.php/Admin/user/add">用户添加</a></li>
-                            <li><a href="/x09tpl/index.php/Admin/user/index">用户列表</a></li>
+                            <li><a href="/index.php/Admin/user/add">用户添加</a></li>
+                            <li><a href="/index.php/Admin/user/index">用户列表</a></li>
                         </ul>
                     </li>
 
                     <li>
                         <a href="#"><i class="icon-th-list"></i> 分类管理</a>
                         <ul class="closed">
-                            <li><a href="/x09tpl/Public/">分类添加</a></li>
-                            <li><a href="/x09tpl/Public/">分类列表</a></li>
+                            <li><a href="/index.php/Admin/Cate/add">分类添加</a></li>
+                            <li><a href="/index.php/Admin/Cate/index">分类列表</a></li>
                         </ul>
                     </li>
 
                     <li>
-                        <a href="/x09tpl/Public/#"><i class="icon-file"></i> 文章管理</a>
+                        <a href="/Public/#"><i class="icon-file"></i> 文章管理</a>
                         <ul class="closed">
-                            <li><a href="/x09tpl/Public/">文章添加</a></li>
-                            <li><a href="/x09tpl/Public/">文章列表</a></li>
+                            <li><a href="/Public/">文章添加</a></li>
+                            <li><a href="/Public/">文章列表</a></li>
                         </ul>
                     </li>
 
                     <li>
                         <a href=""><i class="icon-file"></i> 商品管理</a>
                         <ul class="closed">
-                            <li><a href="/x09tpl/index.php/Admin/Shop/add">商品添加</a></li>
-                            <li><a href="/x09tpl/index.php/Admin/Shop/index">商品列表</a></li>
+                            <li><a href="/index.php/Admin/Shop/add">商品添加</a></li>
+                            <li><a href="/index.php/Admin/Shop/index">商品列表</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -277,7 +277,7 @@
     <div class="mws-panel-inner-wrap"><div class="mws-panel-body no-padding">
         <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper" role="grid">
         <div id="DataTables_Table_0_length" class="dataTables_length"> 
-        <form action="/x09tpl/index.php/Admin/user/index" method="get">
+        <form action="/index.php/Admin/user/index" method="get">
         	<input aria-controls="DataTables_Table_1" type="text" name="name" value="<?php echo ($_GET['name']); ?>"/></label>
         	<input type="submit" class="btn btn-success" value="搜索">
         </div>
@@ -301,8 +301,8 @@
 
                 <td class=" ">
                     <span class="btn-group">            
-                        <a href="/x09tpl/index.php/Admin/user/edit/id/<?php echo ($row['id']); ?>" class="btn btn-small"><i class="icon-pencil"></i></a>
-                        <a href="/x09tpl/index.php/Admin/user/del/id/<?php echo ($row['id']); ?>" class="btn btn-small"><i class="icon-trash"></i></a>
+                        <a href="/index.php/Admin/user/edit/id/<?php echo ($row['id']); ?>" class="btn btn-small"><i class="icon-pencil"></i></a>
+                        <a href="/index.php/Admin/user/del/id/<?php echo ($row['id']); ?>" class="btn btn-small"><i class="icon-trash"></i></a>
                     </span>
                 </td><?php endforeach; endif; ?>
            
@@ -319,6 +319,7 @@
     
     
     
+    
   </div>      
   </div>        
     </div>
@@ -326,39 +327,39 @@
     </div>
     </div>
     <!-- JavaScript Plugins -->
-    <script src="/x09tpl/Public/b/js/libs/jquery-1.8.3.min.js"></script>
-    <script src="/x09tpl/Public/b/js/libs/jquery.mousewheel.min.js"></script>
-    <script src="/x09tpl/Public/b/js/libs/jquery.placeholder.min.js"></script>
-    <script src="/x09tpl/Public/b/custom-plugins/fileinput.js"></script>
+    <script src="/Public/b/js/libs/jquery-1.8.3.min.js"></script>
+    <script src="/Public/b/js/libs/jquery.mousewheel.min.js"></script>
+    <script src="/Public/b/js/libs/jquery.placeholder.min.js"></script>
+    <script src="/Public/b/custom-plugins/fileinput.js"></script>
     
     <!-- jQuery-UI Dependent Scripts -->
-    <script src="/x09tpl/Public/b/jui/js/jquery-ui-1.9.2.min.js"></script>
-    <script src="/x09tpl/Public/b/jui/jquery-ui.custom.min.js"></script>
-    <script src="/x09tpl/Public/b/jui/js/jquery.ui.touch-punch.js"></script>
+    <script src="/Public/b/jui/js/jquery-ui-1.9.2.min.js"></script>
+    <script src="/Public/b/jui/jquery-ui.custom.min.js"></script>
+    <script src="/Public/b/jui/js/jquery.ui.touch-punch.js"></script>
 
     <!-- Plugin Scripts -->
-    <script src="/x09tpl/Public/b/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="/Public/b/plugins/datatables/jquery.dataTables.min.js"></script>
     <!--[if lt IE 9]>
-    <script src="/x09tpl/Public/js/libs/excanvas.min.js"></script>
+    <script src="/Public/js/libs/excanvas.min.js"></script>
     <![endif]-->
-    <script src="/x09tpl/Public/b/plugins/flot/jquery.flot.min.js"></script>
-    <script src="/x09tpl/Public/b/plugins/flot/plugins/jquery.flot.tooltip.min.js"></script>
-    <script src="/x09tpl/Public/b/plugins/flot/plugins/jquery.flot.pie.min.js"></script>
-    <script src="/x09tpl/Public/b/plugins/flot/plugins/jquery.flot.stack.min.js"></script>
-    <script src="/x09tpl/Public/b/plugins/flot/plugins/jquery.flot.resize.min.js"></script>
-    <script src="/x09tpl/Public/b/plugins/colorpicker/colorpicker-min.js"></script>
-    <script src="/x09tpl/Public/b/plugins/validate/jquery.validate-min.js"></script>
-    <script src="/x09tpl/Public/b/custom-plugins/wizard/wizard.min.js"></script>
+    <script src="/Public/b/plugins/flot/jquery.flot.min.js"></script>
+    <script src="/Public/b/plugins/flot/plugins/jquery.flot.tooltip.min.js"></script>
+    <script src="/Public/b/plugins/flot/plugins/jquery.flot.pie.min.js"></script>
+    <script src="/Public/b/plugins/flot/plugins/jquery.flot.stack.min.js"></script>
+    <script src="/Public/b/plugins/flot/plugins/jquery.flot.resize.min.js"></script>
+    <script src="/Public/b/plugins/colorpicker/colorpicker-min.js"></script>
+    <script src="/Public/b/plugins/validate/jquery.validate-min.js"></script>
+    <script src="/Public/b/custom-plugins/wizard/wizard.min.js"></script>
 
     <!-- Core Script -->
-    <script src="/x09tpl/Public/b/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/x09tpl/Public/b/js/core/mws.js"></script>
+    <script src="/Public/b/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/Public/b/js/core/mws.js"></script>
 
     <!-- Themer Script (Remove if not needed) -->
-    <script src="/x09tpl/Public/b/js/core/themer.js"></script>
+    <script src="/Public/b/js/core/themer.js"></script>
 
     <!-- Demo Scripts (remove if not needed) -->
-    <script src="/x09tpl/Public/b/js/demo/demo.dashboard.js"></script>
+    <script src="/Public/b/js/demo/demo.dashboard.js"></script>
 
 </body>
 </html>
