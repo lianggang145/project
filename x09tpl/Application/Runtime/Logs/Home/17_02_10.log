@@ -1,62 +1,3 @@
-<<<<<<< HEAD
-[ 2017-02-10T09:23:26+08:00 ] 127.0.0.1 /
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `address` [ RunTime:0.014000s ]
-ERR: 1146:Table 'z09tpl.address' doesn't exist
- [ SQL语句 ] : SHOW COLUMNS FROM `address`
-SQL: SELECT * FROM `address`  [ RunTime:0.000000s ]
-ERR: 1146:Table 'z09tpl.address' doesn't exist
- [ SQL语句 ] : SELECT * FROM `address` 
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.045000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.013000s ]
-
-[ 2017-02-10T09:24:14+08:00 ] 127.0.0.1 /index.php/Home/user/login
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `user` [ RunTime:0.095000s ]
-SQL: SELECT * FROM `user` WHERE ( name='xiaona' ) LIMIT 1   [ RunTime:0.000000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T09:24:15+08:00 ] 127.0.0.1 /index.php/Home/shou/index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-=======
 [ 2017-02-10T00:02:19+08:00 ] 127.0.0.1 /index.php/Home/order/update
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
@@ -109,79 +50,10 @@ NOTIC: [2] unlink(./Public/Up/2017-02-09/589c8eefd0b1c.jpg): No such file or dir
 SQL: UPDATE `user_info` SET `pic`='/Public/Up/2017-02-10/589c92f37360d.jpg',`name`='qqqqqq1',`sex`=2,`age`=12,`phone`='11111111111',`email`='199@qq.com' WHERE ( id= ) [ RunTime:0.000000s ]
 ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
  [ SQL语句 ] : UPDATE `user_info` SET `pic`='/Public/Up/2017-02-10/589c92f37360d.jpg',`name`='qqqqqq1',`sex`=2,`age`=12,`phone`='11111111111',`email`='199@qq.com' WHERE ( id= )
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-<<<<<<< HEAD
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.021000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T11:06:58+08:00 ] 127.0.0.1 /
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `address` [ RunTime:0.001000s ]
-ERR: 1146:Table 'z09tpl.address' doesn't exist
- [ SQL语句 ] : SHOW COLUMNS FROM `address`
-SQL: SELECT * FROM `address`  [ RunTime:0.000000s ]
-ERR: 1146:Table 'z09tpl.address' doesn't exist
- [ SQL语句 ] : SELECT * FROM `address` 
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T11:07:00+08:00 ] 127.0.0.1 /index.php/Home/user/login
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `user` WHERE ( name='xiaona' ) LIMIT 1   [ RunTime:0.000000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T11:07:01+08:00 ] 127.0.0.1 /index.php/Home/shou/index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-=======
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086005s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.087005s ]
 INFO: [ view_filter ] --START--
@@ -264,189 +136,10 @@ INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
 NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\xiaozhu22\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
 SQL: SHOW COLUMNS FROM `user_info` [ RunTime:0.002000s ]
 SQL: SELECT * FROM `user_info` WHERE ( uid='14' ) LIMIT 1   [ RunTime:0.001000s ]
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-<<<<<<< HEAD
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T11:40:20+08:00 ] 127.0.0.1 /index.php/Home/shou/index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T11:40:28+08:00 ] 127.0.0.1 /index.php/Home/shou/index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
-
-[ 2017-02-10T11:40:31+08:00 ] 127.0.0.1 /index.php/Home/shou/index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T11:40:42+08:00 ] 127.0.0.1 /index.php/Home/shou/index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T11:40:47+08:00 ] 127.0.0.1 /index.php/Home/shou/index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.017000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T11:40:59+08:00 ] 127.0.0.1 /index.php/Home/shou/index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.017000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T11:41:08+08:00 ] 127.0.0.1 /index.php/Home/shou/index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.018000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T11:41:58+08:00 ] 127.0.0.1 /index.php/Home/shou/index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.018000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T11:42:20+08:00 ] 127.0.0.1 /index.php/Home/shou/index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-=======
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103006s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.105006s ]
 INFO: [ view_filter ] --START--
@@ -656,110 +349,10 @@ INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-<<<<<<< HEAD
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
-
-[ 2017-02-10T11:43:15+08:00 ] 127.0.0.1 /index.php/Home/shou/index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T11:43:33+08:00 ] 127.0.0.1 /index.php/Home/shou/index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T11:43:36+08:00 ] 127.0.0.1 /index.php/Home/shou/index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.017000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T14:06:20+08:00 ] 127.0.0.1 /index.php/Home/shou/index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ view_parse ] --START--
-NOTIC: [2] file_get_contents(./Application/Home/View/user/public.html): failed to open stream: No such file or directory D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Template.class.php 第 696 行.
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T14:07:05+08:00 ] 127.0.0.1 /index.php/Home/shou
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-=======
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.131008s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.131008s ]
 INFO: [ view_filter ] --START--
@@ -865,277 +458,10 @@ INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
 NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\xiaozhu22\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
 SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002001s ]
 SQL: SELECT * FROM `user` WHERE ( name='xiaohei' ) LIMIT 1   [ RunTime:0.001000s ]
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-<<<<<<< HEAD
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T14:07:17+08:00 ] 127.0.0.1 /index.php/Home/shou
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ view_parse ] --START--
-NOTIC: [2] file_get_contents(./Application/Home/View/public/.html): failed to open stream: No such file or directory D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Template.class.php 第 696 行.
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T14:07:20+08:00 ] 127.0.0.1 /index.php/Home/shou
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T14:07:22+08:00 ] 127.0.0.1 /index.php/Home/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `address` [ RunTime:0.001000s ]
-ERR: 1146:Table 'z09tpl.address' doesn't exist
- [ SQL语句 ] : SHOW COLUMNS FROM `address`
-SQL: SELECT * FROM `address`  [ RunTime:0.001000s ]
-ERR: 1146:Table 'z09tpl.address' doesn't exist
- [ SQL语句 ] : SELECT * FROM `address` 
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T14:07:24+08:00 ] 127.0.0.1 /index.php/Home/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `address` [ RunTime:0.000000s ]
-ERR: 1146:Table 'z09tpl.address' doesn't exist
- [ SQL语句 ] : SHOW COLUMNS FROM `address`
-SQL: SELECT * FROM `address`  [ RunTime:0.000000s ]
-ERR: 1146:Table 'z09tpl.address' doesn't exist
- [ SQL语句 ] : SELECT * FROM `address` 
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
-
-[ 2017-02-10T14:07:25+08:00 ] 127.0.0.1 /index.php/Home/user/login
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `user` WHERE ( name='xiaona' ) LIMIT 1   [ RunTime:0.001000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T14:07:26+08:00 ] 127.0.0.1 /index.php/Home/shou/index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.018000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
-
-[ 2017-02-10T14:07:27+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
-
-[ 2017-02-10T14:07:58+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T14:47:52+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.031000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
-
-[ 2017-02-10T14:53:30+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.002000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.053000s ]
-SQL: SELECT * FROM `cate`  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined variable: type D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 10 行.
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.038000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
-
-[ 2017-02-10T14:58:32+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate`  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined variable: type D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 10 行.
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8] Undefined variable: type D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 158 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.017000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
-
-[ 2017-02-10T14:58:57+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-=======
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043003s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.043003s ]
 INFO: [ view_filter ] --START--
@@ -1422,48 +748,10 @@ INFO: [ app_begin ] --END-- [ RunTime:0.033002s ]
 ERR: 非法操作:jihuo
 
 [ 2017-02-10T08:19:25+08:00 ] 127.0.0.1 /index.php/Home/shou/index.html
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_begin ] --START--
-<<<<<<< HEAD
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate`  [ RunTime:0.001000s ]
-NOTIC: [8] Undefined variable: type D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 10 行.
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8] Undefined variable: type D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 164 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.018000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T14:59:05+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate`  [ RunTime:0.001000s ]
-NOTIC: [8] Undefined variable: type D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 10 行.
-=======
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
 INFO: [ view_parse ] --START--
@@ -1488,54 +776,10 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
 NOTIC: [8] Undefined index: islogin C:\wamp\www\xiaozhu22\project\x09tpl\Application\Home\Controller\MiddleController.class.php 第 7 行.
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-<<<<<<< HEAD
-NOTIC: [8] Undefined variable: type D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 170 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.020000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T15:14:14+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.002000s ]
-SQL: SELECT * FROM `cate`  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined variable: type D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 10 行.
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T15:16:50+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.002000s ]
-SQL: SELECT * FROM `cate`  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined variable: type D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 10 行.
-=======
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
 INFO: [ view_filter ] --START--
@@ -1572,57 +816,24 @@ INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
 NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\xiaozhu22\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
 SQL: SHOW COLUMNS FROM `user` [ RunTime:0.071004s ]
 SQL: SELECT * FROM `user` WHERE ( name='xiaona' ) LIMIT 1   [ RunTime:0.018001s ]
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-<<<<<<< HEAD
-NOTIC: [8] Undefined variable: session D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 159 行.
-NOTIC: [8] Undefined variable:  D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 159 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
-=======
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_end ] --START--
-<<<<<<< HEAD
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T15:17:34+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-=======
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
 
 [ 2017-02-10T08:19:51+08:00 ] 127.0.0.1 /index.php/Home/shou/index.html
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
 INFO: [ app_begin ] --START--
-<<<<<<< HEAD
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate`  [ RunTime:0.001000s ]
-NOTIC: [8] Undefined variable: type D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 10 行.
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8] Array to string conversion D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 159 行.
-NOTIC: [8] Undefined variable: Array D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 159 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
-=======
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
 INFO: [ view_parse ] --START--
@@ -1631,83 +842,11 @@ INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043003s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.045003s ]
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-<<<<<<< HEAD
-INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
-
-[ 2017-02-10T15:17:53+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.002000s ]
-SQL: SELECT * FROM `cate`  [ RunTime:0.001000s ]
-NOTIC: [8] Undefined variable: type D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 10 行.
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8] Array to string conversion D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 159 行.
-NOTIC: [8] Undefined variable: Array D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 159 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
-
-[ 2017-02-10T15:18:41+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.002000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate`  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined variable: type D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 10 行.
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T15:18:55+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate`  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined variable: type D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 10 行.
-=======
 INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
 
 [ 2017-02-10T08:19:54+08:00 ] 127.0.0.1 /index.php/Home/order/index
@@ -1763,124 +902,10 @@ SQL: SELECT * FROM `user_info` WHERE `email` = '99999@qq.com' LIMIT 1   [ RunTim
 NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp\www\xiaozhu22\project\x09tpl\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
 SQL: INSERT INTO `user_info` (`name`,`sex`,`age`,`email`,`phone`,`uid`,`pic`) VALUES ('王美丽',2,22,'99999@qq.com','15890956946',13,'/Public/Up/2017-02-10/589d07886a3bf.jpg') [ RunTime:0.049003s ]
 SQL: SELECT * FROM `user_info` WHERE ( id='16' ) LIMIT 1   [ RunTime:0.001000s ]
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-<<<<<<< HEAD
-
-[ 2017-02-10T15:19:05+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate`  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined variable: type D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 10 行.
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8] Array to string conversion D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 159 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T15:19:30+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate`  [ RunTime:0.001000s ]
-NOTIC: [8] Undefined variable: type D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 10 行.
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8] Use of undefined constant name - assumed 'name' D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 159 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.017000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T15:21:11+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate`  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined variable: type D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 10 行.
-INFO: [ view_parse ] --START--
-NOTIC: [2] simplexml_load_string(): Entity: line 1: parser error : AttValue: &quot; or ' expected D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Template\TagLib.class.php 第 80 行.
-NOTIC: [2] simplexml_load_string(): &lt;tpl&gt;&lt;tag name={$_SESSION} item=&quot;list&quot; /&gt;&lt;/tpl&gt; D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Template\TagLib.class.php 第 80 行.
-NOTIC: [2] simplexml_load_string():                ^ D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Template\TagLib.class.php 第 80 行.
-NOTIC: [2] simplexml_load_string(): Entity: line 1: parser error : attributes construct error D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Template\TagLib.class.php 第 80 行.
-NOTIC: [2] simplexml_load_string(): &lt;tpl&gt;&lt;tag name={$_SESSION} item=&quot;list&quot; /&gt;&lt;/tpl&gt; D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Template\TagLib.class.php 第 80 行.
-NOTIC: [2] simplexml_load_string():                ^ D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Template\TagLib.class.php 第 80 行.
-NOTIC: [2] simplexml_load_string(): Entity: line 1: parser error : Couldn't find end of Start Tag tag line 1 D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Template\TagLib.class.php 第 80 行.
-NOTIC: [2] simplexml_load_string(): &lt;tpl&gt;&lt;tag name={$_SESSION} item=&quot;list&quot; /&gt;&lt;/tpl&gt; D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Template\TagLib.class.php 第 80 行.
-NOTIC: [2] simplexml_load_string():                ^ D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Template\TagLib.class.php 第 80 行.
-ERR: XML标签语法错误 : name={$_SESSION} item="list"
-
-[ 2017-02-10T15:21:20+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.002000s ]
-SQL: SELECT * FROM `cate`  [ RunTime:0.001000s ]
-NOTIC: [8] Undefined variable: type D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 10 行.
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-
-[ 2017-02-10T15:21:31+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate`  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined variable: type D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 10 行.
-=======
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.176010s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.177010s ]
 INFO: [ view_filter ] --START--
@@ -1985,281 +1010,10 @@ INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-<<<<<<< HEAD
-NOTIC: [8] Array to string conversion D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 159 行.
-NOTIC: [8] Undefined variable: Array D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 159 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
-
-[ 2017-02-10T15:22:08+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate`  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined variable: type D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 10 行.
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8] Array to string conversion D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 159 行.
-NOTIC: [8] Undefined variable: Array D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 159 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.017000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T15:22:22+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate`  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined variable: type D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 10 行.
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8] Undefined variable: session D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 159 行.
-NOTIC: [8] Undefined variable:  D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 159 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
-
-[ 2017-02-10T15:24:21+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate`  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined variable: type D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 10 行.
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T15:24:33+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate`  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined variable: type D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 10 行.
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8] Array to string conversion D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 159 行.
-NOTIC: [8] Array to string conversion D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 159 行.
-NOTIC: [8] Array to string conversion D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 159 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T15:24:39+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate`  [ RunTime:0.001000s ]
-NOTIC: [8] Undefined variable: type D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 10 行.
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8] Use of undefined constant name - assumed 'name' D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 159 行.
-NOTIC: [8] Use of undefined constant name - assumed 'name' D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 159 行.
-NOTIC: [8] Use of undefined constant name - assumed 'name' D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 159 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.017000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T15:24:51+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate`  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined variable: type D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 10 行.
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.019000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T15:26:36+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate`  [ RunTime:0.001000s ]
-NOTIC: [8] Undefined variable: type D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 10 行.
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8] Undefined variable: type D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 159 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.017000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
-
-[ 2017-02-10T15:43:17+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate`  [ RunTime:0.000000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.019000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T15:57:11+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate`  [ RunTime:0.000000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8] Use of undefined constant cate2 - assumed 'cate2' D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 166 行.
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 166 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.022000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T16:35:12+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-=======
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102006s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.102006s ]
 INFO: [ view_filter ] --START--
@@ -2476,134 +1230,10 @@ NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array
 NOTIC: [2] unlink(./Public/Up/2017-02-10/589c9624d72be.jpg): No such file or directory C:\wamp\www\xiaozhu22\project\x09tpl\Application\Home\Controller\OrderController.class.php 第 93 行.
 SQL: UPDATE `user_info` SET `pic`='/Public/Up/2017-02-10/589d07fa66747.jpg',`name`='xiaona',`sex`=2,`age`=12,`phone`='12231434112',`email`='1232132@qq.com' WHERE ( id=15 ) [ RunTime:0.001000s ]
 SQL: SELECT * FROM `user_info` WHERE ( uid='14' ) LIMIT 1   [ RunTime:0.001000s ]
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-<<<<<<< HEAD
-NOTIC: [8] Use of undefined constant cate2 - assumed 'cate2' D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 166 行.
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 166 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.021000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T16:35:19+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.018000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T16:35:23+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
-NOTIC: [8] Use of undefined constant cate2 - assumed 'cate2' D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 166 行.
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 166 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.028000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T16:50:04+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-
-[ 2017-02-10T16:50:41+08:00 ] 127.0.0.1 /index.php/Home/shou/Index.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-
-[ 2017-02-10T16:51:07+08:00 ] 127.0.0.1 /index.php/Home/shou/cate
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-ERR: 参数错误或者未定义:pid
-
-[ 2017-02-10T16:51:30+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-
-[ 2017-02-10T16:52:20+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-
-[ 2017-02-10T16:52:40+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-=======
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051003s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
 INFO: [ view_filter ] --START--
@@ -2728,184 +1358,11 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.008001s ]
 
 [ 2017-02-10T08:25:01+08:00 ] 127.0.0.1 /index.php/Home/order/doupdate
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-<<<<<<< HEAD
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-
-[ 2017-02-10T16:53:03+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-
-[ 2017-02-10T16:53:41+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T16:54:02+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T16:54:29+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.002000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T16:54:53+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.000000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T16:55:32+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T16:55:43+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.000000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T16:55:48+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
-
-[ 2017-02-10T16:56:17+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.000000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T16:56:33+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.000000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
-
-[ 2017-02-10T16:57:28+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-=======
 INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
 NOTIC: [8] Undefined index: id C:\wamp\www\xiaozhu22\project\x09tpl\Application\Home\Controller\OrderController.class.php 第 81 行.
 NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\xiaozhu22\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
@@ -3113,41 +1570,10 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
 
 [ 2017-02-10T10:54:04+08:00 ] 127.0.0.1 /index.php/Home/shou/Regist.html
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_begin ] --START--
-<<<<<<< HEAD
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 37 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
-
-[ 2017-02-10T16:57:51+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 37 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T16:58:41+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-=======
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
 ERR: 非法操作:Regist
@@ -3177,59 +1603,10 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.043002s ]
 INFO: [ app_end ] --END-- [ RunTime:0.043002s ]
 
 [ 2017-02-10T10:56:22+08:00 ] 127.0.0.1 /home/shou/index
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_begin ] --START--
-<<<<<<< HEAD
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.001000s ]
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 37 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T16:59:19+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 37 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T16:59:30+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 37 行.
-NOTIC: [8] Use of undefined constant cate - assumed 'cate' D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 45 行.
-NOTIC: [8] Undefined index: cate D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 45 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T16:59:36+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-=======
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
 NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\xiaozhu22\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
@@ -3296,57 +1673,10 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.009000s ]
 
 [ 2017-02-10T11:18:00+08:00 ] 127.0.0.1 /index.php/Home/shou/lout
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_begin ] --START--
-<<<<<<< HEAD
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 37 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:00:42+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.002000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.001000s ]
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 37 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:00:44+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.001000s ]
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 37 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:00:45+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-=======
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
 INFO: [ view_parse ] --START--
@@ -3394,121 +1724,10 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
 
 [ 2017-02-10T11:18:29+08:00 ] 127.0.0.1 /index.php/Home/user/dores
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_begin ] --START--
-<<<<<<< HEAD
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 37 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:00:54+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 37 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:01:08+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.001000s ]
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 37 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
-
-[ 2017-02-10T17:02:35+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 37 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:02:46+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.001000s ]
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 37 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:03:24+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 37 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:03:24+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 37 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:03:25+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-=======
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
 NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\xiaozhu22\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
@@ -3659,41 +1878,10 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
 
 [ 2017-02-10T11:19:43+08:00 ] 127.0.0.1 /index.php/Home/user/index.html
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_begin ] --START--
-<<<<<<< HEAD
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 37 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
-
-[ 2017-02-10T17:03:59+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 37 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:04:11+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-=======
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
 INFO: [ view_parse ] --START--
@@ -3730,172 +1918,10 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
 INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
 
 [ 2017-02-10T11:20:57+08:00 ] 127.0.0.1 /index.php/Home/user/login
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
 INFO: [ app_begin ] --START--
-<<<<<<< HEAD
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.002000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 37 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:04:19+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 37 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:04:35+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.001000s ]
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 34 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:04:44+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 35 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:05:16+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.001000s ]
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 36 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:05:29+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 37 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:05:42+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 37 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:06:29+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.001000s ]
-NOTIC: [8] Array to string conversion D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 35 行.
-NOTIC: [8] Undefined variable: Array D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 35 行.
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 37 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:06:40+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 37 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:07:08+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 38 行.
-NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 38 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:07:17+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-=======
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
 NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\xiaozhu22\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
@@ -4040,26 +2066,10 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
 
 [ 2017-02-10T11:23:48+08:00 ] 127.0.0.1 /index.php/Home/user/index.html
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_begin ] --START--
-<<<<<<< HEAD
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-NOTIC: [8] Undefined index: cate2 D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 39 行.
-NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 39 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:07:47+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-=======
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
 INFO: [ view_parse ] --START--
@@ -4076,26 +2086,11 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
 
 [ 2017-02-10T11:23:56+08:00 ] 127.0.0.1 /index.php/Home/user/login
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-<<<<<<< HEAD
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
-
-[ 2017-02-10T17:07:58+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-=======
 INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
 NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\xiaozhu22\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
 SQL: SHOW COLUMNS FROM `user` [ RunTime:0.012001s ]
@@ -4122,206 +2117,10 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
 
 [ 2017-02-10T11:24:05+08:00 ] 127.0.0.1 /index.php/Home/user/login
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_begin ] --START--
-<<<<<<< HEAD
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.000000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:08:18+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:08:29+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.000000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
-
-[ 2017-02-10T17:08:41+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.000000s ]
-NOTIC: [8] Use of undefined constant cate2 - assumed 'cate2' D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 47 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:08:53+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.001000s ]
-NOTIC: [8] Use of undefined constant cate2 - assumed 'cate2' D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 47 行.
-NOTIC: [8] Use of undefined constant cate3 - assumed 'cate3' D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 47 行.
-NOTIC: [8] Undefined index: cate3 D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 47 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:08:58+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.000000s ]
-NOTIC: [8] Use of undefined constant cate2 - assumed 'cate2' D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 47 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:09:05+08:00 ] 127.0.0.1 /index.php/Home/shou/cate?pid=0
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.000000s ]
-NOTIC: [8] Use of undefined constant cate2 - assumed 'cate2' D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 47 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:09:45+08:00 ] 127.0.0.1 /index.php/Home/shou/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.000000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8] Use of undefined constant cate2 - assumed 'cate2' D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 166 行.
-NOTIC: [8] Use of undefined constant cate2 - assumed 'cate2' D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 166 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.021000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:10:03+08:00 ] 127.0.0.1 /index.php/Home/shou/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.000000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.021000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
-
-[ 2017-02-10T17:11:03+08:00 ] 127.0.0.1 /index.php/Home/shou/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.000000s ]
-=======
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
 NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\xiaozhu22\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
@@ -4495,155 +2294,10 @@ INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-<<<<<<< HEAD
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.024000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:11:19+08:00 ] 127.0.0.1 /index.php/Home/shou/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.000000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8] Use of undefined constant key - assumed 'key' D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 166 行.
-NOTIC: [8] Undefined index: key D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 166 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.024000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:11:35+08:00 ] 127.0.0.1 /index.php/Home/shou/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.000000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8] Use of undefined constant cate2 - assumed 'cate2' D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 166 行.
-NOTIC: [8] Use of undefined constant cate2 - assumed 'cate2' D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 166 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.026000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:14:21+08:00 ] 127.0.0.1 /index.php/Home/shou/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.000000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8] Undefined index: key D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 166 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.021000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
-
-[ 2017-02-10T17:14:44+08:00 ] 127.0.0.1 /index.php/Home/shou/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.000000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8] Undefined index: key D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 166 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.025000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:16:41+08:00 ] 127.0.0.1 /index.php/Home/shou/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.000000s ]
-=======
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042002s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.043002s ]
 INFO: [ view_filter ] --START--
@@ -4727,38 +2381,10 @@ INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
 NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\xiaozhu22\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
 SQL: SHOW COLUMNS FROM `user` [ RunTime:0.008001s ]
 SQL: SELECT * FROM `user` WHERE `email` = '9864322@qq.com' LIMIT 1   [ RunTime:0.001000s ]
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-<<<<<<< HEAD
-NOTIC: [8] Undefined index: key D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 166 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.029000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:19:49+08:00 ] 127.0.0.1 /index.php/Home/shou/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.001000s ]
-=======
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030001s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.031001s ]
 INFO: [ view_filter ] --START--
@@ -4772,304 +2398,10 @@ INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-<<<<<<< HEAD
-NOTIC: [8] Undefined index: key D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 166 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.024000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:21:14+08:00 ] 127.0.0.1 /index.php/Home/shou/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.001000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8] Undefined index: key D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 166 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.023000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:24:16+08:00 ] 127.0.0.1 /index.php/Home/shou/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.001000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8] Undefined index: key D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 166 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.021000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:25:31+08:00 ] 127.0.0.1 /index.php/Home/shou/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.000000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.022000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
-
-[ 2017-02-10T17:28:28+08:00 ] 127.0.0.1 /index.php/Home/shou/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.000000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8] Undefined variable: k D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 167 行.
-NOTIC: [8] Undefined index:  D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 167 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.025000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
-
-[ 2017-02-10T17:30:02+08:00 ] 127.0.0.1 /index.php/Home/shou/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.001000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8] Undefined variable: k D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 167 行.
-NOTIC: [8] Undefined index:  D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 167 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.021000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
-
-[ 2017-02-10T17:32:07+08:00 ] 127.0.0.1 /index.php/Home/shou/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.001000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8] Undefined variable: k D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 167 行.
-NOTIC: [8] Undefined index:  D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 167 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.024000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:32:33+08:00 ] 127.0.0.1 /index.php/Home/shou/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.001000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-NOTIC: [8] Undefined variable: k D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 167 行.
-NOTIC: [8] Undefined index:  D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 167 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.024000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:33:31+08:00 ] 127.0.0.1 /index.php/Home/shou/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.000000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8] Undefined variable: k D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 167 行.
-NOTIC: [8] Undefined index:  D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 167 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.028000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
-
-[ 2017-02-10T17:34:02+08:00 ] 127.0.0.1 /index.php/Home/shou/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.000000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8] Undefined variable: k D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 167 行.
-NOTIC: [8] Undefined index:  D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 167 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.024000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:34:23+08:00 ] 127.0.0.1 /index.php/Home/shou/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.001000s ]
-=======
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037003s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.038003s ]
 INFO: [ view_filter ] --START--
@@ -5253,39 +2585,10 @@ INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
 NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\xiaozhu22\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
 SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002000s ]
 SQL: SELECT * FROM `user` WHERE ( name='nanyeye' ) LIMIT 1   [ RunTime:0.001000s ]
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-<<<<<<< HEAD
-NOTIC: [8] Undefined variable: k D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 167 行.
-NOTIC: [8] Undefined index:  D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 167 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.028000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:35:04+08:00 ] 127.0.0.1 /index.php/Home/shou/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.000000s ]
-=======
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
 INFO: [ view_filter ] --START--
@@ -5302,51 +2605,10 @@ INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-<<<<<<< HEAD
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.023000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
-
-[ 2017-02-10T17:35:17+08:00 ] 127.0.0.1 /index.php/Home/shou/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.001000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.023000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:35:38+08:00 ] 127.0.0.1 /index.php/Home/shou/
-=======
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
 INFO: [ view_filter ] --START--
@@ -5429,23 +2691,10 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006001s ]
 INFO: [ app_end ] --END-- [ RunTime:0.006001s ]
 
 [ 2017-02-10T11:38:08+08:00 ] 127.0.0.1 /index.php/Home/user/dores
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
 INFO: [ app_begin ] --START--
-<<<<<<< HEAD
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.000000s ]
-=======
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
 NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\xiaozhu22\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
@@ -5453,47 +2702,10 @@ SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002000s ]
 SQL: SELECT * FROM `user` WHERE `email` = '61111@qq.com' LIMIT 1   [ RunTime:0.001000s ]
 SQL: SELECT * FROM `user` WHERE ( name='nangege' ) LIMIT 1   [ RunTime:0.001000s ]
 SQL: INSERT INTO `user` (`name`,`pwd`,`email`,`token`) VALUES ('nangege','e3ceb5881a0a1fdaad01296d7554868d','61111@qq.com','22308d3a031f46f2ed7c187a38027587') [ RunTime:0.000000s ]
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-<<<<<<< HEAD
-NOTIC: [2] Illegal string offset 'name' D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 169 行.
-NOTIC: [2] Illegal string offset 'name' D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 169 行.
-NOTIC: [2] Illegal string offset 'name' D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 169 行.
-NOTIC: [2] Illegal string offset 'name' D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 169 行.
-NOTIC: [8] Undefined index: name D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 169 行.
-NOTIC: [2] Illegal string offset 'name' D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 169 行.
-NOTIC: [2] Illegal string offset 'name' D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 169 行.
-NOTIC: [2] Illegal string offset 'name' D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 169 行.
-NOTIC: [2] Illegal string offset 'name' D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 169 行.
-NOTIC: [8] Undefined index: name D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 169 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.022000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:36:18+08:00 ] 127.0.0.1 /index.php/Home/shou/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.000000s ]
-=======
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
 INFO: [ view_filter ] --START--
@@ -5510,115 +2722,10 @@ INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-<<<<<<< HEAD
-NOTIC: [2] Illegal string offset 'name' D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 169 行.
-NOTIC: [2] Illegal string offset 'name' D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 169 行.
-NOTIC: [2] Illegal string offset 'name' D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 169 行.
-NOTIC: [2] Illegal string offset 'name' D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 169 行.
-NOTIC: [8] Undefined index: name D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 169 行.
-NOTIC: [2] Illegal string offset 'name' D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 169 行.
-NOTIC: [2] Illegal string offset 'name' D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 169 行.
-NOTIC: [2] Illegal string offset 'name' D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 169 行.
-NOTIC: [2] Illegal string offset 'name' D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 169 行.
-NOTIC: [8] Undefined index: name D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\8ffdf28c01efeda659ebd00ff6a3a75d.php 第 169 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.028000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T17:36:44+08:00 ] 127.0.0.1 /index.php/Home/shou/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.002000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.001000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.018000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
-
-[ 2017-02-10T19:12:26+08:00 ] 127.0.0.1 /index.php/Home/shou/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.001000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.001000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.027000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
-
-[ 2017-02-10T19:13:29+08:00 ] 127.0.0.1 /index.php/Home/shou/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
-SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.000000s ]
-SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
-SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
-SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.001000s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020000s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.020000s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
-INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
-=======
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
 INFO: [ view_filter ] --START--
@@ -5684,5 +2791,4 @@ INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
 INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010001s ]
 INFO: [ app_end ] --END-- [ RunTime:0.010001s ]
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
 

@@ -245,17 +245,10 @@
                     </li>
 
                     <li>
-<<<<<<< HEAD
-                        <a href="/Public/#"><i class="icon-file"></i> 文章管理</a>
-                        <ul class="closed">
-                            <li><a href="/Public/">文章添加</a></li>
-                            <li><a href="/Public/">文章列表</a></li>
-=======
                         <a href="/Public/#"><i class="icon-file"></i> 图片轮奸</a>
                         <ul class="closed">
                             <li><a href="/index.php/Admin/Pic/add">图片添加</a></li>
                             <li><a href="/index.php/Admin/Pic/doindex">图片列表</a></li>
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
                         </ul>
                     </li>
 
