@@ -1,0 +1,55 @@
+<extend name="user/public" />
+<block name="title"><title>修改链接</title></block>
+<block name="linkedit">
+	<div class="mws-panel grid_8">
+                    <div class="mws-panel-header">
+                        <span><i class="icon-pencil"></i>链接修改</span>
+                        
+                    </div>
+                    <div class="mws-panel-body no-padding">
+                        <form class="mws-form" action="__MODULE__/Link/update" method="post" enctype="multipart/form-data">
+                            
+                            <div class="mws-form-inline">
+                                <div class="mws-form-row">
+                                    <label class="mws-form-label">链接名</label>
+                                    <div class="mws-form-item">
+                                        <input class="large" type="text" value="{$list['name']}" name="name" required oninvalid="setCustomValidity('链接名空')" oninput="setCustomValidity('')">
+                                    </div>
+                                </div>                                                          
+                                
+                                <div class="mws-form-row">
+                                    <label class="mws-form-label">链接地址</label>
+                                    <div class="mws-form-item">
+                                        <input class="large" type="text" value="{$list['http']}" name="http" required oninvalid="setCustomValidity('网址不能空')" oninput="setCustomValidity('')">
+                                    </div>
+                                </div> 
+                                <div class="mws-form-row">
+                                    <label class="mws-form-label">免费热线</label>
+                                    <div class="mws-form-item">
+                                        <input class="large" type="text" name="phone" value="{$list['phone']}" required oninvalid="setCustomValidity('电话')" oninput="setCustomValidity('')">
+                                    </div>
+                                </div>
+                                <div class="mws-form-row">
+                                    <label class="mws-form-label">原商标</label>
+                                    <div class="mws-form-item">
+                                        <img src="{$list['pic']}" alt="">
+                                    </div>
+                                </div>
+                                 <div class="mws-form-row">
+                                    <label class="mws-form-label">新商标</label>
+                                    <div class="mws-form-item">
+                                         <div><input name="pic" style="position: absolute; top: 0px; right: 0px; margin: 0px; cursor: pointer; font-size: 999px; opacity: 0; z-index: 999;" type="file"></span></div> 
+                                    </div>
+                                </div>
+                                
+                                   
+                              <div class="mws-button-row">
+                                    
+                                    <input type="hidden" name="id" value="{$list['id']}">
+                                    <input value="Submit" class="btn btn-danger" type="submit">
+                                    <input value="Reset" class="btn " type="reset">
+                               </div>                       
+                        </form>
+                    </div>      
+
+</block>

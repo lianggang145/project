@@ -1,0 +1,25 @@
+<extend name="user/public" />
+<block name="title"><title>轮奸图添加</title></block>
+<block name="picadd">
+	<div class="mws-panel grid_8">
+    <div class="mws-panel-header">
+        <span>图片添加</span>
+    </div>
+    <div class="mws-panel-body no-padding">
+        <form class="mws-form" action="__MODULE__/pic/index" method="post" enctype="multipart/form-data">   
+            
+            <div class="mws-form-row">
+                <label class="mws-form-label">添加图片</label>
+                <div class="mws-form-item">
+                    <input type="file" name="pic" value="">               
+            </div>
+        </div>                
+        <div class="mws-button-row">
+        
+            <input value="Submit" class="btn btn-danger" type="submit">
+            <input value="Reset" class="btn " type="reset">
+        </div>
+  	  </form>
+ </div>      
+    </div>
+</block>

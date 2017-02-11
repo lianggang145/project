@@ -2,6 +2,7 @@
 namespace Home\Controller;
 use Think\Controller;
 class ShouController extends Controller {
+<<<<<<< HEAD
         public function index(){
             $shop=M('shops');//实例化
             $list=$shop->select();
@@ -13,6 +14,12 @@ class ShouController extends Controller {
             // var_dump($_SESSION);
         $this->assign('list',$list);
         $this->assign('cate',$_SESSION['cate']);
+=======
+	public function index(){
+        $mod=M('pic');
+        $list=$mod->select();
+        $this->assign('list',$list);
+>>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
         $this->display('shou/index');
     }
 

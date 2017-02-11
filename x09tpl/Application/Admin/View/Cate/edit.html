@@ -1,0 +1,39 @@
+<extend name="user/public" />
+<block name="title"><title>分类修改</title></block>
+<block name="cateedit">
+	<div class="mws-panel grid_8">
+          <div class="mws-panel-header">
+               <span>分类修改</span>
+          </div>
+          <div class="mws-panel-body no-padding">
+               <form action="__MODULE__/Type/update" method="post" class="mws-form">
+                  
+                    <div class="mws-form-inline">
+                         <div class="mws-form-row">
+                              <label class="mws-form-label">分类名:</label>
+                              <div class="mws-form-item">
+                                   <input class="large" name="name" type="text" value="{$info['name']}">
+                              </div>
+                         </div>
+                     
+                     <div class="mws-form-row">
+                            <label class="mws-form-label">添加分类</label>
+                            <div class="mws-form-item">
+                                <select class="large" name="pid">
+                                 	<option value="0">--请选择--</option>
+                                 	<foreach name="cate" item="row">
+                                    <option value="{$row['id']}" <if condition="$row['id'] eq $info['pid']">selected</if>>{$row['name']}</option> 
+                                  </foreach>                                 
+                                </select>
+                            </div>
+                        </div>
+                    <div class="mws-button-row">
+                       <input type="hidden" name="id" value="{$info['id']}">
+                    
+                         <input class="btn btn-danger" value="修改" type="submit">
+                         <input class="btn " value="重置" type="reset">
+                    </div>
+               </form>
+          </div>         
+      </div>
+</block>

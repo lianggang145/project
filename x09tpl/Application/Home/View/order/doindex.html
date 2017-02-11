@@ -1,0 +1,47 @@
+<extend name="userpublic/index" />
+<block name="title"><title>用户^^详情</title></block>
+<block name="doindex">
+<div class="m_right">
+        	<div class="m_des">
+            	<table style="width:870px; line-height:22px;" cellspacing="0" cellpadding="0" border="0">
+                  <tbody><tr valign="top">
+                    <td width="115"><img src="{$_SESSION['list']['pic']}" width="90" height="90"></td>
+                    <td>
+                    	<div class="m_user">{$_SESSION['list']['name']}</div>
+                        <p>
+                            年龄：{$_SESSION['list']['age']} <br>
+                            <font color="#ff4e00">您还差 270 积分达到 分红100</font><br>
+                            上一次登录时间: 2015-09-28 18:19:47<br>
+                            您还没有通过邮件认证 <a href="__MODULE__/order/update" style="color:#ff4e00;">修改个人信息</a>
+                        </p>
+                        <div class="m_notice">
+                        	用户中心公告！
+                        </div>
+                    </td>
+                  </tr>
+                </tbody></table>	
+            </div>
+            
+           
+
+            <div class="mem_t">账号信息</div>
+            <table class="mon_tab" style="width:870px; margin-bottom:20px;" cellspacing="0" cellpadding="0" border="0">
+              <tbody><tr>
+                <td width="40%">用户ID：<span style="color:#555555;">{$_SESSION['list']['id']}</span></td>
+                <td width="40%">性别：
+                <if condition="$_SESSION['list']['sex']==1">
+                <span style="color:#555555;">男</span></td>
+                <else />
+                <span style="color:#555555;">女</span></td>
+                </if>
+              </tr>
+              <tr>
+                <td>电&nbsp; &nbsp; 话：<span style="color:#555555;">{$_SESSION['list']['phone']}</span></td>
+                <td>邮&nbsp; &nbsp; 箱：<span style="color:#555555;">{$_SESSION['list']['email']}</span></td>
+              </tr>
+              
+            </tbody></table>
+               
+            
+        </div>
+       </block>

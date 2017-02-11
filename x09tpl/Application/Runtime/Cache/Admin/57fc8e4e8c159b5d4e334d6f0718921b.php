@@ -35,7 +35,7 @@
 <link rel="stylesheet" type="text/css" href="/Public/b/css/my.css" media="screen">
 
 
-<title>用户添加</title>
+<title>图片轮奸列表</title>
 
 </head>
 
@@ -245,17 +245,10 @@
                     </li>
 
                     <li>
-<<<<<<< HEAD
-                        <a href="/Public/#"><i class="icon-file"></i> 文章管理</a>
-                        <ul class="closed">
-                            <li><a href="/Public/">文章添加</a></li>
-                            <li><a href="/Public/">文章列表</a></li>
-=======
                         <a href="/Public/#"><i class="icon-file"></i> 图片轮奸</a>
                         <ul class="closed">
                             <li><a href="/index.php/Admin/Pic/add">图片添加</a></li>
                             <li><a href="/index.php/Admin/Pic/doindex">图片列表</a></li>
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
                         </ul>
                     </li>
 
@@ -266,6 +259,15 @@
                             <li><a href="/index.php/Admin/Shop/index">商品列表</a></li>
                         </ul>
                     </li>
+                        
+                    <li>
+                        <a href=""><i class="icon-file"></i>友情链接</a>
+                        <ul class="closed">
+                            <li><a href="/index.php/Admin/Link/add">链接添加</a></li>
+                            <li><a href="/index.php/Admin/Link/index">链接列表</a></li>
+                        </ul>
+                    </li>
+
                 </ul>
             </div>         
         </div>
@@ -273,61 +275,56 @@
         <!-- Main Container Start -->
 <div id="mws-container" class="clearfix">
     
-   <div id="mws-container" class="clearfix">
-            	<div class="container">
-                  
-                    <div class="mws-panel grid_8">
-          <div class="mws-panel-header">
-               <span>用户添加</span>
-          </div>
-          <div class="mws-panel-body no-padding">
-               <form action="/index.php/Admin/User/insert" method="post" class="mws-form">
-                  
-                    <div class="mws-form-inline">
-                         <div class="mws-form-row">
-                              <label class="mws-form-label">用户名:</label>
-                              <div class="mws-form-item">
-                                   <input value="" type="text" class="small" name="name" value="" required oninvalid="setCustomValidity('用户名不能为空')" oninput="setCustomValidity('')">
-                              </div>
-                         </div>
-                         <div class="mws-form-row">
-                              <label class="mws-form-label">密码:</label>
-                              <div class="mws-form-item">
-                                   <input type="password" name="pwd" class="small" value="" required oninvalid="setCustomValidity('密码不能为空')" oninput="setCustomValidity('')">
-                              </div>
-                         </div>
-                         <div class="mws-form-row">
-                              <label class="mws-form-label">确认密码:</label>
-                              <div class="mws-form-item">
-                                   <input type="password" name="repwd" class="small" value="" required oninvalid="setCustomValidity('请确认密码')" oninput="setCustomValidity('')">
-                              </div>
-                         </div>
-                         <div class="mws-form-row">
-                              <label class="mws-form-label">邮箱:</label>
-                              <div class="mws-form-item">
-                                   <input value="" type="text" name="email" class="small" value="" required oninvalid="setCustomValidity('邮箱不能为空')" oninput="setCustomValidity('')">
-                              </div>
-                         </div>
-                    </div>
-                    <div class="mws-button-row">
-                         <input type="submit" class="btn btn-danger" value="添加">
-                         <input type="reset" class="btn " value="重置">
-                    </div>
-               </form>
-          </div>         
-      </div>
-
                                
     
     
     
     
     
-<<<<<<< HEAD
-=======
     
     
->>>>>>> b41afbd98d0a6337fa467e4bd71e2ca13d2eb7e2
+<head>
+   <script type="text/javascript" src="/Public/b/js/jquery-1.8.3.min.js"></script>
+ </head>
+<div class="mws-panel grid_8 mws-collapsible">
+    	<div class="mws-panel-header">
+    	<span><i class="icon-table"></i> 图片轮播列表页</span>
+    <div class="mws-collapse-button mws-inset"></div></div>
+    <div class="mws-panel-inner-wrap"><div class="mws-panel-body no-padding">
+        <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper" role="grid">
+        <div id="DataTables_Table_0_length" class="dataTables_length"> 
+        
+        	
+        	
+        </div>
+      
+        <div id="users">
+        <table class="mws-table mws-datatable dataTable" id="DataTables_Table_0" aria-describedby="DataTables_Table_0_info">
+        <thead>
+            <tr role="row"><th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 112px;" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">编号</th>
+            <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 156px;" aria-label="Browser: activate to sort column ascending">图片</th>        
+        	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 156px;" aria-label="Browser: activate to sort column ascending">操作</th>        
+        </thead>                                                                                                                                                                                                       
+               </tr>
+        <?php if(is_array($list)): foreach($list as $key=>$row): ?><tr class="even" align="center">
+                <td class=" "><span class="badge badge-success"><?php echo ($row['id']); ?></span></td>
+                <td class=" "><img src="<?php echo ($row['pic']); ?>"></td>
+              
+                <td class=" ">
+                    <span class="btn-group">            
+                      
+                        <a href="/index.php/Admin/pic/del/id/<?php echo ($row['id']); ?>" class="btn btn-small"><i class="icon-trash"></i></a>
+                    </span>
+                </td><?php endforeach; endif; ?>
+			</tbody>
+			
+ 	</table>
+    </div> 
+   </div> 
+ </div>
+  </div>
+
+    
   </div>      
   </div>        
     </div>
