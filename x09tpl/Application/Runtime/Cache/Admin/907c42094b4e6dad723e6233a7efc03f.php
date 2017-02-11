@@ -35,7 +35,7 @@
 <link rel="stylesheet" type="text/css" href="/Public/b/css/my.css" media="screen">
 
 
-<title>图片轮奸列表</title>
+<title>修改链接</title>
 
 </head>
 
@@ -283,48 +283,61 @@
     
     
     
-<head>
-   <script type="text/javascript" src="/Public/b/js/jquery-1.8.3.min.js"></script>
- </head>
-<div class="mws-panel grid_8 mws-collapsible">
-    	<div class="mws-panel-header">
-    	<span><i class="icon-table"></i> 图片轮播列表页</span>
-    <div class="mws-collapse-button mws-inset"></div></div>
-    <div class="mws-panel-inner-wrap"><div class="mws-panel-body no-padding">
-        <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper" role="grid">
-        <div id="DataTables_Table_0_length" class="dataTables_length"> 
-        
-        	
-        	
-        </div>
-      
-        <div id="users">
-        <table class="mws-table mws-datatable dataTable" id="DataTables_Table_0" aria-describedby="DataTables_Table_0_info">
-        <thead>
-            <tr role="row"><th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 112px;" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">编号</th>
-            <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 156px;" aria-label="Browser: activate to sort column ascending">图片</th>        
-        	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 156px;" aria-label="Browser: activate to sort column ascending">操作</th>        
-        </thead>                                                                                                                                                                                                       
-               </tr>
-        <?php if(is_array($list)): foreach($list as $key=>$row): ?><tr class="even" align="center">
-                <td class=" "><span class="badge badge-success"><?php echo ($row['id']); ?></span></td>
-                <td class=" "><img src="<?php echo ($row['pic']); ?>"></td>
-              
-                <td class=" ">
-                    <span class="btn-group">            
-                      
-                        <a href="/index.php/Admin/pic/del/id/<?php echo ($row['id']); ?>" class="btn btn-small"><i class="icon-trash"></i></a>
-                    </span>
-                </td><?php endforeach; endif; ?>
-			</tbody>
-			
- 	</table>
-    </div> 
-   </div> 
- </div>
-  </div>
-
     
+    
+    
+	<div class="mws-panel grid_8">
+                    <div class="mws-panel-header">
+                        <span><i class="icon-pencil"></i>链接修改</span>
+                        
+                    </div>
+                    <div class="mws-panel-body no-padding">
+                        <form class="mws-form" action="/index.php/Admin/Link/update" method="post" enctype="multipart/form-data">
+                            
+                            <div class="mws-form-inline">
+                                <div class="mws-form-row">
+                                    <label class="mws-form-label">链接名</label>
+                                    <div class="mws-form-item">
+                                        <input class="large" type="text" value="<?php echo ($list['name']); ?>" name="name" required oninvalid="setCustomValidity('链接名空')" oninput="setCustomValidity('')">
+                                    </div>
+                                </div>                                                          
+                                
+                                <div class="mws-form-row">
+                                    <label class="mws-form-label">链接地址</label>
+                                    <div class="mws-form-item">
+                                        <input class="large" type="text" value="<?php echo ($list['http']); ?>" name="http" required oninvalid="setCustomValidity('网址不能空')" oninput="setCustomValidity('')">
+                                    </div>
+                                </div> 
+                                <div class="mws-form-row">
+                                    <label class="mws-form-label">免费热线</label>
+                                    <div class="mws-form-item">
+                                        <input class="large" type="text" name="phone" value="<?php echo ($list['phone']); ?>" required oninvalid="setCustomValidity('电话')" oninput="setCustomValidity('')">
+                                    </div>
+                                </div>
+                                <div class="mws-form-row">
+                                    <label class="mws-form-label">原商标</label>
+                                    <div class="mws-form-item">
+                                        <img src="<?php echo ($list['pic']); ?>" alt="">
+                                    </div>
+                                </div>
+                                 <div class="mws-form-row">
+                                    <label class="mws-form-label">新商标</label>
+                                    <div class="mws-form-item">
+                                         <div><input name="pic" style="position: absolute; top: 0px; right: 0px; margin: 0px; cursor: pointer; font-size: 999px; opacity: 0; z-index: 999;" type="file"></span></div> 
+                                    </div>
+                                </div>
+                                
+                                   
+                              <div class="mws-button-row">
+                                    
+                                    <input type="hidden" name="id" value="<?php echo ($list['id']); ?>">
+                                    <input value="Submit" class="btn btn-danger" type="submit">
+                                    <input value="Reset" class="btn " type="reset">
+                               </div>                       
+                        </form>
+                    </div>      
+
+
   </div>      
   </div>        
     </div>

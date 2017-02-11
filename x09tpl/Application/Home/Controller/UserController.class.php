@@ -60,7 +60,8 @@ class userController extends Controller {
     	if($name['name']==$data['name']){
     		$this->error('用户名已存在,请重新输入',U('user/registr'));
     	}else{
-            $data['pwd']=md5("!@%".$data['pwd'].'*^&*()');
+          
+            $data['pwd']=md5($data['pwd']);
             // 用unset删除多余数据
             unset($data['repwd']);
             unset($data['fcode']);
@@ -78,10 +79,13 @@ class userController extends Controller {
     // 判断用户是否激活账户
     public function login(){
         $name=$_POST['name'];
-        $pwd=md5("!@$%".$_POST['pwd'].'*^&*()');
+        
+        $pwd=md5($_POST['pwd']);
+        
+        // var_dump($pwd);
         $mod=M('user');
         $list=$mod->where("name='{$name}'")->find();
-        // var_dump($list['id']);
+        // var_dump($list['pwd']);die();
         if(empty($list)||$list['pwd']!=$pwd){
             $this->success('用户名或密码有误',U('user/index'));
         }else{
