@@ -279,6 +279,7 @@
 <div class="mws-panel grid_8">
                     <div class="mws-panel-header">
                         <span><i class="icon-pencil"></i>商品添加</span>
+                        
                     </div>
                     <div class="mws-panel-body no-padding">
                         <form class="mws-form" action="/index.php/Admin/shop/update" method="post" enctype="multipart/form-data">

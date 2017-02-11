@@ -297,7 +297,7 @@
             <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 144px;" aria-label="Platform(s): activate to sort column ascending">商品库存</th>
             <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 144px;" aria-label="Platform(s): activate to sort column ascending">地址</th>
             <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 144px;" aria-label="Platform(s): activate to sort column ascending">添加时间</th>
-            <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 94px;" aria-label="Engine version: activate to sort column ascending">操作</th>                   
+            <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 94px;" aria-label="Engine version: activate to sort column ascending">操作</th>
         </thead>                                                                                                                                                                                                       
                </tr>
           <?php if(is_array($list)): foreach($list as $key=>$row): ?><tr class="even" align="center">
