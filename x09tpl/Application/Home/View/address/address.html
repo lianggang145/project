@@ -1,0 +1,90 @@
+<extend name="userpublic/index" />
+<block name="address">
+<script type="text/javascript" src="__PUBLIC__/h/js/jquery-1.8.3.min.js"></script>
+
+<style type="text/css">
+  .did{
+    border:1px solid red;
+  }
+  </style>
+	<div class="m_right">
+            <form action="__MODULE__/order/orders" method="post">
+            <div class="mem_tit">收货地址</div>
+              <foreach name="list" item="row">
+      <div class="address" aid="{{$row['id']}}">
+      <div class="did1">
+              <div class="a_close"><a href="__MODULE__/order/addressdel/id/{$row['id']}"><img src="__PUBLIC__/home/images/a_close.png" /></a></div>
+              <table border="0" class="add_t" align="center" style="width:98%; margin:10px auto;" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td colspan="2" style="font-size:14px; color:#ff4e00;">杨杨公司</td>
+                  </tr>
+                  <tr>
+                    <td align="right" width="80">收货人姓名：</td>
+                    <td>{$row['user_name']}</td>
+                  </tr>
+                  <tr>
+                    <td align="right">详细地址：</td>
+                    <td>{$row['profile_address']}</td>
+                  </tr>
+                  <tr>
+                    <td align="right">手机：</td>
+                    <td>{$row['phone']}</td>
+                  </tr>
+                  <tr>
+                    <td align="right">电子邮箱：</td>
+                    <td>{$row['profile_email']}</td>
+                  </tr>
+                  <tr>
+                    <td align="right">邮政编码：</td>
+                    <td>{$row['code']}</td>
+                  </tr>             
+                </table>
+                <p align="right">
+                <input type="hidden" name="address_id" value="address_id">
+                  <input type="submit" value="设为默认"></a>&nbsp; &nbsp; &nbsp; &nbsp; <a href="__MODULE__/order/addressedit/id/{$row['id']}" style="color:#ff4e00;">编辑</a>&nbsp; &nbsp; &nbsp; &nbsp;
+                </p>
+                </form>
+            </div>
+            </div>
+          </foreach>
+           
+            <form action="__MODULE__/shou/dizhi" method="post">
+           	 <table border="0" class="add_tab" style="width:930px;"  cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="right">收货人姓名</td>
+                <td style="font-family:'宋体';"><input type="text" value="" name="user_name" class="add_ipt" />（必填）</td>
+                <td align="right">电子邮箱</td>
+                <td style="font-family:'宋体';"><input type="text" name="profile_email" value="" class="add_ipt" />（必填）</td>
+              </tr>
+              <tr>
+                <td align="right">详细地址</td>
+                <td style="font-family:'宋体';"><input type="text" name="profile_address" value="" class="add_ipt" />（必填）</td>
+                <td align="right">邮政编码</td>
+                <td style="font-family:'宋体';"><input type="text" name="code" value="" class="add_ipt" /></td>
+              </tr>
+              <tr>
+                <td align="right">手机</td>
+                <td style="font-family:'宋体';"><input type="text" name="phone" value="" class="add_ipt" />（必填）</td>
+              </tr>
+            </table>
+           	<p align="right">
+<!--             <input type="hidden" name="user_id" value="{$row['user_id']}"> -->
+            	<input type="submit" value="添加">
+            </p> 
+        </div>
+      </form>
+        </div>
+    <script type="text/javascript">
+    // alert($);
+        $('.address').click(function(){
+      // alert('iii');
+      $(this).siblings().removeClass('did');
+      $(this).addClass('did');
+      id=$(this).attr('aid');
+      // alert(id);
+      $('input[name="address_id"]').val(id);
+
+    });
+    </script>
+	<!--End 用户中心 End--> 
+</block>

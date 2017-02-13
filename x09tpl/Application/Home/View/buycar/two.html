@@ -21,7 +21,7 @@
             <td class="car_th" width="150">购买数量</td>
             <td class="car_th" width="130">小计</td>
           </tr>
-          	<foreach name="buy" item="v" key="k">
+            <foreach name="buy" item="v" key="k">
           <tr id="tr{$k}">
             <td>
                 <div class="c_s_img"><img src="__PUBLIC__/{$v['pic']}" width="73" height="73" /></div>
@@ -34,7 +34,7 @@
             </td>
             <td align="center" style="color:#ff4e00;" id="xiaoji{$k}">￥{$v['xiaoji']}</td>
           </tr>
-          	</foreach>
+            </foreach>
           <tr height="70">
             <td colspan="6" style="font-family:'Microsoft YaHei'; border-bottom:0;">
                 <span class="fr">商品总价：<b style="font-size:22px; color:#ff4e00;" class="zongjia">￥{$_SESSION['zj']}</b></span>
@@ -54,35 +54,33 @@
             <h4 class="modal-title">修改</h4>
           </div>
           <div class="modal-body">
-              <foreach name="address" item="k" key="v">
+              <foreach name="address" item="row">
 
-      <div style="border:1px solid black;border-radius:15px;padding:5px;margin-top:2px" id="address{$v->id}">
+      <div style="border:1px solid black;border-radius:15px;padding:5px;margin-top:2px" id="{$row['id']}">
               <table border="0" class="add_t" align="center" style="width:98%; margin:10px auto;" cellspacing="0" cellpadding="0">
                  <tr>
                     <td align="right" width="180">收货人姓名：</td>
-                    <td>{$v['user_name']}</td>
+                    <td>{$row['user_name']}</td>
                   </tr>
                   <tr>
                     <td align="right">手机：</td>
-                    <td>{$v['phone']}</td>
+                    <td>{$row['phone']}</td>
                   </tr>
                   <tr>
                     <td align="right">电子邮箱：</td>
-                    <td>{$v['profile_email']}</td>
+                    <td>{$row['profile_email']}</td>
                   </tr>
                   <tr>
                     <td align="right">邮政编码：</td>
-                    <td>{$v['code']}</td>
+                    <td>{$row['code']}</td>
                   </tr>
                   <tr>
                     <td align="right">配送区域：</td>
-                    <td>{$v['profile_address']}</td>
+                    <td>{$row['profile_address']}</td>
                   </tr>
                 </table>
-        
                 <p align="right">
-
-    <button class="btn btn-success" onclick="dizhi({$v['id']})" data-toggle="modal" data-target="#myModal1" data-dismiss="modal">选择此收货地址</button>
+    <button class="btn btn-success" onclick="dizhi({$row['id']})" data-toggle="modal" data-target="#myModal1" data-dismiss="modal">选择此收货地址</button>
 
 
                 </p>
@@ -90,7 +88,7 @@
               </foreach>
           </div>
           <div class="modal-footer">
-            <a href="__MODULE__/shou/address"><button class="btn btn-success" >管理收货地址</button></a>
+            <a href="__MODULE__/shou/addressedit/id/{$row['id']}"><button class="btn btn-success" >管理收货地址</button></a>
             <button class="btn btn-success" data-dismiss="modal">close</button>
           </div>
         </div>
@@ -102,19 +100,19 @@
             <table border="0" class="peo_tab" style="width:1110px;" cellspacing="0" cellpadding="0">
               <tr>
                 <td class="p_td" width="160">联系人名称</td>
-                <td width="395" id="uname">{$v['user_name']}</td>
+                <td width="395" id="uname">{$row['user_name']}</td>
                 <td class="p_td" width="160">电子邮件</td>
-                <td width="395" id="email">{$v['profile_email']}</td>
+                <td width="395" id="emaila">{$row['profile_email']}</td>
               </tr>
               <tr>
                 <td class="p_td">详细地址</td>
-                <td id="address">{$v['profile_address']}</td>
+                <td id="address">{$row['profile_address']}</td>
                 <td class="p_td">邮政编码</td>
-                <td  id="code">{$v['code']}</td>
+                <td  id="code">{$row['code']}</td>
               </tr>
               <tr>
                 <td class="p_td">电话</td>
-                <td id="phone">{$v['phone']}</td>
+                <td id="phone">{$row['phone']}</td>
                 <td class="p_td"></td>
                 <td></td>
               </tr>
@@ -164,7 +162,7 @@
                 </td>
               </tr>
               <tr height="70">
-                <td align="right"><a href="__MODULE__/shou/addorders" ><img src="__PUBLIC__/home/images/btn_sure.gif" /></a></td>
+                <td align="right"><a href="__MODULE__/shou/addorders/id/{$row['id']}" ><img src="__PUBLIC__/home/images/btn_sure.gif" /></a></td>
               </tr>
             </table>
 
@@ -205,14 +203,14 @@
     }
 
     function dizhi(id){
-        $.get('/web/dizhi',{id:id}, function(data) {
-            // alert(data[0]);
-            $("#uname").html(data[0].uname);
-            $("#address").html(data[0].address);
-            $("#address").html(data[0].address);
-            $("#email").html(data[0].email);
-            $("#code").html(data[0].code);
-            $("#phone").html(data[0].phone);
+        $.get('__MODULE__/shou/xdizhi',{id:id}, function(data) {
+            // alert("{$_SESSION['data']['user_name']}");   
+
+            $("#uname").html("{$_SESSION['data']['user_name']}");
+            $("#address").html("{$_SESSION['data']['profile_address']}");
+            $("#emaila").html("{$_SESSION['data']['profile_email']}");
+            $("#code").html("{$_SESSION['data']['code']}");
+            $("#phone").html("{$_SESSION['data']['phone']}");
         });
     }
 

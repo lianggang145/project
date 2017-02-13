@@ -13,7 +13,6 @@
     <script type="text/javascript" src="/Public/home/js/jquery.bxslider_e88acd1b.js"></script>
     <script type="text/javascript" src="/Public/home/js/jquery-1.8.2.min.js"></script>
     <script type="text/javascript" src="/Public/home/js/menu.js"></script>    
-    <script type="text/javascript" src="/Public/home/js/lrscroll.js"></script>
     <script type="text/javascript" src="/Public/home/js/iban.js"></script>
     <script type="text/javascript" src="/Public/home/js/fban.js"></script>
     <script type="text/javascript" src="/Public/home/js/f_ban.js"></script>
@@ -21,7 +20,6 @@
     <script type="text/javascript" src="/Public/home/js/bban.js"></script>
     <script type="text/javascript" src="/Public/home/js/hban.js"></script>
     <script type="text/javascript" src="/Public/home/js/tban.js"></script>
-    <script type="text/javascript" src="/Public/home/js/lrscroll_1.js"></script>
     
     
 <title>首页</title>
@@ -94,31 +92,21 @@
         <span class="fl"><a href="#">咖啡</a><a href="#">iphone 6S</a><a href="#">新鲜美食</a><a href="#">蛋糕</a><a href="#">日用品</a><a href="#">连衣裙</a></span>
     </div>
     <div class="i_car">
-    	<div class="car_t">购物车 [ <span>3</span> ]</div>
+    	<div class="car_t">购物车 [ <span><?php echo ($count); ?></span> ]</div>
         <div class="car_bg">
-       		<!--Begin 购物车未登录 Begin-->
-        	<div class="un_login">还未登录！<a href="Login.html" style="color:#ff4e00;">马上登录</a> 查看购物车！</div>
-            <!--End 购物车未登录 End-->
-            <!--Begin 购物车已登录 Begin-->
-            <ul class="cars">
-            	<li>
-                	<div class="img"><a href="#"><img src="/Public/home/images/car1.jpg" width="58" height="58" /></a></div>
-                    <div class="name"><a href="#">法颂浪漫梦境50ML 香水女士持久清新淡香 送2ML小样3只</a></div>
-                    <div class="price"><font color="#ff4e00">￥399</font> X1</div>
-                </li>
-                <li>
-                	<div class="img"><a href="#"><img src="/Public/home/images/car2.jpg" width="58" height="58" /></a></div>
-                    <div class="name"><a href="#">香奈儿（Chanel）邂逅活力淡香水50ml</a></div>
-                    <div class="price"><font color="#ff4e00">￥399</font> X1</div>
-                </li>
-                <li>
-                	<div class="img"><a href="#"><img src="/Public/home/images/car2.jpg" width="58" height="58" /></a></div>
-                    <div class="name"><a href="#">香奈儿（Chanel）邂逅活力淡香水50ml</a></div>
-                    <div class="price"><font color="#ff4e00">￥399</font> X1</div>
-                </li>
+       			<?php if($_SESSION['hid']): ?><ul class="cars">
+            	<?php if(count($_SESSION['buycar']) > 0): if(is_array($buycar)): foreach($buycar as $key=>$row): ?><li>
+                	<div class="img"><a href="/index.php/Home/Shou/product?id=<?php echo ($row['id']); ?>"><img src="/Public/<?php echo ($row['pic']); ?>" width="58" height="58" /></a></div>
+                    <div class="name"><a href="/index.php/Home/Shou/product?id=<?php echo ($row['id']); ?>"><?php echo ($row['name']); ?></a></div>
+                    <div class="price"><font color="#ff4e00">￥<?php echo ($row['price']); ?></font> X<?php echo ($row['num']); ?></div>
+             </li><?php endforeach; endif; ?>
+            <div class="price_a"><a href="/index.php/Home/Shou/Buycar">去购物车结算</a></div>       				
+            	<?php else: ?>
+            	购物车是空的<?php endif; ?>
             </ul>
-            <div class="price_sum">共计&nbsp; <font color="#ff4e00">￥</font><span>1058</span></div>
-            <div class="price_a"><a href="#">去购物车结算</a></div>
+       			<?php else: ?>
+        	<div class="un_login">还未登录！<a href="Login.html" style="color:#ff4e00;">马上登录</a> 查看购物车！</div><?php endif; ?>
+
             <!--End 购物车已登录 End-->
         </div>
     </div>
@@ -139,9 +127,9 @@
                             </div>
                             <div class="zj" style="margin-top:<?php echo -40*$key;?>px">
                                 <div class="zj_l">
-                                       <?php if(is_array($row['cate2'])): foreach($row['cate2'] as $key=>$rows): ?><div class="zj_l_c">
+                                       <?php if(is_array($row['cate2'])): foreach($row['cate2'] as $keys=>$rows): ?><div class="zj_l_c">
                                                 <h2><?php echo ($rows['name']); ?></h2>
-                                                    <?php if(is_array($rows['cate3'])): foreach($rows['cate3'] as $key=>$rowss): ?><a href="#"><?php echo ($rowss['name']); ?></a>|<?php endforeach; endif; ?>
+                                                    <?php if(is_array($rows['cate3'])): foreach($rows['cate3'] as $keyss=>$rowss): ?><a href="/index.php/Home/shou/categorylist/index.html?id=<?php echo ($key); ?>,<?php echo ($keys); ?>,<?php echo ($keyss); ?>"><?php echo ($rowss['name']); ?></a>|<?php endforeach; endif; ?>
                                             </div><?php endforeach; endif; ?>
                                 </div>
                                 <div class="zj_r">
@@ -459,6 +447,7 @@
     <!--End 进口 生鲜 End-->
   
   
+ 
  
  
  

@@ -1,0 +1,81 @@
+<extend name="userpublic/index" />
+<block name="title"><title>订单</title></block>
+<block name="orders">
+    <script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.8.2.min.js"></script>
+           <p></p>
+            <div class="mem_tit">我的订单</div>
+            <table border="0" class="order_tab" style="width:930px; text-align:center; margin-bottom:30px;" cellspacing="0" cellpadding="0">
+              <tr>                                                                                                                                                    
+                <td width="20%">订单号</td>
+                <td width="15%">下单时间</td>
+                <td width="10%">收货人</td>
+                <td width="15%">订单总金额</td>
+                <td width="25%">订单状态(点击可确认订单)</td>
+                <td width="15%">操作</td>
+              </tr>
+              	<foreach name="orders" item="v" key="k">
+              <tr>
+                <td><font color="#ff4e00">{$v['oid']}</font></td>
+                <td>{$v['addtime']}</td>
+                <td>{$v['likeman']}</td>
+                <td>￥{$v['total']}</td>
+                <td><a href="javascript:void(0)" id="status{$v['id']}" onclick="status({$v['id']},{$v['status']})">{$status[$v['status']]}</a></td>
+                <td><a href="javascript:void(0)" id="del{$v['id']}" onclick="del({$v['id']})">取消订单</a> | <a href="__MODULE__/order/orderdetail?id={$v['id']}">订单详情</a></td>
+              </tr>
+              	</foreach>
+
+            </table>
+
+
+
+<script type="text/javascript">
+  // alert($);
+  //确认订单
+  function status(id,sta){
+    // alert($("#status"+id).html());
+    if(sta==1){
+    if(confirm('订单已确认？')){
+    	// alert($);
+    $.ajax({
+      url: '__MODULE__/order/orderstatus',
+      type: 'GET',
+      data: {id: id,sta: sta},
+      success:
+      function(data){
+        alert(data);
+        // alert($("#status"+id).html())
+        $("#status"+id).html(data);
+      }
+    })      
+   }
+    }
+   if(sta==3){
+    if(confirm('确认已收货？')){
+    $.ajax({
+      url: '__MODULE__/order/orderstatus',
+      type: 'GET',
+      data: {id: id,sta: sta},
+      success:
+      function(data){
+        // alert(data);
+        // alert($("#status"+id).html())
+        $("#status"+id).html(data);
+      }
+    })      
+   }
+    }
+  }
+  //取消订单
+  function del(id){
+      if(confirm('确认取消订单吗？')){
+          $('#del'+id).parent().parent().remove();
+          $.get('__MODULE__/order/orderdel?id='+id, function(data) {
+              // alert(data);
+          });
+      }
+  
+  }
+</script>         
+
+
+</block>

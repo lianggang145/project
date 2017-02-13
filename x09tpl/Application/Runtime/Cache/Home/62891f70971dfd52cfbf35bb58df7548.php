@@ -1,22 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/style.css" />
+	<link type="text/css" rel="stylesheet" href="/Public/home/css/style.css" />
     <!--[if IE 6]>
-    <script src="__PUBLIC__/home/js/iepng.js" type="text/javascript"></script>
+    <script src="/Public/home/js/iepng.js" type="text/javascript"></script>
         <script type="text/javascript">
            EvPNG.fix('div, ul, img, li, input, a'); 
         </script>
     <![endif]-->
         
-    <script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.8.2.min.js"></script>
-    <script type="text/javascript" src="__PUBLIC__/home/js/menu.js"></script>    
+    <script type="text/javascript" src="/Public/home/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="/Public/home/js/menu.js"></script>    
         
-	<script type="text/javascript" src="__PUBLIC__/home/js/select.js"></script>
+	<script type="text/javascript" src="/Public/home/js/select.js"></script>
         
     
-<block name='title'><title></title></block>
+<title>订单</title>
 </head>
 <body>  
 <!--Begin Header Begin-->
@@ -26,7 +26,7 @@
     	
         <!--End 所在收货地区 End-->
         <span class="fr">
-        	<span class="fl"><a href="Login.html">{$_SESSION['name']}</a>&nbsp;<a href="#">我的订单</a>&nbsp;|</span>
+        	<span class="fl"><a href="Login.html"><?php echo ($_SESSION['name']); ?></a>&nbsp;<a href="#">我的订单</a>&nbsp;|</span>
         	<span class="ss">
             	<div class="ss_list">
                 	<a href="#">收藏夹</a>
@@ -68,12 +68,12 @@
             </span>
             <span class="fl">|&nbsp;关注我们：</span>
             <span class="s_sh"><a href="#" class="sh1">新浪</a><a href="#" class="sh2">微信</a></span>
-            <span class="fr">|&nbsp;<a href="#">手机版&nbsp;<img src="__PUBLIC__/home/images/s_tel.png" align="absmiddle" /></a></span>
+            <span class="fr">|&nbsp;<a href="#">手机版&nbsp;<img src="/Public/home/images/s_tel.png" align="absmiddle" /></a></span>
         </span>
     </div>
 </div>
 <div class="top">
-    <div class="logo"><a href="__MODULE__/Shou/index"><img src="__PUBLIC__/home/images/logo.png" /></a></div>
+    <div class="logo"><a href="Index.html"><img src="/Public/home/images/logo.png" /></a></div>
 </div>
 <!--End Header End--> 
 <div class="i_bg bg_color">
@@ -84,9 +84,9 @@
             <div class="left_m">
             	<div class="left_m_t t_bg1">订单中心</div>
                 <ul>
-                	<li><a href="__MODULE__/order/orders">我的订单</a></li>
-                    <li><a href="__MODULE__/order/address">收货地址</a></li>
-                    <li><a href="__MODULE__/Shou/index">去首页逛逛</a></li>
+                	<li><a href="/index.php/Home/order/orders">我的订单</a></li>
+                    <li><a href="/index.php/Home/order/address">收货地址</a></li>
+                    <li><a href="/index.php/Home/Shou/index">去首页逛逛</a></li>
                     <li><a href="#">跟踪订单</a></li>
                 </ul>
             </div>
@@ -119,13 +119,89 @@
             </div>
         </div>
 		
-    <block name="userinfo"></block>
-    <block name="doindex"></block>
-    <block name="update"></block>
-    <block name="address"></block>
-    <block name="addressedit"></block>
-    <block name="orders"></block>
-    <block name="ordersdetail"></block>
+    
+    
+    
+    
+    
+    
+    <script type="text/javascript" src="/Public/home/js/jquery-1.8.2.min.js"></script>
+           <p></p>
+            <div class="mem_tit">我的订单</div>
+            <table border="0" class="order_tab" style="width:930px; text-align:center; margin-bottom:30px;" cellspacing="0" cellpadding="0">
+              <tr>                                                                                                                                                    
+                <td width="20%">订单号</td>
+                <td width="15%">下单时间</td>
+                <td width="10%">收货人</td>
+                <td width="15%">订单总金额</td>
+                <td width="25%">订单状态(点击可确认订单)</td>
+                <td width="15%">操作</td>
+              </tr>
+              	<?php if(is_array($orders)): foreach($orders as $k=>$v): ?><tr>
+                <td><font color="#ff4e00"><?php echo ($v['oid']); ?></font></td>
+                <td><?php echo ($v['addtime']); ?></td>
+                <td><?php echo ($v['likeman']); ?></td>
+                <td>￥<?php echo ($v['total']); ?></td>
+                <td><a href="javascript:void(0)" id="status<?php echo ($v['id']); ?>" onclick="status(<?php echo ($v['id']); ?>,<?php echo ($v['status']); ?>)"><?php echo ($status[$v['status']]); ?></a></td>
+                <td><a href="javascript:void(0)" id="del<?php echo ($v['id']); ?>" onclick="del(<?php echo ($v['id']); ?>)">取消订单</a> | <a href="/index.php/Home/order/orderdetail?id=<?php echo ($v['id']); ?>">订单详情</a></td>
+              </tr><?php endforeach; endif; ?>
+
+            </table>
+
+
+
+<script type="text/javascript">
+  // alert($);
+  //确认订单
+  function status(id,sta){
+    // alert($("#status"+id).html());
+    if(sta==1){
+    if(confirm('订单已确认？')){
+    	// alert($);
+    $.ajax({
+      url: '/index.php/Home/order/orderstatus',
+      type: 'GET',
+      data: {id: id,sta: sta},
+      success:
+      function(data){
+        alert(data);
+        // alert($("#status"+id).html())
+        $("#status"+id).html(data);
+      }
+    })      
+   }
+    }
+   if(sta==3){
+    if(confirm('确认已收货？')){
+    $.ajax({
+      url: '/index.php/Home/order/orderstatus',
+      type: 'GET',
+      data: {id: id,sta: sta},
+      success:
+      function(data){
+        // alert(data);
+        // alert($("#status"+id).html())
+        $("#status"+id).html(data);
+      }
+    })      
+   }
+    }
+  }
+  //取消订单
+  function del(id){
+      if(confirm('确认取消订单吗？')){
+          $('#del'+id).parent().parent().remove();
+          $.get('/index.php/Home/order/orderdel?id='+id, function(data) {
+              // alert(data);
+          });
+      }
+  
+  }
+</script>         
+
+
+
+    
     </div>
 	<!--End 用户中心 End--> 
     <!--Begin Footer Begin -->
@@ -133,7 +209,7 @@
         <div class="b_btm">
             <table border="0" style="width:210px; height:62px; float:left; margin-left:75px; margin-top:30px;" cellspacing="0" cellpadding="0">
               <tr>
-                <td width="72"><img src="__PUBLIC__/home/images/b1.png" width="62" height="62" /></td>
+                <td width="72"><img src="/Public/home/images/b1.png" width="62" height="62" /></td>
                 <td><h2>正品保障</h2>正品行货  放心购买</td>
 
 
@@ -141,19 +217,19 @@
             </table>
 			<table border="0" style="width:210px; height:62px; float:left; margin-left:75px; margin-top:30px;" cellspacing="0" cellpadding="0">
               <tr>
-                <td width="72"><img src="__PUBLIC__/home/images/b2.png" width="62" height="62" /></td>
+                <td width="72"><img src="/Public/home/images/b2.png" width="62" height="62" /></td>
                 <td><h2>满38包邮</h2>满38包邮 免运费</td>
               </tr>
             </table>
             <table border="0" style="width:210px; height:62px; float:left; margin-left:75px; margin-top:30px;" cellspacing="0" cellpadding="0">
               <tr>
-                <td width="72"><img src="__PUBLIC__/home/images/b3.png" width="62" height="62" /></td>
+                <td width="72"><img src="/Public/home/images/b3.png" width="62" height="62" /></td>
                 <td><h2>天天低价</h2>天天低价 畅选无忧</td>
               </tr>
             </table>
             <table border="0" style="width:210px; height:62px; float:left; margin-left:75px; margin-top:30px;" cellspacing="0" cellpadding="0">
               <tr>
-                <td width="72"><img src="__PUBLIC__/home/images/b4.png" width="62" height="62" /></td>
+                <td width="72"><img src="/Public/home/images/b4.png" width="62" height="62" /></td>
                 <td><h2>准时送达</h2>收货时间由你做主</td>
               </tr>
             </table>
@@ -202,14 +278,14 @@
             </p>
         </div>
         <div class="b_er">
-            <div class="b_er_c"><img src="__PUBLIC__/home/images/er.gif" width="118" height="118" /></div>
-            <img src="__PUBLIC__/home/images/ss.png" />
+            <div class="b_er_c"><img src="/Public/home/images/er.gif" width="118" height="118" /></div>
+            <img src="/Public/home/images/ss.png" />
         </div>
     </div>    
     <div class="btmbg">
 		<div class="btm">
         	备案/许可证编号：蜀ICP备12009302号-1-www.dingguagua.com   Copyright © 2015-2018 尤洪商城网 All Rights Reserved. 复制必究 , Technical Support: Dgg Group <br />
-            <img src="__PUBLIC__/home/images/b_1.gif" width="98" height="33" /><img src="__PUBLIC__/home/images/b_2.gif" width="98" height="33" /><img src="__PUBLIC__/home/images/b_3.gif" width="98" height="33" /><img src="__PUBLIC__/home/images/b_4.gif" width="98" height="33" /><img src="__PUBLIC__/home/images/b_5.gif" width="98" height="33" /><img src="__PUBLIC__/home/images/b_6.gif" width="98" height="33" />
+            <img src="/Public/home/images/b_1.gif" width="98" height="33" /><img src="/Public/home/images/b_2.gif" width="98" height="33" /><img src="/Public/home/images/b_3.gif" width="98" height="33" /><img src="/Public/home/images/b_4.gif" width="98" height="33" /><img src="/Public/home/images/b_5.gif" width="98" height="33" /><img src="/Public/home/images/b_6.gif" width="98" height="33" />
         </div>    	
     </div>
     <!--End Footer End -->    
@@ -219,6 +295,6 @@
 
 
 <!--[if IE 6]>
-<script src="__PUBLIC__/home///letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<script src="/Public/home///letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
 <![endif]-->
 </html>

@@ -16,7 +16,7 @@
 	<script type="text/javascript" src="/Public/home/js/select.js"></script>
         
     
-<title>用户详情</title>
+<title>用户^^详情</title>
 </head>
 <body>  
 <!--Begin Header Begin-->

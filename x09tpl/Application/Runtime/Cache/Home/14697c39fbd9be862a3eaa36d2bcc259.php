@@ -92,31 +92,21 @@
         <span class="fl"><a href="#">咖啡</a><a href="#">iphone 6S</a><a href="#">新鲜美食</a><a href="#">蛋糕</a><a href="#">日用品</a><a href="#">连衣裙</a></span>
     </div>
     <div class="i_car">
-    	<div class="car_t">购物车 [ <span>3</span> ]</div>
+    	<div class="car_t">购物车 [ <span><?php echo ($count); ?></span> ]</div>
         <div class="car_bg">
-       		<!--Begin 购物车未登录 Begin-->
-        	<div class="un_login">还未登录！<a href="Login.html" style="color:#ff4e00;">马上登录</a> 查看购物车！</div>
-            <!--End 购物车未登录 End-->
-            <!--Begin 购物车已登录 Begin-->
-            <ul class="cars">
-            	<li>
-                	<div class="img"><a href="#"><img src="/Public/home/images/car1.jpg" width="58" height="58" /></a></div>
-                    <div class="name"><a href="#">法颂浪漫梦境50ML 香水女士持久清新淡香 送2ML小样3只</a></div>
-                    <div class="price"><font color="#ff4e00">￥399</font> X1</div>
-                </li>
-                <li>
-                	<div class="img"><a href="#"><img src="/Public/home/images/car2.jpg" width="58" height="58" /></a></div>
-                    <div class="name"><a href="#">香奈儿（Chanel）邂逅活力淡香水50ml</a></div>
-                    <div class="price"><font color="#ff4e00">￥399</font> X1</div>
-                </li>
-                <li>
-                	<div class="img"><a href="#"><img src="/Public/home/images/car2.jpg" width="58" height="58" /></a></div>
-                    <div class="name"><a href="#">香奈儿（Chanel）邂逅活力淡香水50ml</a></div>
-                    <div class="price"><font color="#ff4e00">￥399</font> X1</div>
-                </li>
+       			<?php if($_SESSION['hid']): ?><ul class="cars">
+            	<?php if(count($_SESSION['buycar']) > 0): if(is_array($buycar)): foreach($buycar as $key=>$row): ?><li>
+                	<div class="img"><a href="/index.php/Home/Shou/product?id=<?php echo ($row['id']); ?>"><img src="/Public/<?php echo ($row['pic']); ?>" width="58" height="58" /></a></div>
+                    <div class="name"><a href="/index.php/Home/Shou/product?id=<?php echo ($row['id']); ?>"><?php echo ($row['name']); ?></a></div>
+                    <div class="price"><font color="#ff4e00">￥<?php echo ($row['price']); ?></font> X<?php echo ($row['num']); ?></div>
+             </li><?php endforeach; endif; ?>
+            <div class="price_a"><a href="/index.php/Home/Shou/Buycar">去购物车结算</a></div>       				
+            	<?php else: ?>
+            	购物车是空的<?php endif; ?>
             </ul>
-            <div class="price_sum">共计&nbsp; <font color="#ff4e00">￥</font><span>1058</span></div>
-            <div class="price_a"><a href="#">去购物车结算</a></div>
+       			<?php else: ?>
+        	<div class="un_login">还未登录！<a href="Login.html" style="color:#ff4e00;">马上登录</a> 查看购物车！</div><?php endif; ?>
+
             <!--End 购物车已登录 End-->
         </div>
     </div>
@@ -137,9 +127,9 @@
                             </div>
                             <div class="zj" style="margin-top:<?php echo -40*$key;?>px">
                                 <div class="zj_l">
-                                       <?php if(is_array($row['cate2'])): foreach($row['cate2'] as $key=>$rows): ?><div class="zj_l_c">
+                                       <?php if(is_array($row['cate2'])): foreach($row['cate2'] as $keys=>$rows): ?><div class="zj_l_c">
                                                 <h2><?php echo ($rows['name']); ?></h2>
-                                                    <?php if(is_array($rows['cate3'])): foreach($rows['cate3'] as $key=>$rowss): ?><a href="#"><?php echo ($rowss['name']); ?></a>|<?php endforeach; endif; ?>
+                                                    <?php if(is_array($rows['cate3'])): foreach($rows['cate3'] as $keyss=>$rowss): ?><a href="/index.php/Home/shou/categorylist/index.html?id=<?php echo ($key); ?>,<?php echo ($keys); ?>,<?php echo ($keyss); ?>"><?php echo ($rowss['name']); ?></a>|<?php endforeach; endif; ?>
                                             </div><?php endforeach; endif; ?>
                                 </div>
                                 <div class="zj_r">
@@ -190,7 +180,7 @@
             <td class="car_th" width="150">购买数量</td>
             <td class="car_th" width="130">小计</td>
           </tr>
-          	<?php if(is_array($buy)): foreach($buy as $k=>$v): ?><tr id="tr<?php echo ($k); ?>">
+            <?php if(is_array($buy)): foreach($buy as $k=>$v): ?><tr id="tr<?php echo ($k); ?>">
             <td>
                 <div class="c_s_img"><img src="/Public/<?php echo ($v['pic']); ?>" width="73" height="73" /></div>
                <?php echo ($v['name']); ?>
@@ -221,40 +211,38 @@
             <h4 class="modal-title">修改</h4>
           </div>
           <div class="modal-body">
-              <?php if(is_array($address)): foreach($address as $v=>$k): ?><div style="border:1px solid black;border-radius:15px;padding:5px;margin-top:2px" id="address<?php echo ($v->id); ?>">
+              <?php if(is_array($address)): foreach($address as $key=>$row): ?><div style="border:1px solid black;border-radius:15px;padding:5px;margin-top:2px" id="<?php echo ($row['id']); ?>">
               <table border="0" class="add_t" align="center" style="width:98%; margin:10px auto;" cellspacing="0" cellpadding="0">
                  <tr>
                     <td align="right" width="180">收货人姓名：</td>
-                    <td><?php echo ($v['user_name']); ?></td>
+                    <td><?php echo ($row['user_name']); ?></td>
                   </tr>
                   <tr>
                     <td align="right">手机：</td>
-                    <td><?php echo ($v['phone']); ?></td>
+                    <td><?php echo ($row['phone']); ?></td>
                   </tr>
                   <tr>
                     <td align="right">电子邮箱：</td>
-                    <td><?php echo ($v['profile_email']); ?></td>
+                    <td><?php echo ($row['profile_email']); ?></td>
                   </tr>
                   <tr>
                     <td align="right">邮政编码：</td>
-                    <td><?php echo ($v['code']); ?></td>
+                    <td><?php echo ($row['code']); ?></td>
                   </tr>
                   <tr>
                     <td align="right">配送区域：</td>
-                    <td><?php echo ($v['profile_address']); ?></td>
+                    <td><?php echo ($row['profile_address']); ?></td>
                   </tr>
                 </table>
-        
                 <p align="right">
-
-    <button class="btn btn-success" onclick="dizhi(<?php echo ($v['id']); ?>)" data-toggle="modal" data-target="#myModal1" data-dismiss="modal">选择此收货地址</button>
+    <button class="btn btn-success" onclick="dizhi(<?php echo ($row['id']); ?>)" data-toggle="modal" data-target="#myModal1" data-dismiss="modal">选择此收货地址</button>
 
 
                 </p>
             </div><?php endforeach; endif; ?>
           </div>
           <div class="modal-footer">
-            <a href="/index.php/Home/shou/address"><button class="btn btn-success" >管理收货地址</button></a>
+            <a href="/index.php/Home/shou/addressedit/id/<?php echo ($row['id']); ?>"><button class="btn btn-success" >管理收货地址</button></a>
             <button class="btn btn-success" data-dismiss="modal">close</button>
           </div>
         </div>
@@ -266,19 +254,19 @@
             <table border="0" class="peo_tab" style="width:1110px;" cellspacing="0" cellpadding="0">
               <tr>
                 <td class="p_td" width="160">联系人名称</td>
-                <td width="395" id="uname"><?php echo ($v['user_name']); ?></td>
+                <td width="395" id="uname"><?php echo ($row['user_name']); ?></td>
                 <td class="p_td" width="160">电子邮件</td>
-                <td width="395" id="email"><?php echo ($v['profile_email']); ?></td>
+                <td width="395" id="emaila"><?php echo ($row['profile_email']); ?></td>
               </tr>
               <tr>
                 <td class="p_td">详细地址</td>
-                <td id="address"><?php echo ($v['profile_address']); ?></td>
+                <td id="address"><?php echo ($row['profile_address']); ?></td>
                 <td class="p_td">邮政编码</td>
-                <td  id="code"><?php echo ($v['code']); ?></td>
+                <td  id="code"><?php echo ($row['code']); ?></td>
               </tr>
               <tr>
                 <td class="p_td">电话</td>
-                <td id="phone"><?php echo ($v['phone']); ?></td>
+                <td id="phone"><?php echo ($row['phone']); ?></td>
                 <td class="p_td"></td>
                 <td></td>
               </tr>
@@ -328,7 +316,7 @@
                 </td>
               </tr>
               <tr height="70">
-                <td align="right"><a href="/index.php/Home/shou/addorders" ><img src="/Public/home/images/btn_sure.gif" /></a></td>
+                <td align="right"><a href="/index.php/Home/shou/addorders/id/<?php echo ($row['id']); ?>" ><img src="/Public/home/images/btn_sure.gif" /></a></td>
               </tr>
             </table>
 
@@ -369,18 +357,19 @@
     }
 
     function dizhi(id){
-        $.get('/web/dizhi',{id:id}, function(data) {
-            // alert(data[0]);
-            $("#uname").html(data[0].uname);
-            $("#address").html(data[0].address);
-            $("#address").html(data[0].address);
-            $("#email").html(data[0].email);
-            $("#code").html(data[0].code);
-            $("#phone").html(data[0].phone);
+        $.get('/index.php/Home/shou/xdizhi',{id:id}, function(data) {
+            // alert("<?php echo ($_SESSION['data']['user_name']); ?>");   
+
+            $("#uname").html("<?php echo ($_SESSION['data']['user_name']); ?>");
+            $("#address").html("<?php echo ($_SESSION['data']['profile_address']); ?>");
+            $("#emaila").html("<?php echo ($_SESSION['data']['profile_email']); ?>");
+            $("#code").html("<?php echo ($_SESSION['data']['code']); ?>");
+            $("#phone").html("<?php echo ($_SESSION['data']['phone']); ?>");
         });
     }
 
     </script> 
+ 
 
    
     <!--Begin Footer Begin -->

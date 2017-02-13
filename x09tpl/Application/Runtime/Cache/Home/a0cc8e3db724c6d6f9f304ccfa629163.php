@@ -16,7 +16,7 @@
 	<script type="text/javascript" src="/Public/home/js/select.js"></script>
         
     
-<title>用户详情</title>
+<title>用户^^详情</title>
 </head>
 <body>  
 <!--Begin Header Begin-->
@@ -72,46 +72,8 @@
         </span>
     </div>
 </div>
-<div class="m_top_bg">
-    <div class="top">
-        <div class="m_logo"><a href="Index.html"><img src="/Public/home/images/logo1.png" /></a></div>
-        <div class="m_search">
-            <form>
-                <input type="text" value="" class="m_ipt" />
-                <input type="submit" value="搜索" class="m_btn" />
-            </form>                      
-            <span class="fl"><a href="#">咖啡</a><a href="#">iphone 6S</a><a href="#">新鲜美食</a><a href="#">蛋糕</a><a href="#">日用品</a><a href="#">连衣裙</a></span>
-        </div>
-        <div class="i_car">
-            <div class="car_t">购物车 [ <span>3</span> ]</div>
-            <div class="car_bg">
-                <!--Begin 购物车未登录 Begin-->
-                <div class="un_login">还未登录！<a href="Login.html" style="color:#ff4e00;">马上登录</a> 查看购物车！</div>
-                <!--End 购物车未登录 End-->
-                <!--Begin 购物车已登录 Begin-->
-                <ul class="cars">
-                    <li>
-                        <div class="img"><a href="#"><img src="/Public/home/images/car1.jpg" width="58" height="58" /></a></div>
-                        <div class="name"><a href="#">法颂浪漫梦境50ML 香水女士持久清新淡香 送2ML小样3只</a></div>
-                        <div class="price"><font color="#ff4e00">￥399</font> X1</div>
-                    </li>
-                    <li>
-                        <div class="img"><a href="#"><img src="/Public/home/images/car2.jpg" width="58" height="58" /></a></div>
-                        <div class="name"><a href="#">香奈儿（Chanel）邂逅活力淡香水50ml</a></div>
-                        <div class="price"><font color="#ff4e00">￥399</font> X1</div>
-                    </li>
-                    <li>
-                        <div class="img"><a href="#"><img src="/Public/home/images/car2.jpg" width="58" height="58" /></a></div>
-                        <div class="name"><a href="#">香奈儿（Chanel）邂逅活力淡香水50ml</a></div>
-                        <div class="price"><font color="#ff4e00">￥399</font> X1</div>
-                    </li>
-                </ul>
-                <div class="price_sum">共计&nbsp; <font color="#ff4e00">￥</font><span>1058</span></div>
-                <div class="price_a"><a href="#">去购物车结算</a></div>
-                <!--End 购物车已登录 End-->
-            </div>
-        </div>
-    </div>
+<div class="top">
+    <div class="logo"><a href="/index.php/Home/Shou/index"><img src="/Public/home/images/logo.png" /></a></div>
 </div>
 <!--End Header End--> 
 <div class="i_bg bg_color">
@@ -122,8 +84,8 @@
             <div class="left_m">
             	<div class="left_m_t t_bg1">订单中心</div>
                 <ul>
-                	<li><a href="Member_Order.html">我的订单</a></li>
-                    <li><a href="Member_Address.html">收货地址</a></li>
+                	<li><a href="/index.php/Home/order/orders">我的订单</a></li>
+                    <li><a href="/index.php/Home/order/address">收货地址</a></li>
                     <li><a href="/index.php/Home/Shou/index">去首页逛逛</a></li>
                     <li><a href="#">跟踪订单</a></li>
                 </ul>
@@ -201,6 +163,10 @@
             
         </div>
        
+    
+    
+    
+    
     
     </div>
 	<!--End 用户中心 End--> 

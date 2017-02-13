@@ -397,12 +397,13 @@
                 	<if condition="$_SESSION['user']">
 
             alert("请先登录");
-            window.location="/web/login";
+            window.location="__MODULE__/shou/login";
                 	</if>
             num=document.getElementById('num').value;
+            // alert(num);
             var price=$("#price").html();
-            $.get("/web/buycaradd/",{k:k,num:num,price:price}, function(data) {
-            // alert(data);
+            $.get("__MODULE__/shou/buycaradd/",{k:k,num:num,price:price}, function(data) {
+            // alert(data);    
                 $('#count').html("购物车共有"+data+"种宝贝");
             });
         }

@@ -35,7 +35,7 @@
 <link rel="stylesheet" type="text/css" href="/Public/b/css/my.css" media="screen">
 
 
-<title>图片轮奸列表</title>
+<title>订单列表页</title>
 
 </head>
 
@@ -288,46 +288,62 @@
     
     
     
-<head>
+    
+    
+    
+    
+		<head>
    <script type="text/javascript" src="/Public/b/js/jquery-1.8.3.min.js"></script>
  </head>
 <div class="mws-panel grid_8 mws-collapsible">
     	<div class="mws-panel-header">
-    	<span><i class="icon-table"></i> 图片轮播列表页</span>
+    	<span><i class="icon-table"></i> 订单列表页</span>
     <div class="mws-collapse-button mws-inset"></div></div>
     <div class="mws-panel-inner-wrap"><div class="mws-panel-body no-padding">
         <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper" role="grid">
         <div id="DataTables_Table_0_length" class="dataTables_length"> 
+        <form action="/index.php/Admin/shop/index" method="get">
+        	<input aria-controls="DataTables_Table_1" type="text" name="name" value="<?php echo ($_GET['name']); ?>"/></label>
+        	<input type="submit" class="btn btn-success" value="搜索">
         </div>
-       <div id="users">
+        </form>
+        <div id="users">
         <table class="mws-table mws-datatable dataTable" id="DataTables_Table_0" aria-describedby="DataTables_Table_0_info">
         <thead>
-            <tr role="row"><th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 112px;" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">编号</th>
-            <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 156px;" aria-label="Browser: activate to sort column ascending">图片</th>        
-        	<th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 156px;" aria-label="Browser: activate to sort column ascending">操作</th>        
+
+            
+             <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 94px;" aria-label="Engine version: activate to sort column ascending">编号</th>  
+            <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 156px;" aria-label="Browser: activate to sort column ascending">订单号</th>
+            <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 144px;" aria-label="Platform(s): activate to sort column ascending">商品描述</th>
+            <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 144px;" aria-label="Platform(s): activate to sort column ascending">商品图片</th>
+            <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 144px;" aria-label="Platform(s): activate to sort column ascending">商品库存</th>
+            <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 144px;" aria-label="Platform(s): activate to sort column ascending">地址</th>
+            <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 144px;" aria-label="Platform(s): activate to sort column ascending">添加时间</th>
+            <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 94px;" aria-label="Engine version: activate to sort column ascending">操作</th>
         </thead>                                                                                                                                                                                                       
                </tr>
-        <?php if(is_array($list)): foreach($list as $key=>$row): ?><tr class="even" align="center">
+          <?php if(is_array($list)): foreach($list as $key=>$row): ?><tr class="even" align="center">
+               
                 <td class=" "><span class="badge badge-success"><?php echo ($row['id']); ?></span></td>
-                <td class=" "><img src="<?php echo ($row['pic']); ?>"></td>
-              
+                <td class=" "><span class="badge badge-success"><?php echo ($row['name']); ?></span></td>
+                <td class=" "><span class="badge badge-success"><?php echo ($row['descr']); ?></span></td>
+				 <td class=" "><img src="<?php echo ($row['pic']); ?>" alt="图片暂缺" width="120px" height="135px"></td>
+				  <td class=" "><span class="badge badge-success"><?php echo ($row['num']); ?></span></td>
+				   <td class=" "><span class="badge badge-success"><?php echo ($row['address']); ?></span></td>
+				    <td class=" "><span class="badge badge-success"><?php echo ($row['time']); ?></span></td>
                 <td class=" ">
                     <span class="btn-group">            
-                      
-                        <a href="/index.php/Admin/pic/del/id/<?php echo ($row['id']); ?>" class="btn btn-small"><i class="icon-trash"></i></a>
+                        <a href="/index.php/Admin/Shop/edit/id/<?php echo ($row['id']); ?>" class="btn btn-small"><i class="icon-pencil"></i></a>
+                        <a href="/index.php/Admin/Shop/del/id/<?php echo ($row['id']); ?>" class="btn btn-small"><i class="icon-trash"></i></a>
                     </span>
                 </td><?php endforeach; endif; ?>
+          
 			</tbody>
-			
  	</table>
-    </div> 
-   </div> 
- </div>
-  </div>
+     <?php echo ($page); ?>
+   
+   
 
-    
-    
-    
   </div>      
   </div>        
     </div>

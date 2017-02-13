@@ -1,0 +1,41 @@
+<extend name="userpublic/index" />
+<block name="addressedit">
+<style type="text/css">
+  .did{
+    border:1px solid red;
+  }
+</style>
+  <div class="mem_tit">
+              <a href="#">修改收货地址</a>
+            </div>
+            <form action="__MODULE__/shou/addressupdate" method="post">
+             <table border="0" class="add_tab" style="width:930px;"  cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="right">收货人姓名</td>
+                <td style="font-family:'宋体';"><input type="text" name="user_name" class="add_ipt" value="{$ss['user_name']}" />（必填）</td>
+                <td align="right">电子邮箱</td>
+                <td style="font-family:'宋体';"><input type="text" name="profile_email" value="{$ss['profile_email']}" class="add_ipt" />（必填）</td>
+              </tr>
+              <tr>
+                <td align="right">详细地址</td>
+                <td style="font-family:'宋体';"><input type="text" name="profile_address" value="{$ss['profile_address']}" class="add_ipt" />（必填）</td>
+                <td align="right">邮政编码</td>
+                <td style="font-family:'宋体';"><input type="text" name="code" value="{$ss['code']}" class="add_ipt" /></td>
+              </tr>
+              <tr>
+                <td align="right">手机</td>
+                <td style="font-family:'宋体';"><input type="text" name="phone" value="{$ss['phone']}" class="add_ipt" />（必填）</td>
+              </tr>
+            </table>
+            <p align="right">
+            <input type="hidden" name="id" value="{$ss['id']}">
+              <input type="submit" class="btn btn-error" value="修改">
+            </p> 
+           </form>
+
+            
+        </div>
+
+            
+        </div>
+</block>

@@ -245,10 +245,10 @@
                     </li>
 
                     <li>
-                        <a href="/Public/#"><i class="icon-file"></i> 文章管理</a>
+                        <a href="/Public/#"><i class="icon-file"></i> 图片轮奸</a>
                         <ul class="closed">
-                            <li><a href="/Public/">文章添加</a></li>
-                            <li><a href="/Public/">文章列表</a></li>
+                            <li><a href="/index.php/Admin/Pic/add">图片添加</a></li>
+                            <li><a href="/index.php/Admin/Pic/doindex">图片列表</a></li>
                         </ul>
                     </li>
 
@@ -257,6 +257,20 @@
                         <ul class="closed">
                             <li><a href="/index.php/Admin/Shop/add">商品添加</a></li>
                             <li><a href="/index.php/Admin/Shop/index">商品列表</a></li>
+                        </ul>
+                    </li>
+                        
+                    <li>
+                        <a href=""><i class="icon-file"></i>友情链接</a>
+                        <ul class="closed">
+                            <li><a href="/index.php/Admin/Link/add">链接添加</a></li>
+                            <li><a href="/index.php/Admin/Link/index">链接列表</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""><i class="icon-file"></i>订单管理</a>
+                        <ul class="closed">
+                            <li><a href="/index.php/Admin/Orders/index">订单列表</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -277,7 +291,7 @@
                <span>分类添加</span>
           </div>
           <div class="mws-panel-body no-padding">
-               <form action="/index.php/Admin/Cate/index" method="post" class="mws-form">
+               <form action="/index.php/Admin/Type/insert" method="post" class="mws-form">
                   
                     <div class="mws-form-inline">
                          <div class="mws-form-row">
@@ -292,9 +306,7 @@
                             <div class="mws-form-item">
                                 <select class="large" name="pid">
                                  	<option value="0">--请选择--</option>
-                                 	
-                                    <option value=""></option> 
-                                                                            
+                                 	<?php if(is_array($cate)): foreach($cate as $key=>$row): ?><option value="<?php echo ($row['id']); ?>"><?php echo ($row['name']); ?></option><?php endforeach; endif; ?>                                 
                                 </select>
                             </div>
                         </div>
@@ -308,6 +320,11 @@
           </div>         
       </div>
 
+    
+    
+    
+    
+    
   </div>      
   </div>        
     </div>

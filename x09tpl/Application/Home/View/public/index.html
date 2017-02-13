@@ -94,31 +94,27 @@
         <span class="fl"><a href="#">咖啡</a><a href="#">iphone 6S</a><a href="#">新鲜美食</a><a href="#">蛋糕</a><a href="#">日用品</a><a href="#">连衣裙</a></span>
     </div>
     <div class="i_car">
-    	<div class="car_t">购物车 [ <span>3</span> ]</div>
+    	<div class="car_t">购物车 [ <span>{$count}</span> ]</div>
         <div class="car_bg">
-       		<!--Begin 购物车未登录 Begin-->
-        	<div class="un_login">还未登录！<a href="Login.html" style="color:#ff4e00;">马上登录</a> 查看购物车！</div>
-            <!--End 购物车未登录 End-->
-            <!--Begin 购物车已登录 Begin-->
+       			<if condition="$_SESSION['hid']">
             <ul class="cars">
+            	<if condition="count($_SESSION['buycar']) gt 0">
+            <foreach name="buycar" item="row">
             	<li>
-                	<div class="img"><a href="#"><img src="__PUBLIC__/home/images/car1.jpg" width="58" height="58" /></a></div>
-                    <div class="name"><a href="#">法颂浪漫梦境50ML 香水女士持久清新淡香 送2ML小样3只</a></div>
-                    <div class="price"><font color="#ff4e00">￥399</font> X1</div>
-                </li>
-                <li>
-                	<div class="img"><a href="#"><img src="__PUBLIC__/home/images/car2.jpg" width="58" height="58" /></a></div>
-                    <div class="name"><a href="#">香奈儿（Chanel）邂逅活力淡香水50ml</a></div>
-                    <div class="price"><font color="#ff4e00">￥399</font> X1</div>
-                </li>
-                <li>
-                	<div class="img"><a href="#"><img src="__PUBLIC__/home/images/car2.jpg" width="58" height="58" /></a></div>
-                    <div class="name"><a href="#">香奈儿（Chanel）邂逅活力淡香水50ml</a></div>
-                    <div class="price"><font color="#ff4e00">￥399</font> X1</div>
-                </li>
+                	<div class="img"><a href="__MODULE__/Shou/product?id={$row['id']}"><img src="__PUBLIC__/{$row['pic']}" width="58" height="58" /></a></div>
+                    <div class="name"><a href="__MODULE__/Shou/product?id={$row['id']}">{$row['name']}</a></div>
+                    <div class="price"><font color="#ff4e00">￥{$row['price']}</font> X{$row['num']}</div>
+             </li>
+            	</foreach>
+            <div class="price_a"><a href="__MODULE__/Shou/Buycar">去购物车结算</a></div>       				
+            	<else />
+            	购物车是空的
+            	</if>
             </ul>
-            <div class="price_sum">共计&nbsp; <font color="#ff4e00">￥</font><span>1058</span></div>
-            <div class="price_a"><a href="#">去购物车结算</a></div>
+       			<else />
+        	<div class="un_login">还未登录！<a href="Login.html" style="color:#ff4e00;">马上登录</a> 查看购物车！</div>
+       			</if>
+
             <!--End 购物车已登录 End-->
         </div>
     </div>
@@ -140,11 +136,11 @@
                             </div>
                             <div class="zj" style="margin-top:{-40*$key}px">
                                 <div class="zj_l">
-                                       <foreach name="row['cate2']" item="rows">
+                                       <foreach name="row['cate2']" item="rows" key="keys">
                                             <div class="zj_l_c">
                                                 <h2>{$rows['name']}</h2>
-                                                    <foreach name="rows['cate3']" item="rowss">
-                                                        <a href="#">{$rowss['name']}</a>|
+                                                    <foreach name="rows['cate3']" item="rowss" key="keyss">
+                                                        <a href="__MODULE__/shou/categorylist/index.html?id={$key},{$keys},{$keyss}">{$rowss['name']}</a>|
                                                     </foreach>
                                             </div> 
                                        </foreach>
@@ -178,6 +174,7 @@
 <block name="product"></block> 
 <block name="buycar"></block> 
 <block name="buycartwo"></block> 
+<block name="categorylist"></block> 
 
    
     <!--Begin Footer Begin -->

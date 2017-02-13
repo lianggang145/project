@@ -259,6 +259,20 @@
                             <li><a href="/index.php/Admin/Shop/index">商品列表</a></li>
                         </ul>
                     </li>
+                        
+                    <li>
+                        <a href=""><i class="icon-file"></i>友情链接</a>
+                        <ul class="closed">
+                            <li><a href="/index.php/Admin/Link/add">链接添加</a></li>
+                            <li><a href="/index.php/Admin/Link/index">链接列表</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""><i class="icon-file"></i>订单管理</a>
+                        <ul class="closed">
+                            <li><a href="/index.php/Admin/Orders/index">订单列表</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>         
         </div>
@@ -315,6 +329,9 @@
 
   </div>
                            
+    
+    
+    
     
     
     

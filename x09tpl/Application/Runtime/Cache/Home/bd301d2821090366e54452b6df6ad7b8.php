@@ -22,7 +22,7 @@
     <script type="text/javascript" src="/Public/home/js/tban.js"></script>
     
     
-<title>购物车</title>
+<title>商品列表页</title>
 
 </head>
 <body>  
@@ -158,209 +158,199 @@
 <!--End Menu End--> 
  
  
+ 
+ 
 
-
-
-    <script type="text/javascript" src="/Public/home/js/num.js">
-    	var jq = jQuery.noConflict();
-    </script>     
-    
-    </body>
-<div class="i_bg">  
-    <div class="content mar_20">
-        <img src="/Public/home/images/img1.jpg" />        
-    </div>
-    <!--Begin 第一步：查看购物车 Begin -->
-    <div class="content mar_20">
-        <table border="0" class="car_tab" style="width:1200px; margin-bottom:50px;" cellspacing="0" cellpadding="0" id="allchecked">
+<html>
+<body>
+	<div class="postion" style="margin-left:25%">
+    	<span class="fl">全部 > <?php echo ($path); ?> </span>
+    	</div>
+    <!--Begin 筛选条件 Begin-->
+<!--     <div class="content mar_10">
+    	<table border="0" class="choice" style="width:100%; font-family:'宋体'; margin:0 auto;" cellspacing="0" cellpadding="0">
+          <tr valign="top">
+            <td width="70">&nbsp; 品牌：</td>
+            <td class="td_a"><a href="#" class="now">香奈儿（Chanel）</a><a href="#">迪奥（Dior）</a><a href="#">范思哲（VERSACE）</a><a href="#">菲拉格慕（Ferragamo）</a><a href="#">兰蔻（LANCOME）</a><a href="#">爱马仕（HERMES）</a><a href="#">卡文克莱（Calvin Klein）</a><a href="#">古驰（GUCCI）</a><a href="#">宝格丽（BVLGARI）</a><a href="#">阿迪达斯（Adidas）</a><a href="#">卡尔文·克莱恩（CK）</a><a href="#">凌仕（LYNX）</a><a href="#">大卫杜夫（Davidoff）</a><a href="#">安娜苏（Anna sui）</a><a href="#">阿玛尼（ARMANI）</a><a href="#">娇兰（Guerlain）</a></td>
+          </tr>
+          <tr valign="top">
+            <td>&nbsp; 价格：</td>                                                                                                       
+            <td class="td_a"><a href="#">0-199</a><a href="#" class="now">200-399</a><a href="#">400-599</a><a href="#">600-899</a><a href="#">900-1299</a><a href="#">1300-1399</a><a href="#">1400以上</a></td>
+          </tr>                                              
           <tr>
-            <td class="car_th" width="60">选择</td>
-            <td class="car_th" width="290">商品名称</td>
-            <td class="car_th" width="90">公司</td>
-            <td class="car_th" width="140">单价</td>
-            <td class="car_th" width="90">购买数量</td>
-            <td class="car_th" width="130">小计</td>
-            <!-- <td class="car_th" width="130">添加时间</td> -->
-            <td class="car_th" width="150">操作</td>
-          </tr>
-          	<?php if(is_array($buycar)): foreach($buycar as $k=>$v): ?><tr id="tr<?php echo ($k); ?>">
-        <td class="sorting_1"><input type="checkbox" value="<?php echo ($k); ?>"></td> 
-            <td>
-                <div class="c_s_img"><img src="/Public/<?php echo ($v['pic']); ?>" width="73" height="73" /></div>
-               <?php echo ($v['name']); ?>
-            </td>
-            <td align="center"><?php echo ($v['address']); ?></td>
-            <td align="center" id="price<?php echo ($k); ?>"><?php echo ($v['price']); ?></td>
-            <td align="center">
-                <div class="c_num">
-                    <input type="button" value="" onclick="jianUpdate1(jq(this));jisuan('<?php echo ($k); ?>')" class="car_btn_1" />
-                    <input type="text" value="<?php echo ($v['num']); ?>" name="goods" id="sum<?php echo ($k); ?>" class="car_ipt" readonly/>  
-                    <input type="button" value="" onclick="addUpdate1(jq(this));jisuan('<?php echo ($k); ?>')" class="car_btn_2" />
-                </div>
-            </td>
-            <td align="center" style="color:#ff4e00;" id="xiaoji<?php echo ($k); ?>">￥<?php echo ($v['xiaoji']); ?></td>
-            <!-- <td align="center" ><?php echo ($v['addtime']); ?></td> -->
-            <td align="center"><a href="javascript:void(0)" onclick="del(<?php echo ($k); ?>)">删除</a>&nbsp; &nbsp;<a href="#">加入收藏</a></td>
-          </tr><?php endforeach; endif; ?>
-            	<?php if(count($buycar) > 0): ?><tr height="70">
-          <td colspan="2" >
-              <a href="javascript:void(0)" class="alldel">全选</a>|<a href="javascript:void(0)" class="nodel">全不选</a>|<a href="javascript:void(0)" class="fdel">反选</a>
-          </td>
-            <td colspan="6" style="font-family:'Microsoft YaHei'; border-bottom:0;">
-                <span class="fr">商品总价：<b style="font-size:22px; color:#ff4e00;" id="zongjia">￥0</b></span>
-            </td>
-          </tr>
-          <tr valign="top" height="150">
-            <td colspan="8" align="right">
-                <a href="/index.php/Home/shou/index"><img src="/Public/home/images/buy1.gif" /></a>&nbsp; &nbsp; <a href="javascript:void(0)" onclick="jiesuan()"><img src="/Public/home/images/buy2.gif" /></a>
-            </td>
-          </tr>
-            	<?php else: ?>
-          <tr height="70">
-          <td colspan="2" >
-          </td>
-            <td colspan="6" style="font-family:'Microsoft YaHei'; border-bottom:0;">
-                <span class="fr"><b style="font-size:22px; color:#ff4e00;">购物车是空的,<a href="/index.php/Home/shou/index">去别处逛逛</a></b></span>
-            </td>
-          </tr><?php endif; ?>
-        </table>
-        
+            <td>&nbsp; 类型：</td>
+            <td class="td_a"><a href="#">女士香水</a><a href="#">男士香水</a><a href="#">Q版香水</a><a href="#">组合套装</a><a href="#">香体走珠</a><a href="#">其它</a></td>
+          </tr>                                          
+          <tr>
+            <td>&nbsp; 香型：</td>                                       
+            <td class="td_a"><a href="#">浓香水</a><a href="#">香精Parfum香水</a><a href="#">淡香精EDP淡香水</a><a href="#">香露EDT</a><a href="#">古龙水</a><a href="#">其它</a></td>
+          </tr>                                                             
+        </table>                                                                                 
     </div>
-    <!--End 第一步：查看购物车 End--> 
+ -->    <!--End 筛选条件 End-->
     
- 
-    </body>  
+    <div class="content mar_20">
+<!--     	<div class="l_history">
+        	<div class="his_t">
+            	<span class="fl">浏览历史</span>
+                <span class="fr"><a href="#">清空</a></span>
+            </div>
+        	<ul>
+            	<li>
+                    <div class="img"><a href="#"><img src="/Public/home/images/his_1.jpg" width="185" height="162" /></a></div>
+                	<div class="name"><a href="#">Dior/迪奥香水2件套装</a></div>
+                    <div class="price">
+                    	<font>￥<span>368.00</span></font> &nbsp; 18R
+                    </div>
+                </li>
+                <li>
+                    <div class="img"><a href="#"><img src="/Public/home/images/his_2.jpg" width="185" height="162" /></a></div>
+                	<div class="name"><a href="#">Dior/迪奥香水2件套装</a></div>
+                    <div class="price">
+                    	<font>￥<span>768.00</span></font> &nbsp; 18R
+                    </div>
+                </li>
+                <li>
+                    <div class="img"><a href="#"><img src="/Public/home/images/his_3.jpg" width="185" height="162" /></a></div>
+                	<div class="name"><a href="#">Dior/迪奥香水2件套装</a></div>
+                    <div class="price">
+                    	<font>￥<span>680.00</span></font> &nbsp; 18R
+                    </div>
+                </li>
+                <li>
+                    <div class="img"><a href="#"><img src="/Public/home/images/his_4.jpg" width="185" height="162" /></a></div>
+                	<div class="name"><a href="#">Dior/迪奥香水2件套装</a></div>
+                    <div class="price">
+                    	<font>￥<span>368.00</span></font> &nbsp; 18R
+                    </div>
+                </li>
+                <li>
+                    <div class="img"><a href="#"><img src="/Public/home/images/his_5.jpg" width="185" height="162" /></a></div>
+                	<div class="name"><a href="#">Dior/迪奥香水2件套装</a></div>
+                    <div class="price">
+                    	<font>￥<span>368.00</span></font> &nbsp; 18R
+                    </div>
+                </li>
+        	</ul>
+        </div>
+ -->        <div class="l_list">
+        	<div class="list_t">
+            	<span class="fl list_or">
+                	<a href="#" class="now">默认</a>
+                    <a href="#">
+                    	<span class="fl">销量</span>                        
+                        <span class="i_up">销量从低到高显示</span>
+                        <span class="i_down">销量从高到低显示</span>                                                     
+                    </a>
+                    <a href="#">
+                    	<span class="fl">价格</span>                        
+                        <span class="i_up">价格从低到高显示</span>
+                        <span class="i_down">价格从高到低显示</span>     
+                    </a>
+                    <a href="#">新品</a>
+                </span>
+                <span class="fr"></span>
+            </div>
+            <div class="list_c">
+            	
+                <ul class="cate_list">
+                	<?php if(is_array($shops)): foreach($shops as $key=>$row): ?><li>
+                    	<div class="img"><a href="/index.php/Home/shou/product?id=<?php echo ($row['id']); ?>"><img src="/Public/<?php echo ($row['pic']); ?>" width="210" height="185" /></a></div>
+                        <div class="price">
+                            <font>￥<span><?php echo ($row['price']); ?></span></font> &nbsp; 26R
+                        </div>
+                        <div class="name"><a href="/index.php/Home/shou/product?id=<?php echo ($row['id']); ?>"><?php echo ($row['name']); ?></a></div>
+                        <div class="carbg">
+                        	<a href="javascript:void(0)" onclick="ShowDiv('MyDiv','fade')" class="ss">收藏</a>
+                            <a href="javascript:void(0)" onclick=";buycaradd(<?php echo ($row['id']); ?>)" class="j_car">加入购物车</a>
+                        </div>
+                    </li><?php endforeach; endif; ?>
+
+                </ul>
+                
+                
+                
+                
+            </div>
+        </div>
+    </div>
+
+    <!--Begin 弹出层-收藏成功 Begin-->
+    <div id="fade" class="black_overlay"></div>
+    <div id="MyDiv" class="white_content">             
+        <div class="white_d">
+            <div class="notice_t">
+                <span class="fr" style="margin-top:10px; cursor:pointer;" onclick="CloseDiv('MyDiv','fade')"><img src="/Public/home/images/close.gif" /></span>
+            </div>
+            <div class="notice_c">
+                
+                <table border="0" align="center" style="margin-top:;" cellspacing="0" cellpadding="0">
+                  <tr valign="top">
+                    <td width="40"><img src="/Public/home/images/suc.png" /></td>
+                    <td>
+                        <span style="color:#3e3e3e; font-size:18px; font-weight:bold;">您已成功收藏该商品</span><br />
+                        <a href="#">查看我的关注 >></a>
+                    </td>
+                  </tr>
+                  <tr height="50" valign="bottom">
+                    <td>&nbsp;</td>
+                    <td><a href="#" class="b_sure">确定</a></td>
+                  </tr>
+                </table>
+                    
+            </div>
+        </div>
+    </div>    
+    <!--End 弹出层-收藏成功 End-->
+    
+    
+    <!--Begin 弹出层-加入购物车 Begin-->
+    <div id="fade1" class="black_overlay"></div>
+    <div id="MyDiv1" class="white_content">             
+        <div class="white_d">
+            <div class="notice_t">
+                <span class="fr" style="margin-top:10px; cursor:pointer;" onclick="CloseDiv_1('MyDiv1','fade1')"><img src="/Public/home/images/close.gif" /></span>
+            </div>
+            <div class="notice_c">
+                
+                <table border="0" align="center" style="margin-top:;" cellspacing="0" cellpadding="0">
+                  <tr valign="top">
+                    <td width="40"><img src="/Public/home/images/suc.png" /></td>
+                    <td>
+                        <span style="color:#3e3e3e; font-size:18px; font-weight:bold;">宝贝已成功添加到购物车</span><br />
+                        <span id="count">购物车共有{count(session('buycar'))}种宝贝</span> &nbsp; &nbsp; 
+                    </td>
+                  </tr>
+                  <tr height="50" valign="bottom">
+                    <td>&nbsp;</td>
+                    <td><a href="/index.php/Home/shou/buycar" class="b_sure">去购物车结算</a><a href="/index.php/Home/shou/index" class="b_buy">继续购物</a></td>
+                  </tr>
+                </table>
+                    
+            </div>
+        </div>
+    </div>    
+    <!--End 弹出层-加入购物车 End-->
+
+    </body>
+<script type="text/javascript" src="/Public/home/js/n_nav.js"></script>  
     <script type="text/javascript">
-        $(".menu_bg").remove();//.top+.menu_bg=head2
-        $(".i_car").remove();//.top+.menu_bg=head2
-        // $(".leftNav").remove();//.top+.menu_bg=head2
-
-        // $(".leftNav").css('display','none');//分类列表
-        // $(".nav_t").mouseover(function(){
-        // $(".leftNav").css('display','block');
-        // });
-
-        $(':checkbox').click(function(event){
-          // alert("111");
-        zongjia=0;
-        $("#allchecked").find(':checkbox').each(function(){
-          if($(this).is(':checked')){
-          	k=$(this).val();
-            zongjia=zongjia+Math.ceil($('#sum'+k).val()*$("#price"+k).html()*10)/10;
-        }
-        // alert(zongjia);
-        })
-            $('#zongjia').html("￥"+zongjia);
-          });
-      //全选
-  $(".alldel").click(function(){
-    // alert('全选');
-    $('#allchecked').find('tr').each(function(){
-      // alert('q1');
-       $(this).find(":checkbox").attr('checked',true);
-       // jisuan($this)
-       // alert($(this).val());
-        zongjia=0;
-            	<?php if(is_array($buycar)): foreach($buycar as $k=>$v): ?>xiaoji<?php echo ($k); ?>=Math.ceil($('#sum<?php echo ($k); ?>').val()*$("#price<?php echo ($k); ?>").html()*10)/10;
-            zongjia=xiaoji<?php echo ($k); ?>+zongjia;<?php endforeach; endif; ?>
-
-            $('#zongjia').html("￥"+zongjia);
-
-    })
-  })
-
-  //全不选
-  $('.nodel').click(function(){
-    $('#allchecked').find('tr').each(function(){
-       $(this).find(':checkbox').attr('checked',false);
-            $('#zongjia').html(0);
-    })
-  })
-  //反选
- $(".fdel").click(function(){
-  zongjia=0;
-  $("#allchecked").find(':checkbox').each(function(){
-  	// alert($(this).val())
-  	if($(this).is(':checked')){
-      		$(this).attr('checked',false);
-      	}else{
-     		 $(this).attr('checked',true);
-          		k=$(this).val();
-  // alert(k);
-            		zongjia=zongjia+Math.ceil($('#sum'+k).val()*$("#price"+k).html()*10)/10;
-       	 }
-       	})
-
-            $('#zongjia').html(zongjia);
-
- })
-        function del(k){
-            if(confirm('确认删除商品吗？')){
-                // alert(k);
-                // $(this).parents('tr').remove();
-                $('#tr'+k).remove();
-
-       $.ajax({
-         url: '/index.php/Home/shou/buycardel',
-         type: 'get',
-         data: {k:k},
-       })
-            }
-        
-        }
-        //总价
-
-        function jisuan(k){
-            	<?php if(is_array($buycar)): foreach($buycar as $k=>$v): ?>xiaoji<?php echo ($k); ?>=Math.ceil($('#sum<?php echo ($k); ?>').val()*$("#price<?php echo ($k); ?>").html()*10)/10;
-            zongjia=xiaoji<?php echo ($k); ?>+zongjia;<?php endforeach; endif; ?>
-            zongjia=0;
-        $("#allchecked").find('tr').each(function(){
-          if(!$(this).find(":checkbox").attr('checked')){
-            // alert($(this).find(":checkbox").val())
-          }else{
-            k=$(this).find(":checkbox").val();
-            if(k!==undefined){
+    $('.leftNav').css('display', 'none');
+        function buycaradd(k){
+            	<?php if($_SESSION['hid']): else: ?>
+            alert("请先登录");
+            window.location="/index.php/Home/shou/login";<?php endif; ?>
+            window.location="/index.php/Home/shou/product?id="+k;
             // alert(k);
-            zongjia=zongjia+Math.ceil($('#sum'+k).val()*$("#price"+k).html()*10)/10;
-            }
-          }
-       $.ajax({
-         url: '/index.php/Home/shou/shuliangbiangeng',
-         type: 'get',
-         data: {k:k,shuliang:$('#sum'+k).val()},
-       })
-       $('#xiaoji'+k).html("￥"+Math.ceil($('#sum'+k).val()*$("#price"+k).html()*10)/10);
-        })
-       $('#zongjia').html("￥"+	zongjia);
-     
-
-
+            // $.get("/index.php/Home/shou/buycaradd/",{k:k,sum:1}, function(data) {
+            //     // alert(data);
+            //     $('#count').html("购物车共有"+data+"种宝贝");
+            // });
         }
-    //结算    
-    function jiesuan(){
-    var aa = new Array(); 
-    $('#allchecked').find(':checkbox').each(function(){
-    	if ($(this).is(':checked')) {
-    		// alert(1);
-	     // alert($(this).val());
-	     id=$(this).val();
-            	     aa.push(id);
-    	}
-    })
-    zj=$('#zongjia').html();
-    // alert(aa);
-    $.get('/index.php/Home/shou/checked',{id:aa,zj:zj}, function(data) {
-      // alert(data);
-      if(data!=="0"){
-        window.location="/index.php/Home/shou/buycartwo";
-      }
-    });
-    }
-
     </script>
-  
- 
- 
+    </html>
+
+
  
 
    

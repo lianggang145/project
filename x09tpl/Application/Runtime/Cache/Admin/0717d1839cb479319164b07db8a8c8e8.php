@@ -245,10 +245,10 @@
                     </li>
 
                     <li>
-                        <a href="/Public/#"><i class="icon-file"></i> 文章管理</a>
+                        <a href="/Public/#"><i class="icon-file"></i> 图片轮奸</a>
                         <ul class="closed">
-                            <li><a href="/Public/">文章添加</a></li>
-                            <li><a href="/Public/">文章列表</a></li>
+                            <li><a href="/index.php/Admin/Pic/add">图片添加</a></li>
+                            <li><a href="/index.php/Admin/Pic/doindex">图片列表</a></li>
                         </ul>
                     </li>
 
@@ -257,6 +257,20 @@
                         <ul class="closed">
                             <li><a href="/index.php/Admin/Shop/add">商品添加</a></li>
                             <li><a href="/index.php/Admin/Shop/index">商品列表</a></li>
+                        </ul>
+                    </li>
+                        
+                    <li>
+                        <a href=""><i class="icon-file"></i>友情链接</a>
+                        <ul class="closed">
+                            <li><a href="/index.php/Admin/Link/add">链接添加</a></li>
+                            <li><a href="/index.php/Admin/Link/index">链接列表</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""><i class="icon-file"></i>订单管理</a>
+                        <ul class="closed">
+                            <li><a href="/index.php/Admin/Orders/index">订单列表</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -271,7 +285,7 @@
     
     
 		<head>
-   <script type="text/javascript" src="/js/jquery-1.8.3.min.js"></script>
+   <script type="text/javascript" src="/Public/b/js/jquery-1.8.3.min.js"></script>
  </head>
 <div class="mws-panel grid_8 mws-collapsible">
     	<div class="mws-panel-header">
@@ -297,7 +311,7 @@
             <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 144px;" aria-label="Platform(s): activate to sort column ascending">商品库存</th>
             <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 144px;" aria-label="Platform(s): activate to sort column ascending">地址</th>
             <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 144px;" aria-label="Platform(s): activate to sort column ascending">添加时间</th>
-            <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 94px;" aria-label="Engine version: activate to sort column ascending">操作</th>                   
+            <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 94px;" aria-label="Engine version: activate to sort column ascending">操作</th>
         </thead>                                                                                                                                                                                                       
                </tr>
           <?php if(is_array($list)): foreach($list as $key=>$row): ?><tr class="even" align="center">
@@ -322,6 +336,12 @@
    
    
 
+    
+    
+    
+    
+    
+    
     
     
   </div>      

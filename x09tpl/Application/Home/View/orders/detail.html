@@ -1,0 +1,50 @@
+<extend name="userpublic/index" />
+<block name="title"><title>订单</title></block>
+<block name="ordersdetail">
+            <p></p>
+            <div class="mem_tit">订单详情</div>
+            <table border="0" class="order_tab" style="width:930px; text-align:center; margin-bottom:30px;" cellspacing="0" cellpadding="0">
+              <tr>                                                   
+                <td width="25%">订单号</td>
+                <td width="25%">{$order['oid']}</td>
+                <td width="25%">下单时间</td>
+                <td width="25%">{$order['addtime']}</td>
+              </tr>
+              <tr>                                                   
+                <td width="25%">收货人</td>
+                <td width="25%">{$order['likeman']}</td>
+                <td width="25%">订单总金额</td>
+                <td width="25%">{$order['total']}</td>
+              </tr>
+              <tr>                                                   
+                <td colspan="4" width="100%">
+                <table>
+                  <tr>
+                    <td>商品名称</td>
+                    <td>商品描述</td>
+                    <td>类别</td>
+                    <td>单价</td>
+                    <td>数量</td>
+                  </tr>
+                  	<foreach name="detail" item="row">
+                  <tr>
+                    <td>{$row['name']}</td>
+                    <td>{$row['descr']}</td>
+                    <td>{$row['cate']}</td>
+                    <td>{$row['price']}</td>
+                    <td>{$row['num']}</td>
+                  </tr>
+                  	</foreach>
+                </table>   
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4" width="100%">
+                  <div class="price_a"><a href="__MODULE__/order/orders" class="btn btn-success">返回订单页</a></div>
+                </td>
+              </tr>
+            </table>
+
+
+
+</block>
