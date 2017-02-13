@@ -8,7 +8,7 @@
             <div class="top_slide_wrap">
             
                 <ul class="slide_box bxslider">
-                <foreach name="list" item="row">
+                <foreach name="pic" item="row">
                     <li><img src="{$row['pic']}" width="740" height="401" /></li>
                 </foreach>
                 </ul>	
@@ -162,7 +162,7 @@
         </div>
     </div>
     <!--Begin 限时特卖 Begin-->
-    <div class="i_t mar_10">
+<!--     <div class="i_t mar_10">
     	<span class="fl">限时特卖</span>
         <span class="i_mores fr"><a href="#">更多</a></span>
     </div>
@@ -228,13 +228,76 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!--End 限时特卖 End-->
     <div class="content mar_20">
     	<img src="__PUBLIC__/home/images/mban_1.jpg" width="1200" height="110" />
     </div>
 	
-       
+
+    <!--Begin 进口 生鲜 Begin-->
+        <foreach name="shops" item="row" key="key">
+    <div class="i_t mar_10">
+        <span class="floor_num">{$key}F</span>
+        <span class="fl">{$row['name']} <b>·</b> </span>    
+        <span class="i_mores fr">
+            <if condition="count($row['shops']) lt 0">
+        <foreach name="row['shops']" item="row2" key="key2">
+        <a href="/web/product/{$row2->id}">{$row2['name']}</a>&nbsp; &nbsp; &nbsp; 
+        </foreach>
+       </if>
+        </span>
+    </div>
+    <div class="content">
+        <div class="fresh_left">
+            <div class="fre_ban">
+                <div id="imgPlay1">
+                    <ul class="imgs" id="actor1">
+                            <foreach name="row['shops']" item="row3" key="key3">
+                                    <li><a href="/web/product/{$row3['id']}"> <img src="__PUBLIC__/{$row3['pic']}" width="211" height="286" /></a></li>
+                            </foreach>
+                    </ul>
+                    <div class="prevf">上一张</div>
+                    <div class="nextf">下一张</div> 
+                </div>   
+            </div>
+            <div class="fresh_txt">
+                <div class="fresh_txt_c">
+                <foreach name="row['shops']" item="row3" key="key3">
+                 <a href="__MODULE__/shou/product/index.html?id={$row3['id']}">{$row3['name']}</a>
+                </foreach>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="fresh_mid">
+            <ul>
+                <foreach name="row['shops']" item="row3" key="key3">
+                <li>
+                    <div class="name"><a href="/web/product/{$row3['id']}">{$row3['name']}</a></div>
+                    <div class="price">
+                        <font>￥<span>{$row3['price']}</span></font> &nbsp; 
+                    </div>
+                    <div class="img"><a href="/web/product/{$row3['id']}"><img src="__PUBLIC__/{$row3['pic']}" width="185" height="155" /></a></div>
+                </li>
+                </foreach>
+            </ul>
+        </div>
+        <div class="fresh_right">
+            <ul>
+                <li><a href="#"><img src="__PUBLIC__/home/images/fre_b2.jpg" width="260" height="220" /></a></li>
+                <li><a href="#"><img src="__PUBLIC__/home/images/fre_b1.jpg" width="260" height="220" /></a></li>
+            </ul>
+        </div>
+    </div>  
+        </foreach>
+    <!--广告位-->
+    <div class="content mar_20"  id="adv">
+        <img src="__PUBLIC__/home/images/mban_1.jpg" width="1200" height="110" />
+    </div>
+    <!--广告位-->
+          
       
     <!--End 进口 生鲜 End-->
   

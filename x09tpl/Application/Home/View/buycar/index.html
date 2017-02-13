@@ -1,0 +1,220 @@
+<extend name="public/index" />
+<block name="title"><title>购物车</title></block>
+<block name="buycar">
+</body>
+<div class="i_bg">  
+    <div class="content mar_20">
+        <img src="__PUBLIC__/home/images/img1.jpg" />        
+    </div>
+    <!--Begin 第一步：查看购物车 Begin -->
+    <div class="content mar_20">
+        <table border="0" class="car_tab" style="width:1200px; margin-bottom:50px;" cellspacing="0" cellpadding="0" id="allchecked">
+          <tr>
+            <td class="car_th" width="60">选择</td>
+            <td class="car_th" width="290">商品名称</td>
+            <td class="car_th" width="90">公司</td>
+            <td class="car_th" width="140">单价</td>
+            <td class="car_th" width="90">购买数量</td>
+            <td class="car_th" width="130">小计</td>
+            <td class="car_th" width="130">添加时间</td>
+            <td class="car_th" width="150">操作</td>
+          </tr>
+          	<foreach name="buycar" item="v" key="k">
+          <tr id="tr{$k}">
+        <td class="sorting_1"><input type="checkbox" value="{$k}"></td> 
+            <td>
+                <div class="c_s_img"><img src="{$v->pic}" width="73" height="73" /></div>
+               {$v['name']}
+            </td>
+            <td align="center">{$v['address']}</td>
+            <td align="center" id="price{$k}">{$v['price']}</td>
+            <td align="center">
+                <div class="c_num">
+                    <input type="button" value="" onclick="jianUpdate1(jq(this));jisuan('{$k}')" class="car_btn_1" />
+                    <input type="text" value="{$v['num']}" name="goods" id="sum{$k}" class="car_ipt" readonly/>  
+                    <input type="button" value="" onclick="addUpdate1(jq(this));jisuan('{$k}')" class="car_btn_2" />
+                </div>
+            </td>
+            <td align="center" style="color:#ff4e00;" id="xiaoji{$k}">￥{$v['xiaoji']}</td>
+            <td align="center" >{$v['addtime']}</td>
+            <td align="center"><a href="javascript:void(0)" onclick="del({$k})">删除</a>&nbsp; &nbsp;<a href="#">加入收藏</a></td>
+          </tr>
+          	</foreach>
+            	<if condition="count($buycar) gt 0">
+          <tr height="70">
+          <td colspan="2" >
+              <a href="javascript:void(0)" class="alldel">全选</a>|<a href="javascript:void(0)" class="nodel">全不选</a>|<a href="javascript:void(0)" class="fdel">反选</a>
+          </td>
+            <td colspan="6" style="font-family:'Microsoft YaHei'; border-bottom:0;">
+                <span class="fr">商品总价：<b style="font-size:22px; color:#ff4e00;" id="zongjia">￥0</b></span>
+            </td>
+          </tr>
+          <tr valign="top" height="150">
+            <td colspan="8" align="right">
+                <a href="/web/index"><img src="__PUBLIC__/home/images/buy1.gif" /></a>&nbsp; &nbsp; <a href="javascript:void(0)" onclick="jiesuan()"><img src="__PUBLIC__/home/images/buy2.gif" /></a>
+            </td>
+          </tr>
+            	<else />
+          <tr height="70">
+          <td colspan="2" >
+          </td>
+            <td colspan="6" style="font-family:'Microsoft YaHei'; border-bottom:0;">
+                <span class="fr"><b style="font-size:22px; color:#ff4e00;">购物车是空的,<a href="/web/index">去别处逛逛</a></b></span>
+            </td>
+          </tr>
+            	</if>
+        </table>
+        
+    </div>
+    <!--End 第一步：查看购物车 End--> 
+    
+ 
+    </body>  
+    <script type="text/javascript">
+        $(".menu_bg").remove();//.top+.menu_bg=head2
+        $(".i_car").remove();//.top+.menu_bg=head2
+        // $(".leftNav").remove();//.top+.menu_bg=head2
+
+        // $(".leftNav").css('display','none');//分类列表
+        // $(".nav_t").mouseover(function(){
+        // $(".leftNav").css('display','block');
+        // });
+
+        $(':checkbox').click(function(event){
+          // alert("111");
+        zongjia=0;
+        $("#allchecked").find('tr').each(function(){
+
+
+          if(!$(this).find(":checkbox").attr('checked')){
+            // alert($(this).find(":checkbox").val())
+
+          }else{
+            k=$(this).find(":checkbox").val();
+            if(k!==undefined){
+
+            // alert(k);
+            zongjia=zongjia+Math.ceil($('#sum'+k).val()*$("#price"+k).html()*10)/10;
+            }
+          }
+
+        })
+            $('#zongjia').html(zongjia);
+          });
+      //全选
+  $(".alldel").click(function(){
+    // alert('全选');
+    $('#allchecked').find('tr').each(function(){
+      // alert('q1');
+       $(this).find(":checkbox").attr('checked',true);
+       // jisuan($this)
+       // alert($(this).val());
+        zongjia=0;
+            	<foreach name="buycar" item="v" key="k">
+            xiaoji{$k}=Math.ceil($('#sum{$k}').val()*$("#price{$k}").html()*10)/10;
+            zongjia=xiaoji{$k}+zongjia;
+            	</foreach>
+
+            $('#zongjia').html(zongjia);
+
+    })
+  })
+
+  //全不选
+  $('.nodel').click(function(){
+    $('#allchecked').find('tr').each(function(){
+       $(this).find(':checkbox').attr('checked',false);
+            $('#zongjia').html(0);
+    })
+  })
+  //反选
+ $(".fdel").click(function(){
+  zongjia=0;
+  $("#allchecked").find('tr').each(function(){
+    if($(this).find(":checkbox").attr('checked')){
+      // alert($(this).find(":checkbox").val())
+      $(this).find(":checkbox").attr('checked',false);
+
+    }else{
+      $(this).find(":checkbox").attr('checked',true);
+      k=$(this).find(":checkbox").val();
+      if(k!==undefined){
+
+      // alert(k);
+      zongjia=zongjia+Math.ceil($('#sum'+k).val()*$("#price"+k).html()*10)/10;
+      }
+    }
+  })
+            $('#zongjia').html(zongjia);
+  // alert($("#allchecked").find(':checkbox').length)
+  // $("#allchecked").find('tr').each(function() {
+  //   if($(this).find(":checkbox").attr('checked')){
+  //     jisuan($(this).find(":checkbox").val());
+  //   }
+  // });
+ })
+        function del(k){
+            if(confirm('确认删除商品吗？')){
+                // alert(k);
+                // $(this).parents('tr').remove();
+                $('#tr'+k).remove();
+                $.get('/web/buycardel/'+k, function(data) {
+                    // alert(data);
+                });
+            }
+        
+        }
+        //总价
+
+        function jisuan(k){
+            	<foreach name="buycar" item="v" key="k">
+            xiaoji{$k}=Math.ceil($('#sum{$k}').val()*$("#price{$k}").html()*10)/10;
+            zongjia=xiaoji{$k}+zongjia;
+            </foreach>
+            zongjia=0;
+        $("#allchecked").find('tr').each(function(){
+          if(!$(this).find(":checkbox").attr('checked')){
+            // alert($(this).find(":checkbox").val())
+          }else{
+            k=$(this).find(":checkbox").val();
+            if(k!==undefined){
+            // alert(k);
+            zongjia=zongjia+Math.ceil($('#sum'+k).val()*$("#price"+k).html()*10)/10;
+            }
+          }
+       $.ajax({
+         url: '/web/shuliangbiangeng',
+         type: 'get',
+         data: {k:k,shuliang:$('#sum'+k).val()},
+       })
+       $('#xiaoji'+k).html("￥"+Math.ceil($('#sum'+k).val()*$("#price"+k).html()*10)/10);
+        })
+       $('#zongjia').html(zongjia);
+     
+
+
+        }
+    //结算    
+    function jiesuan(){
+    var aa = new Array(); 
+    $('#allchecked').find('tr').each(function(){
+       id=$(this).find(":checkbox[checked='checked']").val();
+        if(id===undefined){
+       }else{
+            aa.push(id);
+       }
+     
+    })
+    zj=$('#zongjia').html();
+    // alert(aa);
+    $.get('/web/checked',{id:aa,zj:zj}, function(data) {
+      // alert(data);
+      if(data!=="0"){
+        window.location="/web/buycartwo";
+      }
+    });
+    }
+
+    </script>
+  
+</block>

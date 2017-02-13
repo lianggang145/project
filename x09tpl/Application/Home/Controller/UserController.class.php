@@ -30,7 +30,7 @@ class userController extends Controller {
     	$verify->entry();
     }
     // 注册页面
-    public function registr(){
+    public function regist(){
     	$this->display('user/registr');
     }
     // 检测
