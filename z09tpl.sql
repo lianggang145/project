@@ -1,7 +1,7 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : root
+Source Server         : 001
 Source Server Version : 50709
 Source Host           : localhost:3306
 Source Database       : z09tpl
@@ -10,10 +10,28 @@ Target Server Type    : MYSQL
 Target Server Version : 50709
 File Encoding         : 65001
 
-Date: 2017-02-11 16:49:04
+Date: 2017-02-13 09:38:58
 */
 
 SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for buycar
+-- ----------------------------
+DROP TABLE IF EXISTS `buycar`;
+CREATE TABLE `buycar` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `gid` int(10) NOT NULL COMMENT '商品id',
+  `num` int(10) NOT NULL DEFAULT '1',
+  `xiaoji` double(6,2) NOT NULL,
+  `uid` int(10) NOT NULL COMMENT '用户id',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of buycar
+-- ----------------------------
+INSERT INTO `buycar` VALUES ('1', '22', '3', '9999.99', '20');
 
 -- ----------------------------
 -- Table structure for cate
@@ -25,12 +43,23 @@ CREATE TABLE `cate` (
   `pid` int(10) NOT NULL,
   `path` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of cate
 -- ----------------------------
 INSERT INTO `cate` VALUES ('1', '丝袜', '0', '0');
+INSERT INTO `cate` VALUES ('2', 'cate1', '0', '0');
+INSERT INTO `cate` VALUES ('3', 'cate2-0', '1', '0,1');
+INSERT INTO `cate` VALUES ('4', 'cate2-1', '2', '0,2');
+INSERT INTO `cate` VALUES ('5', 'cate3-0', '3', '0,1,3');
+INSERT INTO `cate` VALUES ('6', 'cate3-1', '3', '0,1,3');
+INSERT INTO `cate` VALUES ('7', 'cate3-2', '3', '0,1,3');
+INSERT INTO `cate` VALUES ('8', 'cate3-3', '3', '0,1,3');
+INSERT INTO `cate` VALUES ('9', 'cate3-4', '4', '0,1,4');
+INSERT INTO `cate` VALUES ('10', 'cate3-5', '4', '0,1,4');
+INSERT INTO `cate` VALUES ('11', 'cate3-6', '4', '0,1,4');
+INSERT INTO `cate` VALUES ('12', 'cate3-7', '4', '0,1,4');
 
 -- ----------------------------
 -- Table structure for link
@@ -83,14 +112,20 @@ CREATE TABLE `shops` (
   `address` varchar(255) NOT NULL,
   `uid` int(10) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=24 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=30 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of shops
 -- ----------------------------
-INSERT INTO `shops` VALUES ('22', '杜鹃', '<p>的撒<br/></p>', '9900.00', '1', '2017:02:07 22:03:31', '/x09tpl/Public/Up/2017-02-07/5899cfd0000f4.jpg', '北京', '0');
-INSERT INTO `shops` VALUES ('23', '和美', '<p>嘿嘿和<br/></p>', '222.00', '34', '2017-02-07 21:53:18', '/x09tpl/Public/Up/2017-02-07/5899d14eb2be7.jpg', '南京', '0');
-INSERT INTO `shops` VALUES ('21', '和黑', '<p>撒的<br/></p>', '22.00', '33', '2017-02-07 21:38:46', '/x09tpl/Public/Up/2017-02-07/5899cde6730cc.jpg', '南京', '0');
+INSERT INTO `shops` VALUES ('22', '杜鹃', '<p>的撒<br/></p>', '9900.00', '1', '2017:02:07 22:03:31', '/Up/2017-02-07/5899cde6730cc.jpg', '北京', '5');
+INSERT INTO `shops` VALUES ('23', '和美', '<p>嘿嘿和<br/></p>', '222.00', '34', '2017-02-07 21:53:18', '/Up/2017-02-07/5899cde6730cc.jpg', '南京', '6');
+INSERT INTO `shops` VALUES ('21', '和黑', '<p>撒的<br/></p>', '22.00', '33', '2017-02-07 21:38:46', '/Up/2017-02-07/5899cde6730cc.jpg', '南京', '7');
+INSERT INTO `shops` VALUES ('24', '和黑', '<p>撒的<br/></p>', '22.00', '33', '2017-02-07 21:38:46', '/Up/2017-02-07/5899cde6730cc.jpg', '南京', '8');
+INSERT INTO `shops` VALUES ('25', '和黑', '<p>撒的<br/></p>', '22.00', '33', '2017-02-07 21:38:46', '/Up/2017-02-07/5899cde6730cc.jpg', '南京', '9');
+INSERT INTO `shops` VALUES ('26', '和黑', '<p>撒的<br/></p>', '22.00', '33', '2017-02-07 21:38:46', '/Up/2017-02-07/5899cde6730cc.jpg', '南京', '10');
+INSERT INTO `shops` VALUES ('27', '和黑', '<p>撒的<br/></p>', '22.00', '33', '2017-02-07 21:38:46', '/Up/2017-02-07/5899cde6730cc.jpg', '南京', '11');
+INSERT INTO `shops` VALUES ('28', '和黑', '<p>撒的<br/></p>', '22.00', '33', '2017-02-07 21:38:46', '/Up/2017-02-07/5899cde6730cc.jpg', '南京', '12');
+INSERT INTO `shops` VALUES ('29', '和黑', '<p>撒的<br/></p>', '22.00', '33', '2017-02-07 21:38:46', '/Up/2017-02-07/5899cde6730cc.jpg', '南京', '5');
 
 -- ----------------------------
 -- Table structure for user
@@ -104,7 +139,7 @@ CREATE TABLE `user` (
   `status` int(10) NOT NULL DEFAULT '1',
   `token` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of user
@@ -118,6 +153,7 @@ INSERT INTO `user` VALUES ('15', 'aaaaaa', '9864322@qq.com', '30e908e0dfebe0c35f
 INSERT INTO `user` VALUES ('16', 'wwwwww', '99999@qq.com', '30e908e0dfebe0c35fbeb67ce4b1e023', '1', '247a4cc041308dc35e684d990fec2445');
 INSERT INTO `user` VALUES ('18', 'nanyeye', '9222@qq.com', 'f673bd395c20fe36666a65566869c71d', '1', '32650f18069b9512999a58115688ebab');
 INSERT INTO `user` VALUES ('19', 'nangege', '61111@qq.com', 'e3ceb5881a0a1fdaad01296d7554868d', '1', '22308d3a031f46f2ed7c187a38027587');
+INSERT INTO `user` VALUES ('20', 'lianggang', '1434665026@qq.com', 'e10adc3949ba59abbe56e057f20f883e', '1', '1b141a7223eb484062197b896b21f607');
 
 -- ----------------------------
 -- Table structure for user_info
