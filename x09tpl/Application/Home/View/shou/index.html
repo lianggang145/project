@@ -243,7 +243,7 @@
         <span class="i_mores fr">
             <if condition="count($row['shops']) lt 0">
         <foreach name="row['shops']" item="row2" key="key2">
-        <a href="/web/product/{$row2->id}">{$row2['name']}</a>&nbsp; &nbsp; &nbsp; 
+        <a href="__MODULE__/shou/product/index.html?id={$row3['id']}">{$row2['name']}</a>&nbsp; &nbsp; &nbsp; 
         </foreach>
        </if>
         </span>
@@ -254,7 +254,7 @@
                 <div id="imgPlay1">
                     <ul class="imgs" id="actor1">
                             <foreach name="row['shops']" item="row3" key="key3">
-                                    <li><a href="/web/product/{$row3['id']}"> <img src="__PUBLIC__/{$row3['pic']}" width="211" height="286" /></a></li>
+                                    <li><a href="__MODULE__/shou/product/index.html?id= {$row3['id']}"> <img src="__PUBLIC__/{$row3['pic']}" width="211" height="286" /></a></li>
                             </foreach>
                     </ul>
                     <div class="prevf">上一张</div>
@@ -275,11 +275,11 @@
             <ul>
                 <foreach name="row['shops']" item="row3" key="key3">
                 <li>
-                    <div class="name"><a href="/web/product/{$row3['id']}">{$row3['name']}</a></div>
+                    <div class="name"><a href="__MODULE__/shou/product/index.html?id={$row3['id']}">{$row3['name']}</a></div>
                     <div class="price">
                         <font>￥<span>{$row3['price']}</span></font> &nbsp; 
                     </div>
-                    <div class="img"><a href="/web/product/{$row3['id']}"><img src="__PUBLIC__/{$row3['pic']}" width="185" height="155" /></a></div>
+                    <div class="img"><a href="__MODULE__/shou/product/index.html?id={$row3['id']}"><img src="__PUBLIC__/{$row3['pic']}" width="185" height="155" /></a></div>
                 </li>
                 </foreach>
             </ul>

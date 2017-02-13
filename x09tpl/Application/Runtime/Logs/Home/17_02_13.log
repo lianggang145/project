@@ -1825,3 +1825,1494 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
+[ 2017-02-13T09:40:44+08:00 ] 127.0.0.1 /index.php/Home/shou/buycaradd?k=22&num=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( id= 22 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.000000s ]
+SQL: UPDATE `buycar` SET `num`=3,`xiaoji`=29700 WHERE ( gid = 22 ) [ RunTime:0.001000s ]
+SQL: SELECT * FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Common\functions.php 第 1190 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T09:40:45+08:00 ] 127.0.0.1 /index.php/Home/shou/buycaradd?k=22&num=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( id= 22 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.000000s ]
+SQL: UPDATE `buycar` SET `num`=3,`xiaoji`=29700 WHERE ( gid = 22 ) [ RunTime:0.000000s ]
+SQL: SELECT * FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Common\functions.php 第 1190 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T09:41:22+08:00 ] 127.0.0.1 /index.php/Home/shou/buycaradd?k=22&num=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( id= 22 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.001000s ]
+
+[ 2017-02-13T09:42:49+08:00 ] 127.0.0.1 /index.php/Home/shou/buycaradd?k=22&num=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( id= 22 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.000000s ]
+SQL: UPDATE `buycar` SET `num`=3,`xiaoji`=29700 WHERE ( gid = 22 ) [ RunTime:0.000000s ]
+SQL: SELECT * FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Common\functions.php 第 1190 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T09:42:57+08:00 ] 127.0.0.1 /index.php/Home/shou/buycaradd?k=22&num=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( id= 22 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.000000s ]
+SQL: UPDATE `buycar` SET `num`=3,`xiaoji`=29700 WHERE ( gid = 22 ) [ RunTime:0.000000s ]
+SQL: SELECT * FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Common\functions.php 第 1190 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T09:43:32+08:00 ] 127.0.0.1 /index.php/Home/shou/buycaradd?k=22&num=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( id= 22 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.001000s ]
+SQL: UPDATE `buycar` SET `num`=3,`xiaoji`=29700 WHERE ( gid = 22 ) [ RunTime:0.000000s ]
+SQL: SELECT * FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Common\functions.php 第 1190 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T09:43:41+08:00 ] 127.0.0.1 /index.php/Home/shou/buycaradd?k=22&num=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `shops` WHERE ( id= 22 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.000000s ]
+SQL: UPDATE `buycar` SET `num`=3,`xiaoji`=29700 WHERE ( gid = 22 ) [ RunTime:0.000000s ]
+SQL: SELECT * FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Common\functions.php 第 1190 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-13T09:43:42+08:00 ] 127.0.0.1 /index.php/Home/shou/buycaradd?k=22&num=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( id= 22 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.000000s ]
+SQL: UPDATE `buycar` SET `num`=3,`xiaoji`=29700 WHERE ( gid = 22 ) [ RunTime:0.000000s ]
+SQL: SELECT * FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Common\functions.php 第 1190 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T09:43:42+08:00 ] 127.0.0.1 /index.php/Home/shou/buycaradd?k=22&num=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( id= 22 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.000000s ]
+SQL: UPDATE `buycar` SET `num`=3,`xiaoji`=29700 WHERE ( gid = 22 ) [ RunTime:0.000000s ]
+SQL: SELECT * FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Common\functions.php 第 1190 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T09:44:23+08:00 ] 127.0.0.1 /index.php/Home/shou/buycaradd?k=22&num=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( id= 22 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.001000s ]
+SQL: UPDATE `buycar` SET `num`=3,`xiaoji`=29700 WHERE ( gid = 22 ) [ RunTime:0.000000s ]
+SQL: SELECT * FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Common\functions.php 第 1190 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T09:44:34+08:00 ] 127.0.0.1 /index.php/Home/shou/buycaradd?k=22&num=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( id= 22 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.001000s ]
+SQL: UPDATE `buycar` SET `num`=3,`xiaoji`=29700 WHERE ( gid = 22 ) [ RunTime:0.000000s ]
+SQL: SELECT * FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Common\functions.php 第 1190 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T09:45:21+08:00 ] 127.0.0.1 /index.php/Home/shou/buycaradd?k=22&num=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( id= 22 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.000000s ]
+
+[ 2017-02-13T09:53:45+08:00 ] 127.0.0.1 /index.php/Home/shou/buycaradd?k=22&num=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( id= 22 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.001000s ]
+SQL: SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,shops.num as num,shops.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'shops.xiaoji' in 'field list'
+ [ SQL语句 ] : SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,shops.num as num,shops.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 ) 
+
+[ 2017-02-13T09:53:59+08:00 ] 127.0.0.1 /index.php/Home/shou/buycaradd?k=22&num=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( id= 22 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.000000s ]
+
+[ 2017-02-13T09:54:25+08:00 ] 127.0.0.1 /index.php/Home/shou/buycaradd?k=22&num=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( id= 22 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.001000s ]
+SQL: SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,shops.num as num,shops.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'shops.xiaoji' in 'field list'
+ [ SQL语句 ] : SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,shops.num as num,shops.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 ) 
+
+[ 2017-02-13T09:54:49+08:00 ] 127.0.0.1 /index.php/Home/shou/buycaradd?k=22&num=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( id= 22 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.001000s ]
+SQL: SELECT shops.id as id FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.001000s ]
+
+[ 2017-02-13T09:55:02+08:00 ] 127.0.0.1 /index.php/Home/shou/buycaradd?k=22&num=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( id= 22 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.001000s ]
+SQL: SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.000000s ]
+
+[ 2017-02-13T09:55:14+08:00 ] 127.0.0.1 /index.php/Home/shou/buycaradd?k=22&num=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( id= 22 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.001000s ]
+SQL: SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.001000s ]
+
+[ 2017-02-13T09:55:24+08:00 ] 127.0.0.1 /index.php/Home/shou/buycaradd?k=22&num=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( id= 22 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.000000s ]
+SQL: SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,shops.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.001000s ]
+ERR: 1054:Unknown column 'shops.xiaoji' in 'field list'
+ [ SQL语句 ] : SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,shops.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 ) 
+
+[ 2017-02-13T09:55:44+08:00 ] 127.0.0.1 /index.php/Home/shou/buycaradd?k=22&num=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( id= 22 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.001000s ]
+SQL: SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.000000s ]
+
+[ 2017-02-13T09:55:51+08:00 ] 127.0.0.1 /index.php/Home/shou/buycaradd?k=22&num=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( id= 22 ) LIMIT 1   [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.004000s ]
+SQL: SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.000000s ]
+SQL: UPDATE `buycar` SET `num`=5,`xiaoji`=49500 WHERE ( gid = 22 ) [ RunTime:0.001000s ]
+SQL: SELECT * FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Common\functions.php 第 1190 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-13T09:55:54+08:00 ] 127.0.0.1 /index.php/Home/shou/buycaradd?k=22&num=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( id= 22 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.000000s ]
+SQL: SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.000000s ]
+SQL: UPDATE `buycar` SET `num`=7,`xiaoji`=69300 WHERE ( gid = 22 ) [ RunTime:0.001000s ]
+SQL: SELECT * FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Common\functions.php 第 1190 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T09:55:54+08:00 ] 127.0.0.1 /index.php/Home/shou/buycaradd?k=22&num=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( id= 22 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.000000s ]
+SQL: SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.000000s ]
+SQL: UPDATE `buycar` SET `num`=9,`xiaoji`=89100 WHERE ( gid = 22 ) [ RunTime:0.000000s ]
+SQL: SELECT * FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Common\functions.php 第 1190 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T09:56:01+08:00 ] 127.0.0.1 /index.php/Home/shou/buycaradd?k=22&num=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( id= 22 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.001000s ]
+SQL: SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.001000s ]
+SQL: UPDATE `buycar` SET `num`=11,`xiaoji`=108900 WHERE ( gid = 22 ) [ RunTime:0.000000s ]
+SQL: SELECT * FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Common\functions.php 第 1190 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T09:56:08+08:00 ] 127.0.0.1 /index.php/Home/shou/buycar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `buycar` WHERE ( uid = 20 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: cate D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 136 行.
+NOTIC: [8] Undefined variable: buycar D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 193 行.
+NOTIC: [8] Undefined variable: buycar D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 212 行.
+NOTIC: [8] Undefined variable: buycar D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 280 行.
+NOTIC: [8] Undefined variable: buycar D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 335 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T09:56:39+08:00 ] 127.0.0.1 /index.php/Home/shou/buycar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `buycar` WHERE ( uid = 20 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: cate D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 136 行.
+NOTIC: [8] Undefined variable: buycar D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 193 行.
+NOTIC: [8] Undefined variable: buycar D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 212 行.
+NOTIC: [8] Undefined variable: buycar D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 280 行.
+NOTIC: [8] Undefined variable: buycar D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 335 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T09:57:07+08:00 ] 127.0.0.1 /index.php/Home/shou/buycar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `buycar` WHERE ( uid = 20 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: cate D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 136 行.
+NOTIC: [8] Undefined variable: buycar D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 193 行.
+NOTIC: [8] Undefined variable: buycar D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 212 行.
+NOTIC: [8] Undefined variable: buycar D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 280 行.
+NOTIC: [8] Undefined variable: buycar D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 335 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-13T09:57:45+08:00 ] 127.0.0.1 /index.php/Home/shou/buycar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `buycar` WHERE ( uid = 20 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: cate D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 136 行.
+NOTIC: [8] Undefined variable: buycar D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 193 行.
+NOTIC: [8] Undefined variable: buycar D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 212 行.
+NOTIC: [8] Undefined variable: buycar D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 280 行.
+NOTIC: [8] Undefined variable: buycar D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 335 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T09:58:12+08:00 ] 127.0.0.1 /index.php/Home/shou/buycar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `buycar` WHERE ( uid = 20 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: cate D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 136 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 196 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 197 行.
+NOTIC: [8] Undefined index: address D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 199 行.
+NOTIC: [8] Undefined index: price D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 200 行.
+NOTIC: [8] Undefined index: addtime D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 209 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T09:58:48+08:00 ] 127.0.0.1 /index.php/Home/shou/buycar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `buycar` WHERE ( uid = 20 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: cate D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 136 行.
+NOTIC: [8] Undefined index: pic D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 196 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 197 行.
+NOTIC: [8] Undefined index: address D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 199 行.
+NOTIC: [8] Undefined index: price D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 200 行.
+NOTIC: [8] Undefined index: addtime D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 209 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T09:59:28+08:00 ] 127.0.0.1 /index.php/Home/shou/buycar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `buycar` WHERE ( uid = 20 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: cate D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 136 行.
+NOTIC: [8] Undefined index: pic D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 196 行.
+NOTIC: [8] Undefined index: name D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 197 行.
+NOTIC: [8] Undefined index: address D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 199 行.
+NOTIC: [8] Undefined index: price D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 200 行.
+NOTIC: [8] Undefined index: addtime D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 209 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T10:00:26+08:00 ] 127.0.0.1 /index.php/Home/shou/buycar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.001000s ]
+SQL: SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: cate D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 136 行.
+NOTIC: [8] Undefined index: addtime D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 209 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T10:00:49+08:00 ] 127.0.0.1 /index.php/Home/shou/buycar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.000000s ]
+SQL: SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: cate D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 136 行.
+NOTIC: [8] Undefined index: addtime D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 209 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T10:01:58+08:00 ] 127.0.0.1 /index.php/Home/shou/buycar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.001000s ]
+SQL: SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: cate D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 136 行.
+NOTIC: [8] Undefined index: addtime D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 209 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T10:02:28+08:00 ] 127.0.0.1 /index.php/Home/shou/buycar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.000000s ]
+SQL: SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: cate D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 136 行.
+NOTIC: [8] Undefined index: addtime D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 209 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T10:03:05+08:00 ] 127.0.0.1 /index.php/Home/shou/buycar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.001000s ]
+SQL: SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: cate D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 136 行.
+NOTIC: [8] Undefined index: addtime D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 209 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T10:03:17+08:00 ] 127.0.0.1 /index.php/Home/shou/buycar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.001000s ]
+SQL: SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: cate D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 136 行.
+NOTIC: [8] Undefined index: addtime D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 209 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T10:06:29+08:00 ] 127.0.0.1 /index.php/Home/shou/buycar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.001000s ]
+SQL: SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: cate D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 136 行.
+NOTIC: [8] Undefined index: addtime D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 227 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-13T10:07:42+08:00 ] 127.0.0.1 /index.php/Home/shou/buycar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.002000s ]
+SQL: SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: cate D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 136 行.
+NOTIC: [8] Undefined index: addtime D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 227 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T10:17:08+08:00 ] 127.0.0.1 /index.php/Home/shou/buycar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.001000s ]
+SQL: SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: cate D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 136 行.
+NOTIC: [8] Undefined index: addtime D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 227 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T10:17:29+08:00 ] 127.0.0.1 /index.php/Home/shou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=4 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: buycar D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 14 行.
+
+[ 2017-02-13T10:18:06+08:00 ] 127.0.0.1 /index.php/Home/shou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=4 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: uid D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 15 行.
+SQL: SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid=  )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid=  ) 
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: SHOW COLUMNS FROM `pic` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `pic`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( path like '%,%,%' )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 5 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 6 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 7 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 8 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 9 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 10 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 11 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 12 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T10:18:27+08:00 ] 127.0.0.1 /index.php/Home/shou/product/index.html?id=23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( id= 23 ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: v D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 220 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 220 行.
+NOTIC: [8] Undefined variable: v D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 222 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 222 行.
+NOTIC: [8] Undefined variable: v D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 232 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 232 行.
+NOTIC: [8] Undefined variable: v D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 234 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 234 行.
+NOTIC: [8] Undefined index: user D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 567 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T10:18:32+08:00 ] 127.0.0.1 /index.php/Home/shou/buycar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.000000s ]
+SQL: SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: cate D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 136 行.
+NOTIC: [8] Undefined index: addtime D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 227 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-13T10:19:49+08:00 ] 127.0.0.1 /index.php/Home/shou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=4 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: uid D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 15 行.
+SQL: SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid=  )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid=  ) 
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: SHOW COLUMNS FROM `pic` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `pic`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( path like '%,%,%' )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 5 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 6 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 7 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 8 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 9 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 10 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 11 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 12 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T10:19:53+08:00 ] 127.0.0.1 /index.php/Home/shou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=4 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: uid D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 15 行.
+SQL: SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid=  )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid=  ) 
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: SHOW COLUMNS FROM `pic` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `pic`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( path like '%,%,%' )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 5 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 6 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 7 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 8 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 9 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 10 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 11 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 12 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T10:20:02+08:00 ] 127.0.0.1 /index.php/Home/shou/product/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 参数错误或者未定义:id
+
+[ 2017-02-13T10:20:10+08:00 ] 127.0.0.1 /index.php/Home/shou/product/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 参数错误或者未定义:id
+
+[ 2017-02-13T10:20:13+08:00 ] 127.0.0.1 /index.php/Home/shou/product/29
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 参数错误或者未定义:id
+
+[ 2017-02-13T10:21:09+08:00 ] 127.0.0.1 /index.php/Home/shou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=4 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: uid D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 15 行.
+SQL: SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid=  )  [ RunTime:0.001000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid=  ) 
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: SHOW COLUMNS FROM `pic` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `pic`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `cate` WHERE ( path like '%,%,%' )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 5 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 6 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 7 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 8 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 9 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 10 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 11 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 12 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-13T10:21:13+08:00 ] 127.0.0.1 /index.php/Home/shou/product/index/id/29
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 参数错误或者未定义:id
+
+[ 2017-02-13T10:21:22+08:00 ] 127.0.0.1 /index.php/Home/shou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=4 )  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: uid D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 15 行.
+SQL: SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid=  )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid=  ) 
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: SHOW COLUMNS FROM `pic` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `pic`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( path like '%,%,%' )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 5 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 6 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 7 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 8 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 9 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 10 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 11 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 12 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-13T10:21:25+08:00 ] 127.0.0.1 /index.php/Home/shou/product/index.html?id=29
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( id= 29 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 220 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 220 行.
+NOTIC: [8] Undefined variable: v D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 222 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 222 行.
+NOTIC: [8] Undefined variable: v D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 232 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 232 行.
+NOTIC: [8] Undefined variable: v D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 234 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 234 行.
+NOTIC: [8] Undefined index: user D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 567 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-13T10:21:29+08:00 ] 127.0.0.1 /index.php/Home/shou/product/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 参数错误或者未定义:id
+
+[ 2017-02-13T10:21:52+08:00 ] 127.0.0.1 /index.php/Home/shou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=4 )  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: uid D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 15 行.
+SQL: SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid=  )  [ RunTime:0.001000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid=  ) 
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: SHOW COLUMNS FROM `pic` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `pic`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( path like '%,%,%' )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 5 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 6 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 7 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 8 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 9 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 10 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 11 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 12 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T10:22:07+08:00 ] 127.0.0.1 /index.php/Home/shou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=4 )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: uid D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 15 行.
+SQL: SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid=  )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid=  ) 
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: SHOW COLUMNS FROM `pic` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `pic`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `cate` WHERE ( path like '%,%,%' )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 5 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 6 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 7 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 8 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 9 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 10 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 11 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 12 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T10:22:21+08:00 ] 127.0.0.1 /index.php/Home/shou/product/index.html?id=22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shops` WHERE ( id= 22 ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 220 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 220 行.
+NOTIC: [8] Undefined variable: v D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 222 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 222 行.
+NOTIC: [8] Undefined variable: v D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 232 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 232 行.
+NOTIC: [8] Undefined variable: v D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 234 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 234 行.
+NOTIC: [8] Undefined index: user D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 567 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-13T10:22:33+08:00 ] 127.0.0.1 /index.php/Home/shou/product/index.html?id=29
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( id= 29 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 220 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 220 行.
+NOTIC: [8] Undefined variable: v D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 222 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 222 行.
+NOTIC: [8] Undefined variable: v D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 232 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 232 行.
+NOTIC: [8] Undefined variable: v D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 234 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 234 行.
+NOTIC: [8] Undefined index: user D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 567 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-13T10:23:06+08:00 ] 127.0.0.1 /index.php/Home/shou/buycar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.000000s ]
+SQL: SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: cate D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 136 行.
+NOTIC: [8] Undefined index: addtime D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 227 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T10:23:45+08:00 ] 127.0.0.1 /index.php/Home/shou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=0 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=1 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=3 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=2 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( pid=4 )  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: uid D:\wamp\www\xiangmu\project\x09tpl\Application\Home\Controller\ShouController.class.php 第 15 行.
+SQL: SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid=  )  [ RunTime:0.001000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid=  ) 
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Common\functions.php 第 1190 行.
+SQL: SHOW COLUMNS FROM `pic` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `pic`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `cate` WHERE ( path like '%,%,%' )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 5 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 6 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 7 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 8 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 9 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 10 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 11 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( uid = 12 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T10:23:50+08:00 ] 127.0.0.1 /index.php/Home/shou/product/index.html?id=22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shops` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shops` WHERE ( id= 22 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: v D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 220 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 220 行.
+NOTIC: [8] Undefined variable: v D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 222 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 222 行.
+NOTIC: [8] Undefined variable: v D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 232 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 232 行.
+NOTIC: [8] Undefined variable: v D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 234 行.
+NOTIC: [8] Undefined variable: k D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 234 行.
+NOTIC: [8] Undefined index: user D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b947aa106a8490a9e2f1bafc1902aeb.php 第 567 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-13T10:23:58+08:00 ] 127.0.0.1 /index.php/Home/shou/buycar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\xiangmu\project\x09tpl\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `buycar` [ RunTime:0.002000s ]
+SQL: SELECT shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji FROM `buycar` INNER JOIN shops ON shops.id=buycar.gid  WHERE ( buycar.uid= 20 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: cate D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 136 行.
+NOTIC: [8] Undefined index: addtime D:\wamp\www\xiangmu\project\x09tpl\Application\Runtime\Cache\Home\5b37fa59412fc76c1482a871897b0ff3.php 第 227 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

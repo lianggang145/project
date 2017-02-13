@@ -407,7 +407,7 @@
         <span class="floor_num"><?php echo ($key); ?>F</span>
         <span class="fl"><?php echo ($row['name']); ?> <b>·</b> </span>    
         <span class="i_mores fr">
-            <?php if(count($row['shops']) < 0): if(is_array($row['shops'])): foreach($row['shops'] as $key2=>$row2): ?><a href="/web/product/<?php echo ($row2->id); ?>"><?php echo ($row2['name']); ?></a>&nbsp; &nbsp; &nbsp;<?php endforeach; endif; endif; ?>
+            <?php if(count($row['shops']) < 0): if(is_array($row['shops'])): foreach($row['shops'] as $key2=>$row2): ?><a href="/index.php/Home/shou/product/index.html?id=<?php echo ($row3['id']); ?>"><?php echo ($row2['name']); ?></a>&nbsp; &nbsp; &nbsp;<?php endforeach; endif; endif; ?>
         </span>
     </div>
     <div class="content">
@@ -415,7 +415,7 @@
             <div class="fre_ban">
                 <div id="imgPlay1">
                     <ul class="imgs" id="actor1">
-                            <?php if(is_array($row['shops'])): foreach($row['shops'] as $key3=>$row3): ?><li><a href="/web/product/<?php echo ($row3['id']); ?>"> <img src="/Public/<?php echo ($row3['pic']); ?>" width="211" height="286" /></a></li><?php endforeach; endif; ?>
+                            <?php if(is_array($row['shops'])): foreach($row['shops'] as $key3=>$row3): ?><li><a href="/index.php/Home/shou/product/index.html?id= <?php echo ($row3['id']); ?>"> <img src="/Public/<?php echo ($row3['pic']); ?>" width="211" height="286" /></a></li><?php endforeach; endif; ?>
                     </ul>
                     <div class="prevf">上一张</div>
                     <div class="nextf">下一张</div> 
@@ -432,11 +432,11 @@
         <div class="fresh_mid">
             <ul>
                 <?php if(is_array($row['shops'])): foreach($row['shops'] as $key3=>$row3): ?><li>
-                    <div class="name"><a href="/web/product/<?php echo ($row3['id']); ?>"><?php echo ($row3['name']); ?></a></div>
+                    <div class="name"><a href="/index.php/Home/shou/product/index.html?id=<?php echo ($row3['id']); ?>"><?php echo ($row3['name']); ?></a></div>
                     <div class="price">
                         <font>￥<span><?php echo ($row3['price']); ?></span></font> &nbsp; 
                     </div>
-                    <div class="img"><a href="/web/product/<?php echo ($row3['id']); ?>"><img src="/Public/<?php echo ($row3['pic']); ?>" width="185" height="155" /></a></div>
+                    <div class="img"><a href="/index.php/Home/shou/product/index.html?id=<?php echo ($row3['id']); ?>"><img src="/Public/<?php echo ($row3['pic']); ?>" width="185" height="155" /></a></div>
                 </li><?php endforeach; endif; ?>
             </ul>
         </div>
@@ -457,6 +457,7 @@
     <!--End 进口 生鲜 End-->
   
   
+ 
  
  
 

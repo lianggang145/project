@@ -5,12 +5,15 @@ class ShouController extends Controller {
         public function index(){
             $shops=M('shops');//实例化
             $cates=M('cate');//实例化
+            $buycar=M('buycar');//实例化
             $list=$shops->select();
             // $cate=M('cate');//实例化
             // $cate=$cate->where("pid=0")->select();
             $cate=self::cate(0);
             // var_dump($cate[0]);
             $_SESSION['cate']=$cate;
+        $buycars=$buycar->join('shops ON shops.id=buycar.gid')->field("shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji")->where("buycar.uid= ".$uid)->select();
+        session(['buycar'=>$buycars]);
             // var_dump($cate[0]);
         $this->assign('list',$list);
         $this->assign('cate',$_SESSION['cate']);
@@ -58,13 +61,14 @@ class ShouController extends Controller {
         $num=intval($_GET['num']?$_GET['num']:1);
         $buycar=M('buycar');//实例化
         // $buycars=$buycar->join('shops ON shops.id=buycar.gid')->where("buycar.uid= ".$uid)->find();
-        $buycars2=$buycar->join('shops ON shops.id=buycar.gid')->where("buycar.uid= ".$uid)->select();
-        // var_dump($k);exit;
+        $buycars2=$buycar->join('shops ON shops.id=buycar.gid')->field("shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji")->where("buycar.uid= ".$uid)->select();
+        // var_dump($buycars2);exit;
         $a=1;
         $id=0;
         foreach ($buycars2 as $key => $v) {
             if($v['gid']==$k){//购物车存在该商品
-                $v['num']=$v['num']+$num;
+                // var_dump($v['num']);
+                $v['num']=intval($v['num'])+$num;
                 $buycars[$key]=$v;
                 // $data['price']=$request->input('price');
                 $data['num']=$v['num'];
@@ -90,8 +94,8 @@ class ShouController extends Controller {
             $add=$buycar->add($data);
         }
         // var_dump($add);exit; 
-        $buycars=$buycar->join('shops ON shops.id=buycar.gid')->where("buycar.uid= ".$uid)->select();
-        session(['buycar'=>$buycars]);
+        $buycars2=$buycar->join('shops ON shops.id=buycar.gid')->field("shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji")->where("buycar.uid= ".$uid)->select();
+        session(['buycar'=>$buycars2]);
 
         return (count(session('buycar')));
    }
@@ -99,12 +103,49 @@ class ShouController extends Controller {
    //购物车
    public function buycar(){
             $uid=intval($_SESSION['hid'],10);
-            // var_dump($uid);
             $buycar=M('buycar');//实例化
 
-            $shop=$buycar->where("uid = ".$uid)->select();
+        $shop=$buycar->join('shops ON shops.id=buycar.gid')->field("shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji")->where("buycar.uid= ".$uid)->select();
+            // var_dump($shop);
+            $this->assign('buycar',$shop);
             $this->display('buycar/index');
    }
+
+    //购物车-选中
+    public function checked(){
+        // return $request->input('id');
+        $v=array();
+        $v2=array();
+        if($GET['id']==""){
+            return 0;
+        }else{
+        $buy=intval($GET['id']);
+        $_SESSION['zj']=intval($_GET['zj']);
+        foreach ($_SESSION('buycar') as $key => $value) {
+            if(in_array($key, $buy)){
+                $v[]=$value;
+                // return $buy;
+            }else{
+                $v2[]=$value;
+            }
+        }
+        $_SESSION['buy']=$v;
+        $_SESSION['buyid']=$buy;
+        $_SESSION['buycar']=$v2;
+        // return "1";
+         }
+    }
+
+    //购物车-变更
+    public function shuliangbiangeng(){
+        // dd($request->all());
+        $k= $_GET['k'];
+        $a=$_SESSION['buycar'][$k];
+        $a['num']=$_GET['shuliang'];
+        $a['zongji']=intval($_GET['shuliang'])*session("buycar")[$k]['price'];
+        $_SESSION['buycar'][$k]=$a;
+        // dd(session('buycar')[$k]);
+    }
 
     // 分类
     public function cate($pid){

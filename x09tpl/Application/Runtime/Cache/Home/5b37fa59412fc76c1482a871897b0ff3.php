@@ -172,7 +172,25 @@
  
  
 
-</body>
+	<link type="text/css" rel="stylesheet" href="/Public/home/css/style.css" />
+    <!--[if IE 6]>
+    <script src="/Public/home/js/iepng.js" type="text/javascript"></script>
+        <script type="text/javascript">
+           EvPNG.fix('div, ul, img, li, input, a'); 
+        </script>
+    <![endif]-->
+    
+    <script type="text/javascript" src="/Public/home/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="/Public/home/js/menu.js"></script>    
+                
+	<script type="text/javascript" src="/Public/home/js/n_nav.js"></script>   
+    
+    <script type="text/javascript" src="/Public/home/js/num.js">
+    	var jq = jQuery.noConflict();
+    </script>     
+    
+    <script type="text/javascript" src="/Public/home/js/shade.js"></script>
+    </body>
 <div class="i_bg">  
     <div class="content mar_20">
         <img src="/Public/home/images/img1.jpg" />        
@@ -187,13 +205,13 @@
             <td class="car_th" width="140">单价</td>
             <td class="car_th" width="90">购买数量</td>
             <td class="car_th" width="130">小计</td>
-            <td class="car_th" width="130">添加时间</td>
+            <!-- <td class="car_th" width="130">添加时间</td> -->
             <td class="car_th" width="150">操作</td>
           </tr>
           	<?php if(is_array($buycar)): foreach($buycar as $k=>$v): ?><tr id="tr<?php echo ($k); ?>">
         <td class="sorting_1"><input type="checkbox" value="<?php echo ($k); ?>"></td> 
             <td>
-                <div class="c_s_img"><img src="<?php echo ($v->pic); ?>" width="73" height="73" /></div>
+                <div class="c_s_img"><img src="/Public/<?php echo ($v['pic']); ?>" width="73" height="73" /></div>
                <?php echo ($v['name']); ?>
             </td>
             <td align="center"><?php echo ($v['address']); ?></td>
@@ -206,7 +224,7 @@
                 </div>
             </td>
             <td align="center" style="color:#ff4e00;" id="xiaoji<?php echo ($k); ?>">￥<?php echo ($v['xiaoji']); ?></td>
-            <td align="center" ><?php echo ($v['addtime']); ?></td>
+            <!-- <td align="center" ><?php echo ($v['addtime']); ?></td> -->
             <td align="center"><a href="javascript:void(0)" onclick="del(<?php echo ($k); ?>)">删除</a>&nbsp; &nbsp;<a href="#">加入收藏</a></td>
           </tr><?php endforeach; endif; ?>
             	<?php if(count($buycar) > 0): ?><tr height="70">
