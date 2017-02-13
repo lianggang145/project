@@ -1,24 +1,12 @@
 <extend name="public/index" />
 <block name="title"><title>购物车</title></block>
 <block name="buycar">
-	<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/style.css" />
-    <!--[if IE 6]>
-    <script src="__PUBLIC__/home/js/iepng.js" type="text/javascript"></script>
-        <script type="text/javascript">
-           EvPNG.fix('div, ul, img, li, input, a'); 
-        </script>
-    <![endif]-->
-    
-    <script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.8.2.min.js"></script>
-    <script type="text/javascript" src="__PUBLIC__/home/js/menu.js"></script>    
-                
-	<script type="text/javascript" src="__PUBLIC__/home/js/n_nav.js"></script>   
-    
+
+
     <script type="text/javascript" src="__PUBLIC__/home/js/num.js">
     	var jq = jQuery.noConflict();
     </script>     
     
-    <script type="text/javascript" src="__PUBLIC__/home/js/shade.js"></script>
     </body>
 <div class="i_bg">  
     <div class="content mar_20">
@@ -69,7 +57,7 @@
           </tr>
           <tr valign="top" height="150">
             <td colspan="8" align="right">
-                <a href="/web/index"><img src="__PUBLIC__/home/images/buy1.gif" /></a>&nbsp; &nbsp; <a href="javascript:void(0)" onclick="jiesuan()"><img src="__PUBLIC__/home/images/buy2.gif" /></a>
+                <a href="__MODULE__/shou/index"><img src="__PUBLIC__/home/images/buy1.gif" /></a>&nbsp; &nbsp; <a href="javascript:void(0)" onclick="jiesuan()"><img src="__PUBLIC__/home/images/buy2.gif" /></a>
             </td>
           </tr>
             	<else />
@@ -77,7 +65,7 @@
           <td colspan="2" >
           </td>
             <td colspan="6" style="font-family:'Microsoft YaHei'; border-bottom:0;">
-                <span class="fr"><b style="font-size:22px; color:#ff4e00;">购物车是空的,<a href="/web/index">去别处逛逛</a></b></span>
+                <span class="fr"><b style="font-size:22px; color:#ff4e00;">购物车是空的,<a href="__MODULE__/shou/index">去别处逛逛</a></b></span>
             </td>
           </tr>
             	</if>
@@ -101,23 +89,14 @@
         $(':checkbox').click(function(event){
           // alert("111");
         zongjia=0;
-        $("#allchecked").find('tr').each(function(){
-
-
-          if(!$(this).find(":checkbox").attr('checked')){
-            // alert($(this).find(":checkbox").val())
-
-          }else{
-            k=$(this).find(":checkbox").val();
-            if(k!==undefined){
-
-            // alert(k);
+        $("#allchecked").find(':checkbox').each(function(){
+          if($(this).is(':checked')){
+          	k=$(this).val();
             zongjia=zongjia+Math.ceil($('#sum'+k).val()*$("#price"+k).html()*10)/10;
-            }
-          }
-
+        }
+        // alert(zongjia);
         })
-            $('#zongjia').html(zongjia);
+            $('#zongjia').html("￥"+zongjia);
           });
       //全选
   $(".alldel").click(function(){
@@ -133,7 +112,7 @@
             zongjia=xiaoji{$k}+zongjia;
             	</foreach>
 
-            $('#zongjia').html(zongjia);
+            $('#zongjia').html("￥"+zongjia);
 
     })
   })
@@ -148,37 +127,32 @@
   //反选
  $(".fdel").click(function(){
   zongjia=0;
-  $("#allchecked").find('tr').each(function(){
-    if($(this).find(":checkbox").attr('checked')){
-      // alert($(this).find(":checkbox").val())
-      $(this).find(":checkbox").attr('checked',false);
+  $("#allchecked").find(':checkbox').each(function(){
+  	// alert($(this).val())
+  	if($(this).is(':checked')){
+      		$(this).attr('checked',false);
+      	}else{
+     		 $(this).attr('checked',true);
+          		k=$(this).val();
+  // alert(k);
+            		zongjia=zongjia+Math.ceil($('#sum'+k).val()*$("#price"+k).html()*10)/10;
+       	 }
+       	})
 
-    }else{
-      $(this).find(":checkbox").attr('checked',true);
-      k=$(this).find(":checkbox").val();
-      if(k!==undefined){
-
-      // alert(k);
-      zongjia=zongjia+Math.ceil($('#sum'+k).val()*$("#price"+k).html()*10)/10;
-      }
-    }
-  })
             $('#zongjia').html(zongjia);
-  // alert($("#allchecked").find(':checkbox').length)
-  // $("#allchecked").find('tr').each(function() {
-  //   if($(this).find(":checkbox").attr('checked')){
-  //     jisuan($(this).find(":checkbox").val());
-  //   }
-  // });
+
  })
         function del(k){
             if(confirm('确认删除商品吗？')){
                 // alert(k);
                 // $(this).parents('tr').remove();
                 $('#tr'+k).remove();
-                $.get('/web/buycardel/'+k, function(data) {
-                    // alert(data);
-                });
+
+       $.ajax({
+         url: '__MODULE__/shou/buycardel',
+         type: 'get',
+         data: {k:k},
+       })
             }
         
         }
@@ -201,13 +175,13 @@
             }
           }
        $.ajax({
-         url: '/web/shuliangbiangeng',
+         url: '__MODULE__/shou/shuliangbiangeng',
          type: 'get',
          data: {k:k,shuliang:$('#sum'+k).val()},
        })
        $('#xiaoji'+k).html("￥"+Math.ceil($('#sum'+k).val()*$("#price"+k).html()*10)/10);
         })
-       $('#zongjia').html(zongjia);
+       $('#zongjia').html("￥"+	zongjia);
      
 
 
@@ -215,20 +189,20 @@
     //结算    
     function jiesuan(){
     var aa = new Array(); 
-    $('#allchecked').find('tr').each(function(){
-       id=$(this).find(":checkbox[checked='checked']").val();
-        if(id===undefined){
-       }else{
-            aa.push(id);
-       }
-     
+    $('#allchecked').find(':checkbox').each(function(){
+    	if ($(this).is(':checked')) {
+    		// alert(1);
+	     // alert($(this).val());
+	     id=$(this).val();
+            	     aa.push(id);
+    	}
     })
     zj=$('#zongjia').html();
     // alert(aa);
-    $.get('/web/checked',{id:aa,zj:zj}, function(data) {
+    $.get('__MODULE__/shou/checked',{id:aa,zj:zj}, function(data) {
       // alert(data);
       if(data!=="0"){
-        window.location="/web/buycartwo";
+        window.location="__MODULE__/shou/buycartwo";
       }
     });
     }

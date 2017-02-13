@@ -1,0 +1,221 @@
+<extend name="public/index" />
+<block name="title"><title>确认订单</title></block>
+<block name="buycartwo">
+<link rel="stylesheet" href="/bs/css/bootstrap.min.css">
+  <script src="/bs/js/bootstrap.min.js"></script>
+    <div class="content mar_20">
+        <img src="/images/img2.jpg" />        
+    </div>
+    
+    <!--Begin 第二步：确认订单信息 Begin -->
+    <div class="content mar_20">
+        <div class="two_bg">
+            <div class="two_t">
+                <span class="fr"><a href="/web/buycar">修改</a></span>商品列表
+            </div>
+        <table border="0" class="car_tab" style="width:1200px; margin-bottom:50px;" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="car_th" width="490">商品名称</td>
+            <td class="car_th" width="140">公司</td>
+            <td class="car_th" width="140">单价</td>
+            <td class="car_th" width="150">购买数量</td>
+            <td class="car_th" width="130">小计</td>
+          </tr>
+          	<foreach name="buy" item="v" key="k">
+          <tr id="tr{$k}">
+            <td>
+                <div class="c_s_img"><img src="{$v->pic}" width="73" height="73" /></div>
+               {$['name']}
+            </td>
+            <td align="center">{$v['address']}</td>
+            <td align="center" id="price{$k}">{$v['price']}</td>
+            <td align="center">
+                    <input type="text" value="{$v['num']}" name="goods" id="sum{$k}" class=""  style="text-align:center;border:0px" readonly />  
+            </td>
+            <td align="center" style="color:#ff4e00;" id="xiaoji{$k}">￥{$v['xiaoji']}</td>
+          </tr>
+          	</foreach>
+          <tr height="70">
+            <td colspan="6" style="font-family:'Microsoft YaHei'; border-bottom:0;">
+                <span class="fr">商品总价：<b style="font-size:22px; color:#ff4e00;" class="zongjia">￥{session('zj')}</b></span>
+            </td>
+          </tr>
+        </table>
+
+            
+    <div class="two_t">
+  <div class="container">
+    <button class="btn btn-success" data-toggle="modal" style="float:right;margin-right:50px" data-target="#myModal">修改</button>
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">修改</h4>
+          </div>
+          <div class="modal-body">
+            @foreach($address as $k=>$v)
+
+      <div style="border:1px solid black;border-radius:15px;padding:5px;margin-top:2px" id="address{$v->id}">
+              <table border="0" class="add_t" align="center" style="width:98%; margin:10px auto;" cellspacing="0" cellpadding="0">
+                 <tr>
+                    <td align="right" width="180">收货人姓名：</td>
+                    <td>{$v->uname}</td>
+                  </tr>
+                  <tr>
+                    <td align="right">手机：</td>
+                    <td>{$v->phone}</td>
+                  </tr>
+                  <tr>
+                    <td align="right">电子邮箱：</td>
+                    <td>{$v->email}</td>
+                  </tr>
+                  <tr>
+                    <td align="right">邮政编码：</td>
+                    <td>{$v->code}</td>
+                  </tr>
+                  <tr>
+                    <td align="right">配送区域：</td>
+                    <td>{$v->address}</td>
+                  </tr>
+                </table>
+        
+                <p align="right">
+                @if($v->status==2)
+                  <span style="font-size:20px;color:#ff4e00; cursor:pointer;" name="moren{$v->id}" >默认</span>  
+                  @endif
+    <button class="btn btn-success" onclick="dizhi({$v->id})" data-toggle="modal" data-target="#myModal1" data-dismiss="modal">选择此收货地址</button>
+
+
+                </p>
+            </div>
+            @endforeach
+          </div>
+          <div class="modal-footer">
+            <a href="/web/address"><button class="btn btn-success" >管理收货地址</button></a>
+            <button class="btn btn-success" data-dismiss="modal">close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+                </span>收货人信息
+            </div>
+            <table border="0" class="peo_tab" style="width:1110px;" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="p_td" width="160">联系人名称</td>
+                <td width="395" id="uname">{$receive->uname}</td>
+                <td class="p_td" width="160">电子邮件</td>
+                <td width="395" id="email">{$receive->email}</td>
+              </tr>
+              <tr>
+                <td class="p_td">详细地址</td>
+                <td id="address">{$receive->address}</td>
+                <td class="p_td">邮政编码</td>
+                <td  id="code">{$receive->code}</td>
+              </tr>
+              <tr>
+                <td class="p_td">电话</td>
+                <td id="phone">{$receive->phone}</td>
+                <td class="p_td"></td>
+                <td></td>
+              </tr>
+            </table>
+
+            
+            <div class="two_t">
+                配送方式
+            </div>
+            <table border="0" class="car_tab" style="width:1110px;" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="car_th" width="200">名称</td>
+                <td class="car_th" width="370">订购描述</td>
+                <td class="car_th" width="150">费用</td>
+                <td class="car_th" width="135">免费额度</td>
+                <td class="car_th" width="175">保价费用</td>
+              </tr>
+              <tr>
+                <td align="center" style="font-size:14px;"><b>***快递</b></td>
+                <td>邮费￥15.00</td>
+                <td align="center">￥15.00</td>
+                <td align="center">￥15.00</td>
+                <td align="center">不支持保价</td>
+              </tr>
+            </table> 
+            
+            <div class="two_t">
+                支付方式
+            </div>
+            <ul class="pay" id="pay">
+                <li class="checked">货到付款<div class="ch_img"></div></li>
+<!--                 <li>余额支付<div class="ch_img"></div></li>
+                <li>银行亏款/转账<div class="ch_img"></div></li>
+                <li>支付宝<div class="ch_img"></div></li>
+ -->            </ul>
+            
+
+            <table border="0" style="width:900px; margin-top:20px;" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="right">
+                    商品总价: <font color="#ff4e00"  class="zongjia">{session('count')}</font>  + 配送费用: <font color="#ff4e00">￥0</font>
+                </td>
+              </tr>
+              <tr height="70">
+                <td align="right">
+                    <b style="font-size:14px;">应付款金额：<span style="font-size:22px; color:#ff4e00;" class="zongjia">{session('count')}</span></b>
+                </td>
+              </tr>
+              <tr height="70">
+                <td align="right"><a href="__MODULE__/shou/addorders" ><img src="" /></a></td>
+              </tr>
+            </table>
+
+            
+            
+        </div>
+    </div>
+    <!--End 第二步：确认订单信息 End-->
+    
+    
+ 
+    </body>  
+    <script type="text/javascript">
+        $(".menu_bg").remove();//.top+.menu_bg=head2
+        $(".i_car").remove();//.top+.menu_bg=head2
+        $(".leftNav").css('display','none');//分类列表
+        $(".nav_t").mouseover(function(){
+        $(".leftNav").css('display','block');
+        });
+
+    //添加订单
+    function addorder(){
+        // alert(zongjia);
+        // $.get('/web/addorders',{zj:zongjia}, function(data) {
+        //     /*optional stuff to do after success */
+        // /});
+    }
+    choices("pay");
+    function choices(id){
+        $("#"+id).find('li').each(function(index, el) {
+         $(this).click(function(event) {
+                $("#"+id).find('li').each(function(index, el) {
+                    $(this).removeClass('checked');
+                });
+                $(this).addClass('checked');
+         });   
+        });
+    }
+
+    function dizhi(id){
+        $.get('/web/dizhi',{id:id}, function(data) {
+            // alert(data[0]);
+            $("#uname").html(data[0].uname);
+            $("#address").html(data[0].address);
+            $("#address").html(data[0].address);
+            $("#email").html(data[0].email);
+            $("#code").html(data[0].code);
+            $("#phone").html(data[0].phone);
+        });
+    }
+
+    </script></block>

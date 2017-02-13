@@ -13,7 +13,6 @@
     <script type="text/javascript" src="/Public/home/js/jquery.bxslider_e88acd1b.js"></script>
     <script type="text/javascript" src="/Public/home/js/jquery-1.8.2.min.js"></script>
     <script type="text/javascript" src="/Public/home/js/menu.js"></script>    
-    <script type="text/javascript" src="/Public/home/js/select.js"></script>
     <script type="text/javascript" src="/Public/home/js/lrscroll.js"></script>
     <script type="text/javascript" src="/Public/home/js/iban.js"></script>
     <script type="text/javascript" src="/Public/home/js/fban.js"></script>
@@ -170,6 +169,9 @@
 </div>
 <!--End Menu End--> 
 
+    <script type="text/javascript" src="/Public/home/js/lrscroll.js"></script>
+
+    <script type="text/javascript" src="/Public/home/js/lrscroll_1.js"></script>
 <div class="i_bg bg_color">
 	<div class="i_ban_bg">
 		<!--Begin Banner Begin-->
@@ -457,6 +459,7 @@
     <!--End 进口 生鲜 End-->
   
   
+ 
  
  
  

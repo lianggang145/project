@@ -12,9 +12,9 @@ class ShouController extends Controller {
             $cate=self::cate(0);
             // var_dump($cate[0]);
             $_SESSION['cate']=$cate;
-        $buycars=$buycar->join('shops ON shops.id=buycar.gid')->field("shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji")->where("buycar.uid= ".$uid)->select();
-        session(['buycar'=>$buycars]);
-            // var_dump($cate[0]);
+        $buycars=$buycar->join('shops ON shops.id=buycar.gid')->field("buycar.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji")->where("buycar.uid= ".$uid)->select();
+            // var_dump($buycars);
+        // session(['buycar'=>$buycars]);
         $this->assign('list',$list);
         $this->assign('cate',$_SESSION['cate']);
         $mod=M('pic');
@@ -61,12 +61,12 @@ class ShouController extends Controller {
         $num=intval($_GET['num']?$_GET['num']:1);
         $buycar=M('buycar');//实例化
         // $buycars=$buycar->join('shops ON shops.id=buycar.gid')->where("buycar.uid= ".$uid)->find();
-        $buycars2=$buycar->join('shops ON shops.id=buycar.gid')->field("shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji")->where("buycar.uid= ".$uid)->select();
+        $buycars2=$buycar->join('shops ON shops.id=buycar.gid')->field("buycar.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji")->where("buycar.uid= ".$uid)->select();
         // var_dump($buycars2);exit;
         $a=1;
         $id=0;
         foreach ($buycars2 as $key => $v) {
-            if($v['gid']==$k){//购物车存在该商品
+            if($v['gid']==intval($k)){//购物车存在该商品
                 // var_dump($v['num']);
                 $v['num']=intval($v['num'])+$num;
                 $buycars[$key]=$v;
@@ -85,7 +85,7 @@ class ShouController extends Controller {
         // echo $a;
         if($a==1){//购物车没有该商品
             $data['num']=$num;
-            $data['gid']=intval($buycars['id']);
+            $data['gid']=intval($_GET['k']);
             // $data['price']=$request->input('price');
             $data['xiaoji']=$v['price']*$num;
             $data['uid']=$uid;
@@ -94,10 +94,10 @@ class ShouController extends Controller {
             $add=$buycar->add($data);
         }
         // var_dump($add);exit; 
-        $buycars2=$buycar->join('shops ON shops.id=buycar.gid')->field("shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji")->where("buycar.uid= ".$uid)->select();
-        session(['buycar'=>$buycars2]);
+        $buycars2=$buycar->join('shops ON shops.id=buycar.gid')->field("buycar.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji")->where("buycar.uid= ".$uid)->select();
+        $_SESSION['buycar']=$buycars2;
 
-        return (count(session('buycar')));
+        return (count($_SESSION['buycar']));
    }
 
    //购物车
@@ -105,23 +105,38 @@ class ShouController extends Controller {
             $uid=intval($_SESSION['hid'],10);
             $buycar=M('buycar');//实例化
 
-        $shop=$buycar->join('shops ON shops.id=buycar.gid')->field("shops.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji")->where("buycar.uid= ".$uid)->select();
+        $shop=$buycar->join('shops ON shops.id=buycar.gid')->field("buycar.id as id,shops.id as gid,shops.name as name,shops.price as price,shops.descr as descr,shops.pic as pic,shops.address as address,buycar.num as num,buycar.xiaoji as xiaoji")->where("buycar.uid= ".$uid)->select();
             // var_dump($shop);
+                    $_SESSION["buycar"]=$shop;
+
             $this->assign('buycar',$shop);
             $this->display('buycar/index');
    }
 
+    //购物车-删除
+    public function buycardel($k){
+            $buycar=M('buycar');//实例化
+            $buycars=$buycar->where('id','=',$_SESSION['buycar'][$k]->id)->delete();
+            $buycars=$buycar->where('uid','=',intval($_SESSION['hid']))->get();
+            $_SESSION["buycar"]=$buycars;
+        // dd($a);
+        // dd(session('buycar'));
+    }
+
     //购物车-选中
     public function checked(){
-        // return $request->input('id');
         $v=array();
         $v2=array();
-        if($GET['id']==""){
+        if($_GET['id']==""){
+            echo 1;
             return 0;
         }else{
-        $buy=intval($GET['id']);
-        $_SESSION['zj']=intval($_GET['zj']);
-        foreach ($_SESSION('buycar') as $key => $value) {
+        $buy=$_GET['id'];
+        // $buy=intval($GET['id']);
+        $zj=explode("￥", $_GET['zj']);
+        // var_dump($zj);exit;
+        $_SESSION['zj']=intval($zj['1']);
+        foreach ($_SESSION['buycar'] as $key => $value) {
             if(in_array($key, $buy)){
                 $v[]=$value;
                 // return $buy;
@@ -138,15 +153,23 @@ class ShouController extends Controller {
 
     //购物车-变更
     public function shuliangbiangeng(){
-        // dd($request->all());
-        $k= $_GET['k'];
+            $buycar=M('buycar');//实例化
+        $k= intval($_GET['k']);
         $a=$_SESSION['buycar'][$k];
         $a['num']=$_GET['shuliang'];
-        $a['zongji']=intval($_GET['shuliang'])*session("buycar")[$k]['price'];
+        $a['xiaoji']=intval($_GET['shuliang'])*$_SESSION["buycar"][$k]['price'];
+        // var_dump($a);exit;
         $_SESSION['buycar'][$k]=$a;
-        // dd(session('buycar')[$k]);
+        $data['num']=$a['num'];        
+        $data['xiaoji']=$a['xiaoji'];     
+        // var_dump($data);   
+        $m=$buycar->where("id = ".intval($a['id']))->save($data);
     }
-
+    //确认订单
+    public function buycartwo(){
+            $this->assign('buy',$_SESSION['buy']);
+            $this->display('buycar/two');
+    }
     // 分类
     public function cate($pid){
             $cate=M('cate');//实例化

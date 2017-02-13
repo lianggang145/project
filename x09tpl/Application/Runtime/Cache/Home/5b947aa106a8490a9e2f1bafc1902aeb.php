@@ -13,7 +13,6 @@
     <script type="text/javascript" src="/Public/home/js/jquery.bxslider_e88acd1b.js"></script>
     <script type="text/javascript" src="/Public/home/js/jquery-1.8.2.min.js"></script>
     <script type="text/javascript" src="/Public/home/js/menu.js"></script>    
-    <script type="text/javascript" src="/Public/home/js/select.js"></script>
     <script type="text/javascript" src="/Public/home/js/lrscroll.js"></script>
     <script type="text/javascript" src="/Public/home/js/iban.js"></script>
     <script type="text/javascript" src="/Public/home/js/fban.js"></script>
@@ -590,6 +589,7 @@
 
 
   
+ 
  
  
 

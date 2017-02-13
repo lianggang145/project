@@ -13,7 +13,6 @@
     <script type="text/javascript" src="/Public/home/js/jquery.bxslider_e88acd1b.js"></script>
     <script type="text/javascript" src="/Public/home/js/jquery-1.8.2.min.js"></script>
     <script type="text/javascript" src="/Public/home/js/menu.js"></script>    
-    <script type="text/javascript" src="/Public/home/js/lrscroll.js"></script>
     <script type="text/javascript" src="/Public/home/js/iban.js"></script>
     <script type="text/javascript" src="/Public/home/js/fban.js"></script>
     <script type="text/javascript" src="/Public/home/js/f_ban.js"></script>
@@ -21,10 +20,9 @@
     <script type="text/javascript" src="/Public/home/js/bban.js"></script>
     <script type="text/javascript" src="/Public/home/js/hban.js"></script>
     <script type="text/javascript" src="/Public/home/js/tban.js"></script>
-    <script type="text/javascript" src="/Public/home/js/lrscroll_1.js"></script>
     
     
-<title>购物车</title>
+<title>确认订单</title>
 
 </head>
 <body>  
@@ -170,33 +168,29 @@
 <!--End Menu End--> 
  
  
+ 
 
-
-
-    <script type="text/javascript" src="/Public/home/js/num.js">
-    	var jq = jQuery.noConflict();
-    </script>     
-    
-    </body>
-<div class="i_bg">  
+<link rel="stylesheet" href="/Public/bs/css/bootstrap.min.css">
+  <script src="/Public/bs/js/bootstrap.min.js"></script>
     <div class="content mar_20">
-        <img src="/Public/home/images/img1.jpg" />        
+        <img src="/Public/home/images/img2.jpg" />        
     </div>
-    <!--Begin 第一步：查看购物车 Begin -->
+    
+    <!--Begin 第二步：确认订单信息 Begin -->
     <div class="content mar_20">
-        <table border="0" class="car_tab" style="width:1200px; margin-bottom:50px;" cellspacing="0" cellpadding="0" id="allchecked">
+        <div class="two_bg">
+            <div class="two_t">
+                <span class="fr"><a href="/Public/shou/buycar">修改</a></span>商品列表
+            </div>
+        <table border="0" class="car_tab" style="width:1200px; margin-bottom:50px;" cellspacing="0" cellpadding="0">
           <tr>
-            <td class="car_th" width="60">选择</td>
-            <td class="car_th" width="290">商品名称</td>
-            <td class="car_th" width="90">公司</td>
+            <td class="car_th" width="490">商品名称</td>
+            <td class="car_th" width="140">公司</td>
             <td class="car_th" width="140">单价</td>
-            <td class="car_th" width="90">购买数量</td>
+            <td class="car_th" width="150">购买数量</td>
             <td class="car_th" width="130">小计</td>
-            <!-- <td class="car_th" width="130">添加时间</td> -->
-            <td class="car_th" width="150">操作</td>
           </tr>
-          	<?php if(is_array($buycar)): foreach($buycar as $k=>$v): ?><tr id="tr<?php echo ($k); ?>">
-        <td class="sorting_1"><input type="checkbox" value="<?php echo ($k); ?>"></td> 
+          	<?php if(is_array($buy)): foreach($buy as $k=>$v): ?><tr id="tr<?php echo ($k); ?>">
             <td>
                 <div class="c_s_img"><img src="/Public/<?php echo ($v['pic']); ?>" width="73" height="73" /></div>
                <?php echo ($v['name']); ?>
@@ -204,175 +198,189 @@
             <td align="center"><?php echo ($v['address']); ?></td>
             <td align="center" id="price<?php echo ($k); ?>"><?php echo ($v['price']); ?></td>
             <td align="center">
-                <div class="c_num">
-                    <input type="button" value="" onclick="jianUpdate1(jq(this));jisuan('<?php echo ($k); ?>')" class="car_btn_1" />
-                    <input type="text" value="<?php echo ($v['num']); ?>" name="goods" id="sum<?php echo ($k); ?>" class="car_ipt" readonly/>  
-                    <input type="button" value="" onclick="addUpdate1(jq(this));jisuan('<?php echo ($k); ?>')" class="car_btn_2" />
-                </div>
+                    <input type="text" value="<?php echo ($v['num']); ?>" name="goods" id="sum<?php echo ($k); ?>" class=""  style="text-align:center;border:0px" readonly />  
             </td>
             <td align="center" style="color:#ff4e00;" id="xiaoji<?php echo ($k); ?>">￥<?php echo ($v['xiaoji']); ?></td>
-            <!-- <td align="center" ><?php echo ($v['addtime']); ?></td> -->
-            <td align="center"><a href="javascript:void(0)" onclick="del(<?php echo ($k); ?>)">删除</a>&nbsp; &nbsp;<a href="#">加入收藏</a></td>
           </tr><?php endforeach; endif; ?>
-            	<?php if(count($buycar) > 0): ?><tr height="70">
-          <td colspan="2" >
-              <a href="javascript:void(0)" class="alldel">全选</a>|<a href="javascript:void(0)" class="nodel">全不选</a>|<a href="javascript:void(0)" class="fdel">反选</a>
-          </td>
-            <td colspan="6" style="font-family:'Microsoft YaHei'; border-bottom:0;">
-                <span class="fr">商品总价：<b style="font-size:22px; color:#ff4e00;" id="zongjia">￥0</b></span>
-            </td>
-          </tr>
-          <tr valign="top" height="150">
-            <td colspan="8" align="right">
-                <a href="/index.php/Home/shou/index"><img src="/Public/home/images/buy1.gif" /></a>&nbsp; &nbsp; <a href="javascript:void(0)" onclick="jiesuan()"><img src="/Public/home/images/buy2.gif" /></a>
-            </td>
-          </tr>
-            	<?php else: ?>
           <tr height="70">
-          <td colspan="2" >
-          </td>
             <td colspan="6" style="font-family:'Microsoft YaHei'; border-bottom:0;">
-                <span class="fr"><b style="font-size:22px; color:#ff4e00;">购物车是空的,<a href="/index.php/Home/shou/index">去别处逛逛</a></b></span>
+                <span class="fr">商品总价：<b style="font-size:22px; color:#ff4e00;" class="zongjia">￥<?php echo ($_SESSION['zj']); ?></b></span>
             </td>
-          </tr><?php endif; ?>
+          </tr>
         </table>
+
+            
+    <div class="two_t">
+  <div class="container">
+    <button class="btn btn-success" data-toggle="modal" style="float:right;margin-right:50px" data-target="#myModal">修改</button>
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">修改</h4>
+          </div>
+          <div class="modal-body">
+              <?php if(is_array($address)): foreach($address as $v=>$k): ?><div style="border:1px solid black;border-radius:15px;padding:5px;margin-top:2px" id="address<?php echo ($v->id); ?>">
+              <table border="0" class="add_t" align="center" style="width:98%; margin:10px auto;" cellspacing="0" cellpadding="0">
+                 <tr>
+                    <td align="right" width="180">收货人姓名：</td>
+                    <td><?php echo ($v['user_name']); ?></td>
+                  </tr>
+                  <tr>
+                    <td align="right">手机：</td>
+                    <td><?php echo ($v['phone']); ?></td>
+                  </tr>
+                  <tr>
+                    <td align="right">电子邮箱：</td>
+                    <td><?php echo ($v['profile_email']); ?></td>
+                  </tr>
+                  <tr>
+                    <td align="right">邮政编码：</td>
+                    <td><?php echo ($v['code']); ?></td>
+                  </tr>
+                  <tr>
+                    <td align="right">配送区域：</td>
+                    <td><?php echo ($v['profile_address']); ?></td>
+                  </tr>
+                </table>
         
+                <p align="right">
+
+    <button class="btn btn-success" onclick="dizhi(<?php echo ($v['id']); ?>)" data-toggle="modal" data-target="#myModal1" data-dismiss="modal">选择此收货地址</button>
+
+
+                </p>
+            </div><?php endforeach; endif; ?>
+          </div>
+          <div class="modal-footer">
+            <a href="/index.php/Home/shou/address"><button class="btn btn-success" >管理收货地址</button></a>
+            <button class="btn btn-success" data-dismiss="modal">close</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <!--End 第一步：查看购物车 End--> 
+  </div>
+                </span>收货人信息
+            </div>
+            <table border="0" class="peo_tab" style="width:1110px;" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="p_td" width="160">联系人名称</td>
+                <td width="395" id="uname"><?php echo ($v['user_name']); ?></td>
+                <td class="p_td" width="160">电子邮件</td>
+                <td width="395" id="email"><?php echo ($v['profile_email']); ?></td>
+              </tr>
+              <tr>
+                <td class="p_td">详细地址</td>
+                <td id="address"><?php echo ($v['profile_address']); ?></td>
+                <td class="p_td">邮政编码</td>
+                <td  id="code"><?php echo ($v['code']); ?></td>
+              </tr>
+              <tr>
+                <td class="p_td">电话</td>
+                <td id="phone"><?php echo ($v['phone']); ?></td>
+                <td class="p_td"></td>
+                <td></td>
+              </tr>
+            </table>
+
+            
+            <div class="two_t">
+                配送方式
+            </div>
+            <table border="0" class="car_tab" style="width:1110px;" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="car_th" width="200">名称</td>
+                <td class="car_th" width="370">订购描述</td>
+                <td class="car_th" width="150">费用</td>
+                <td class="car_th" width="135">免费额度</td>
+                <td class="car_th" width="175">保价费用</td>
+              </tr>
+              <tr>
+                <td align="center" style="font-size:14px;"><b>***快递</b></td>
+                <td>邮费￥15.00</td>
+                <td align="center">￥15.00</td>
+                <td align="center">￥15.00</td>
+                <td align="center">不支持保价</td>
+              </tr>
+            </table> 
+            
+            <div class="two_t">
+                支付方式
+            </div>
+            <ul class="pay" id="pay">
+                <li class="checked">货到付款<div class="ch_img"></div></li>
+<!--                 <li>余额支付<div class="ch_img"></div></li>
+                <li>银行亏款/转账<div class="ch_img"></div></li>
+                <li>支付宝<div class="ch_img"></div></li>
+ -->            </ul>
+            
+
+            <table border="0" style="width:900px; margin-top:20px;" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="right">
+                    商品总价: <font color="#ff4e00"  class="zongjia"><?php echo ($_SESSION['zj']); ?></font>  + 配送费用: <font color="#ff4e00">￥0</font>
+                </td>
+              </tr>
+              <tr height="70">
+                <td align="right">
+                    <b style="font-size:14px;">应付款金额：<span style="font-size:22px; color:#ff4e00;" class="zongjia"><?php echo ($_SESSION['zj']); ?></span></b>
+                </td>
+              </tr>
+              <tr height="70">
+                <td align="right"><a href="/index.php/Home/shou/addorders" ><img src="/Public/home/images/btn_sure.gif" /></a></td>
+              </tr>
+            </table>
+
+            
+            
+        </div>
+    </div>
+    <!--End 第二步：确认订单信息 End-->
+    
     
  
     </body>  
     <script type="text/javascript">
         $(".menu_bg").remove();//.top+.menu_bg=head2
         $(".i_car").remove();//.top+.menu_bg=head2
-        // $(".leftNav").remove();//.top+.menu_bg=head2
+        $(".leftNav").css('display','none');//分类列表
+        $(".nav_t").mouseover(function(){
+        $(".leftNav").css('display','block');
+        });
 
-        // $(".leftNav").css('display','none');//分类列表
-        // $(".nav_t").mouseover(function(){
-        // $(".leftNav").css('display','block');
-        // });
-
-        $(':checkbox').click(function(event){
-          // alert("111");
-        zongjia=0;
-        $("#allchecked").find(':checkbox').each(function(){
-          if($(this).is(':checked')){
-          	k=$(this).val();
-            zongjia=zongjia+Math.ceil($('#sum'+k).val()*$("#price"+k).html()*10)/10;
-        }
+    //添加订单
+    function addorder(){
         // alert(zongjia);
-        })
-            $('#zongjia').html("￥"+zongjia);
-          });
-      //全选
-  $(".alldel").click(function(){
-    // alert('全选');
-    $('#allchecked').find('tr').each(function(){
-      // alert('q1');
-       $(this).find(":checkbox").attr('checked',true);
-       // jisuan($this)
-       // alert($(this).val());
-        zongjia=0;
-            	<?php if(is_array($buycar)): foreach($buycar as $k=>$v): ?>xiaoji<?php echo ($k); ?>=Math.ceil($('#sum<?php echo ($k); ?>').val()*$("#price<?php echo ($k); ?>").html()*10)/10;
-            zongjia=xiaoji<?php echo ($k); ?>+zongjia;<?php endforeach; endif; ?>
-
-            $('#zongjia').html("￥"+zongjia);
-
-    })
-  })
-
-  //全不选
-  $('.nodel').click(function(){
-    $('#allchecked').find('tr').each(function(){
-       $(this).find(':checkbox').attr('checked',false);
-            $('#zongjia').html(0);
-    })
-  })
-  //反选
- $(".fdel").click(function(){
-  zongjia=0;
-  $("#allchecked").find(':checkbox').each(function(){
-  	// alert($(this).val())
-  	if($(this).is(':checked')){
-      		$(this).attr('checked',false);
-      	}else{
-     		 $(this).attr('checked',true);
-          		k=$(this).val();
-  // alert(k);
-            		zongjia=zongjia+Math.ceil($('#sum'+k).val()*$("#price"+k).html()*10)/10;
-       	 }
-       	})
-
-            $('#zongjia').html(zongjia);
-
- })
-        function del(k){
-            if(confirm('确认删除商品吗？')){
-                // alert(k);
-                // $(this).parents('tr').remove();
-                $('#tr'+k).remove();
-
-       $.ajax({
-         url: '/index.php/Home/shou/buycardel',
-         type: 'get',
-         data: {k:k},
-       })
-            }
-        
-        }
-        //总价
-
-        function jisuan(k){
-            	<?php if(is_array($buycar)): foreach($buycar as $k=>$v): ?>xiaoji<?php echo ($k); ?>=Math.ceil($('#sum<?php echo ($k); ?>').val()*$("#price<?php echo ($k); ?>").html()*10)/10;
-            zongjia=xiaoji<?php echo ($k); ?>+zongjia;<?php endforeach; endif; ?>
-            zongjia=0;
-        $("#allchecked").find('tr').each(function(){
-          if(!$(this).find(":checkbox").attr('checked')){
-            // alert($(this).find(":checkbox").val())
-          }else{
-            k=$(this).find(":checkbox").val();
-            if(k!==undefined){
-            // alert(k);
-            zongjia=zongjia+Math.ceil($('#sum'+k).val()*$("#price"+k).html()*10)/10;
-            }
-          }
-       $.ajax({
-         url: '/index.php/Home/shou/shuliangbiangeng',
-         type: 'get',
-         data: {k:k,shuliang:$('#sum'+k).val()},
-       })
-       $('#xiaoji'+k).html("￥"+Math.ceil($('#sum'+k).val()*$("#price"+k).html()*10)/10);
-        })
-       $('#zongjia').html("￥"+	zongjia);
-     
-
-
-        }
-    //结算    
-    function jiesuan(){
-    var aa = new Array(); 
-    $('#allchecked').find(':checkbox').each(function(){
-    	if ($(this).is(':checked')) {
-    		// alert(1);
-	     // alert($(this).val());
-	     id=$(this).val();
-            	     aa.push(id);
-    	}
-    })
-    zj=$('#zongjia').html();
-    // alert(aa);
-    $.get('/index.php/Home/shou/checked',{id:aa,zj:zj}, function(data) {
-      // alert(data);
-      if(data!=="0"){
-        window.location="/index.php/Home/shou/buycartwo";
-      }
-    });
+        // $.get('/web/addorders',{zj:zongjia}, function(data) {
+        //     /*optional stuff to do after success */
+        // /});
+    }
+    choices("pay");
+    function choices(id){
+        $("#"+id).find('li').each(function(index, el) {
+         $(this).click(function(event) {
+                $("#"+id).find('li').each(function(index, el) {
+                    $(this).removeClass('checked');
+                });
+                $(this).addClass('checked');
+         });   
+        });
     }
 
-    </script>
-  
- 
- 
+    function dizhi(id){
+        $.get('/web/dizhi',{id:id}, function(data) {
+            // alert(data[0]);
+            $("#uname").html(data[0].uname);
+            $("#address").html(data[0].address);
+            $("#address").html(data[0].address);
+            $("#email").html(data[0].email);
+            $("#code").html(data[0].code);
+            $("#phone").html(data[0].phone);
+        });
+    }
+
+    </script> 
 
    
     <!--Begin Footer Begin -->
